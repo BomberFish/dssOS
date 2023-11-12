@@ -12,5 +12,4 @@ echo """
                                  
 The Dollar Store Shim Operating System
 """
-
-su -P -c '/bin/bash -i' # todo: work on bootloader!
+/bin/bash -i # todo: work on bootloader!
