@@ -1,0 +1,209 @@
+07:47:38,655 DBG core.util: VARIANT_ID not found in os-release files
+07:47:38,656 INF core.configuration.profile: Loading information about profiles from /etc/anaconda/profile.d.
+07:47:38,664 INF core.configuration.profile: Found the 'almalinux' profile at /etc/anaconda/profile.d/almalinux.conf.
+07:47:38,665 INF core.configuration.profile: Found the 'centos' profile at /etc/anaconda/profile.d/centos.conf.
+07:47:38,666 INF core.configuration.profile: Found the 'circle' profile at /etc/anaconda/profile.d/circle.conf.
+07:47:38,666 INF core.configuration.profile: Found the 'fedora-designsuite' profile at /etc/anaconda/profile.d/fedora-designsuite.conf.
+07:47:38,667 INF core.configuration.profile: Found the 'fedora-eln' profile at /etc/anaconda/profile.d/fedora-eln.conf.
+07:47:38,667 INF core.configuration.profile: Found the 'fedora-iot' profile at /etc/anaconda/profile.d/fedora-iot.conf.
+07:47:38,668 INF core.configuration.profile: Found the 'fedora-kde' profile at /etc/anaconda/profile.d/fedora-kde.conf.
+07:47:38,668 INF core.configuration.profile: Found the 'fedora-kinoite' profile at /etc/anaconda/profile.d/fedora-kinoite.conf.
+07:47:38,669 INF core.configuration.profile: Found the 'fedora-sericea' profile at /etc/anaconda/profile.d/fedora-sericea.conf.
+07:47:38,669 INF core.configuration.profile: Found the 'fedora-server' profile at /etc/anaconda/profile.d/fedora-server.conf.
+07:47:38,670 INF core.configuration.profile: Found the 'fedora-silverblue' profile at /etc/anaconda/profile.d/fedora-silverblue.conf.
+07:47:38,671 INF core.configuration.profile: Found the 'fedora-workstation' profile at /etc/anaconda/profile.d/fedora-workstation.conf.
+07:47:38,671 INF core.configuration.profile: Found the 'fedora' profile at /etc/anaconda/profile.d/fedora.conf.
+07:47:38,672 INF core.configuration.profile: Found the 'ovirt' profile at /etc/anaconda/profile.d/ovirt.conf.
+07:47:38,673 INF core.configuration.profile: Found the 'rhel' profile at /etc/anaconda/profile.d/rhel.conf.
+07:47:38,673 INF core.configuration.profile: Found the 'rhvh' profile at /etc/anaconda/profile.d/rhvh.conf.
+07:47:38,674 INF core.configuration.profile: Found the 'rocky' profile at /etc/anaconda/profile.d/rocky.conf.
+07:47:38,674 INF core.configuration.profile: Found the 'scientific-linux' profile at /etc/anaconda/profile.d/scientific-linux.conf.
+07:47:38,675 INF core.configuration.profile: Found the 'virtuozzo-linux' profile at /etc/anaconda/profile.d/virtuozzo-linux.conf.
+07:47:38,675 DBG core.configuration.profile: Detecting a profile for ID=fedora, VARIANT_ID=None.
+07:47:38,675 INF core.configuration.profile: The 'fedora' profile is detected.
+07:47:38,676 INF core.configuration.anaconda: Load the 'fedora' profile configuration.
+07:47:38,681 INF main: /sbin/anaconda 39.32.6-2.fc39
+07:47:38,681 INF core.util: Reporting the IPMI event: 7
+07:47:38,751 WRN misc: /usr/lib64/python3.12/site-packages/pyanaconda/core/users.py:31: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  import crypt  # pylint: disable=deprecated-module
+
+07:47:38,949 INF startup_utils: check_memory(): total:8054, needed:320
+07:47:38,949 DBG startup_utils: Don't set up proxy variables.
+07:47:38,970 INF main: anaconda called with cmdline = ['/sbin/anaconda']
+07:47:38,970 INF main: Default encoding = utf-8 
+07:47:38,971 INF misc: Configuration loaded from: ['/etc/anaconda/anaconda.conf', '/etc/anaconda/profile.d/fedora.conf', '/etc/anaconda/conf.d/00-do-nothing.conf', '/etc/anaconda/conf.d/01-still-do-nothing.conf']
+07:47:38,971 INF misc: Writing the runtime configuration to: /run/anaconda/anaconda.conf
+07:47:39,004 INF core.dbus: Connecting to the Anaconda bus at unix:path=/tmp/dbus-94IB0aBWDP,guid=124dd4c18cf8317bf2c94dd2654f319b.
+07:47:47,478 INF main: Found a kickstart file: /run/install/ks.cfg
+07:47:47,937 INF startup_utils: Parsing kickstart: /run/install/ks.cfg
+07:47:50,447 WRN kickstart: Command keyboard will be parsed in DBus module.
+07:47:50,447 WRN kickstart: Command network will be parsed in DBus module.
+07:47:50,447 WRN kickstart: Command repo will be parsed in DBus module.
+07:47:50,448 WRN kickstart: Command repo will be parsed in DBus module.
+07:47:50,448 WRN kickstart: Command rootpw will be parsed in DBus module.
+07:47:50,448 WRN kickstart: Command timesource will be parsed in DBus module.
+07:47:50,448 WRN kickstart: Command timezone will be parsed in DBus module.
+07:47:50,449 WRN kickstart: Command url will be parsed in DBus module.
+07:47:50,449 WRN kickstart: Command bootloader will be parsed in DBus module.
+07:47:50,449 WRN kickstart: Command autopart will be parsed in DBus module.
+07:47:50,449 WRN kickstart: Command zerombr will be parsed in DBus module.
+07:47:50,449 WRN kickstart: Command clearpart will be parsed in DBus module.
+07:47:50,928 DBG payload.dnf.payload: The DNF source is already set.
+07:47:50,955 DBG localization: setting locale to: en_US.UTF-8
+07:47:50,974 DBG network: Initialization started.
+07:47:50,988 DBG network: Devices found: ['ens3']
+07:47:50,995 DBG network: Running task Apply kickstart
+07:47:51,103 DBG network: Apply kickstart result: ['ens3']
+07:47:51,113 DBG network: Running task Dump missing config files
+07:47:51,222 DBG network: Dump missing config files result: []
+07:47:51,230 DBG network: Creating network configurations.
+07:47:51,239 DBG network: Initialization finished.
+07:47:51,241 INF core.threads: Running Thread: AnaWaitForConnectingNMThread (139959781848768)
+07:47:51,242 DBG anaconda: setting display mode to TUI
+07:47:51,260 WRN stdout: Not asking for VNC because of an automated install
+07:47:51,260 WRN stdout: Not asking for VNC because text mode was explicitly asked for in kickstart
+07:47:51,260 INF anaconda: Display mode is set to 'interactive text mode'.
+07:47:51,281 INF startup_utils: check_memory(): total:8054, needed:320
+07:47:51,283 INF network: got 0 NTP servers from DHCP
+07:47:51,285 DBG ui.lib.addons: Loading spokes into module path for addon com_redhat_kdump
+07:47:51,292 INF core.threads: Thread Done: AnaWaitForConnectingNMThread (139959781848768)
+07:47:51,293 DBG startup_utils: no default systemd target set & in text/vnc mode - setting multi-user.target.
+07:47:51,578 DBG core.storage: LABEL=OEMDRV matches [] for devicetree=None and disks_only=True
+07:47:51,584 INF core.threads: Running Thread: AnaStorageThread (139959781848768)
+07:47:51,597 INF core.threads: Running Thread: AnaTimeInitThread (139959686129344)
+07:47:51,660 DBG payload.manager: Restarting payload thread
+07:47:51,660 INF core.threads: Running Thread: AnaPayloadRestartThread (139959677736640)
+07:47:51,661 INF startup_utils: Geolocation is disabled due to automated kickstart based installation.
+07:47:51,661 INF core.threads: Running Thread: AnaPayloadThread (139959669343936)
+07:47:51,662 INF core.threads: Thread Done: AnaPayloadRestartThread (139959677736640)
+07:47:51,677 DBG simpleline: GLib event loop is used!
+07:47:51,818 INF core.hw: Skipping detection of SMT.
+07:47:51,830 INF lifecycle: Adding controller: SummaryHub
+07:47:52,013 INF core.threads: Thread Done: AnaStorageThread (139959781848768)
+07:47:52,014 DBG payload.dnf.payload: Tearing down sources
+07:47:52,137 DBG payload.dnf.payload: Setting up sources
+07:47:52,139 INF lifecycle: Module initialized: LangSpoke
+07:47:52,147 INF lifecycle: Module initialized: TimeSpoke
+07:47:52,149 INF core.threads: Running Thread: AnaSourceWatcher (139959781848768)
+07:47:52,152 INF core.threads: Running Thread: AnaSoftwareWatcher (139959677736640)
+07:47:52,159 INF lifecycle: Module initialized: NetworkSpoke
+07:47:52,174 INF core.threads: Running Thread: AnaStorageWatcher (139959659902656)
+07:47:52,181 INF lifecycle: Module initialized: PasswordSpoke
+07:47:52,185 WRN ui.tui.hubs: Spoke PasswordSpoke initialization failure!
+07:47:52,188 DBG ui.lib.storage: Selecting all disks by default: vda
+07:47:52,188 DBG ui.lib.storage: Applying partitioning
+07:47:52,188 DBG ui.tui.spokes.storage: Saving storage configuration...
+07:47:52,192 INF lifecycle: Module initialized: UserSpoke
+07:47:52,196 INF lifecycle: Initialization of all modules (8) has been started.
+07:47:52,409 DBG ui.tui.spokes.storage: Checking storage configuration...
+07:47:52,521 DBG ui.lib.storage: Validation has been completed: ValidationReport(error_messages=[], warning_messages=[])
+07:47:53,001 INF core.threads: Thread Done: AnaTimeInitThread (139959686129344)
+07:47:53,018 DBG ui.lib.storage: Partitioning has been applied.
+07:47:53,019 INF lifecycle: Module initialized: StorageSpoke
+07:47:53,019 INF core.threads: Thread Done: AnaStorageWatcher (139959659902656)
+07:50:35,470 INF core.threads: Thread Done: AnaPayloadThread (139959669343936)
+07:50:35,477 INF core.threads: Running Thread: AnaCheckSoftwareThread (139959669343936)
+07:50:35,483 INF lifecycle: Module initialized: SourceSpoke
+07:50:35,483 INF core.threads: Thread Done: AnaSourceWatcher (139959781848768)
+07:50:35,486 DBG payload.dnf.payload: Checking the software selection...
+07:50:40,750 DBG payload.dnf.payload: The selection has been checked: ValidationReport(error_messages=[], warning_messages=[])
+07:50:40,751 INF core.threads: Thread Done: AnaCheckSoftwareThread (139959669343936)
+07:50:40,751 INF lifecycle: Module initialized: SoftwareSpoke
+07:50:40,752 INF lifecycle: All modules have been initialized.
+07:50:40,752 INF core.threads: Thread Done: AnaSoftwareWatcher (139959677736640)
+07:50:40,809 DBG simpleline: Scheduling screen SummaryHub
+07:50:40,810 DBG simpleline: New signal RenderScreenSignal enqueued with source ScreenScheduler
+07:50:40,812 DBG simpleline: Scheduling screen ProgressSpoke
+07:50:40,813 DBG simpleline: Starting main loop
+07:50:40,815 DBG simpleline: Processing screen ScreenData(SummaryHub,None,False)
+07:50:40,914 DBG simpleline: Input is required by ScreenData(SummaryHub,None,False) screen
+07:50:41,130 INF ui.lib.space: fs space: 4.25 GiB  needed: 621.79 MiB
+07:50:41,130 DBG simpleline: New signal CloseScreenSignal enqueued with source SummaryHub
+07:50:41,131 DBG simpleline: Closing screen ScreenData(SummaryHub,None,False) from SummaryHub
+07:50:41,131 DBG simpleline: New signal RenderScreenSignal enqueued with source ScreenScheduler
+07:50:41,132 DBG simpleline: Processing screen ScreenData(ProgressSpoke,None,False)
+07:50:41,152 INF core.threads: Running Thread: AnaTaskThread-RunInstallationTask-1 (139959677736640)
+07:50:41,152 DBG ui.tui.spokes.installation_progress: The installation has started.
+07:50:41,153 INF modules.common.task.task: Run the installation queue.
+07:50:41,426 INF installation: Top-level task queue: Complete installation queue
+Number of task queues: 16
+Number of tasks: 40
+Task & task group listing:
+ Task queue: Installation queue
+  Task queue: Installation environment setup
+   Task: Get missing keyboard settings.
+  Task queue: Early storage configuration
+   Task: Create storage layout
+   Task: Mount filesystems
+   Task: Write the storage configuration
+  Task queue: Pre-install scripts
+   Task: Run %pre-install scripts
+  Task queue: Pre install tasks
+   Task: Discover information about a realm
+   Task: Set up FIPS for the payload installation
+   Task: Find additional packages & run pre_install()
+  Task queue: Payload installation
+   Task: Install the payload
+  Task queue: Bootloader installation
+   Task: Configure bootloader
+   Task: Install bootloader
+  Task queue: Post-installation setup tasks
+   Task: Run post-installation setup tasks
+ Task queue: Configuration queue
+  Task queue: Installed system configuration
+   Task: Configure SELinux
+   Task: Configure fingerprint authentication
+   Task: Authselect configuration
+   Task: Set the Hardware Clock from the System Clock
+   Task: Configure time zone
+   Task: Configure NTP
+   Task: Configure Initial Setup
+   Task: Configure post-installation tools
+   Task: Configure services
+   Task: Configure systemd default target
+   Task: Configure default desktop
+   Task: Configure language
+   Task: Configure keyboard
+   Task: Configure firewall
+  Task queue: Network configuration
+   Task: Network configuration
+  Task queue: User creation
+   Task: Create groups
+   Task: Create users
+   Task: Configure root password
+   Task: Set SSH keys
+   Task: Configure optional root password SSH login
+  Task queue: Anaconda addon configuration
+  Task queue: Initramfs generation
+   Task: Generate initramfs
+  Task: Configure FIPS
+  Task: Join a realm
+  Task: Rerun zipl
+  Task queue: Write configs and kickstarts
+   Task: Store kickstarts
+  Task queue: Post installation scripts
+   Task: Run post installation scripts
+  Task: Set file contexts
+  Task: Copy installation logs
+07:50:41,427 INF installation: Task started: Installation queue (1/40)
+07:50:41,427 INF installation: Queue started: Installation queue (1/16)
+07:50:41,427 INF installation: Queue started: Installation environment setup (2/16)
+07:50:41,433 INF installation: Queue started: Early storage configuration (3/16)
+07:50:42,907 INF installation: Queue started: Pre-install scripts (4/16)
+07:50:42,908 INF installation: Queue started: Pre install tasks (5/16)
+07:50:42,931 DBG payload.migrated: Nothing to do in the pre-install step.
+07:50:42,932 INF installation: Queue started: Payload installation (6/16)
+07:51:04,563 INF installation: Queue started: Bootloader installation (7/16)
+07:51:04,598 INF installation: Queue started: Post-installation setup tasks (8/16)
+07:51:05,964 DBG installation: Task completed: Installation queue (1/40) (24.5 s)
+07:51:05,964 INF installation: Task started: Configuration queue (2/40)
+07:51:05,964 INF installation: Queue started: Configuration queue (9/16)
+07:51:05,964 INF installation: Queue started: Installed system configuration (10/16)
+07:51:07,407 INF installation: Queue started: Network configuration (11/16)
+07:51:07,650 INF installation: Queue started: User creation (12/16)
+07:51:07,781 INF installation: Queue started: Anaconda addon configuration (13/16)
+07:51:07,781 INF installation: Queue started: Initramfs generation (14/16)
+07:51:07,810 INF installation: Queue started: Write configs and kickstarts (15/16)
+07:51:07,893 INF installation: Queue started: Post installation scripts (16/16)
+07:51:07,894 INF kickstart.script: Running kickstart %%post script(s)
+07:51:08,018 INF kickstart.script: All kickstart %%post script(s) have been run

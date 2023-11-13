@@ -13,3 +13,8 @@ dssOS is an alternative operating system for Chrome OS devices which runs off a 
 
 > [!WARNING]  
 > Warning: dssOS was hacked together in a weekend, and thus is very unstable. Don't come crying to me when something breaks.
+
+## Credits
+
+- SH1MMER – Utilities used in patcher script, initial RMA shim research
+- Shimboot – bootloader approach

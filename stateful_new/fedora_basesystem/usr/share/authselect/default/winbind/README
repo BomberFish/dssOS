@@ -1,0 +1,100 @@
+Enable winbind for system authentication
+========================================
+
+Selecting this profile will enable Samba's winbind as the source of identity
+and authentication providers.
+
+The Samba standard Windows interoperability suite of utilities allows Linux
+systems to join an Active Directory environment by making them appear to be
+Windows clients. As a means of systems integration, Samba allows a Linux
+client to join an Active Directory Kerberos realm and to use Active Directory
+as its identity store.
+
+Winbind is a component of the Samba suite to provide unified logon. It uses a
+UNIX implementation of Microsoft RPC calls, Pluggable Authentication
+Modules (PAMs), and the Name Service Switch (NSS) to allow Windows domain
+users to appear and operate as UNIX users on a UNIX system.
+
+WINBIND CONFIGURATION
+---------------------
+
+Authselect does not touch winbind's configuration. Please, read winbind's
+documentation to see how to configure it manually. Only local users will be
+available on the system if there is no existing winbind configuration.
+
+AVAILABLE OPTIONAL FEATURES
+---------------------------
+
+with-faillock::
+    Enable account locking in case of too many consecutive
+    authentication failures.
+
+with-mkhomedir::
+    Enable automatic creation of home directories for users on their
+    first login.
+
+with-ecryptfs::
+    Enable automatic per-user ecryptfs.
+
+with-fingerprint::
+    Enable authentication with fingerprint reader through *pam_fprintd*.
+
+with-pam-gnome-keyring::
+    Enable pam-gnome-keyring support.
+
+with-pam-u2f::
+    Enable authentication via u2f dongle through *pam_u2f*.
+
+with-pam-u2f-2fa::
+    Enable 2nd factor authentication via u2f dongle through *pam_u2f*.
+
+without-pam-u2f-nouserok::
+    Module argument nouserok is omitted if also with-pam-u2f-2fa is used.
+    *WARNING*: Omitting nouserok argument means that users without pam-u2f
+    authentication configured will not be able to log in *INCLUDING* root.
+    Make sure you are able to log in before losing root privileges.
+
+with-krb5::
+    Enable Kerberos authentication with *pam_winbind*.
+
+with-silent-lastlog::
+    Do not produce pam_lastlog message during login.
+
+with-pamaccess::
+    Check access.conf during account authorization.
+
+with-pwhistory::
+    Enable pam_pwhistory module for local users.
+
+with-altfiles::
+    Use nss_altfiles for passwd and group nsswitch databases.
+
+with-mdns4::
+    Enable multicast DNS over IPv4.
+
+with-mdns6::
+    Enable multicast DNS over IPv6.
+
+with-systemd-homed::
+    If set, pam_systemd_homed is enabled for all pam operations.
+
+without-nullok::
+    Do not add nullok parameter to pam_unix.
+
+with-libvirt::
+    Enable connecting to libvirt VMs using the hostname configured in the
+    guest OS or, as a fallback, their name.
+
+EXAMPLES
+--------
+* Enable winbind with no additional modules
+
+  authselect select winbind
+
+* Enable winbind and create home directories for users on their first login
+
+  authselect select winbind with-mkhomedir
+
+SEE ALSO
+--------
+* man winbindd(8)

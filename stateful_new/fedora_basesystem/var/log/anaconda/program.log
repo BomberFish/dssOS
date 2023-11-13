@@ -1,0 +1,79 @@
+07:47:38,265 INF program: Running... systemctl restart rsyslog
+07:47:38,653 DBG program: Return code: 0
+07:47:38,929 INF program: Running... losetup --list
+07:47:38,950 INF program: Running... auditctl -e 0
+07:47:38,969 INF program: enabled 0
+07:47:38,969 INF program: failure 1
+07:47:38,969 INF program: pid 0
+07:47:38,969 INF program: rate_limit 0
+07:47:38,969 INF program: backlog_limit 64
+07:47:38,969 INF program: lost 0
+07:47:38,970 INF program: backlog 0
+07:47:38,970 INF program: backlog_wait_time 60000
+07:47:38,970 INF program: backlog_wait_time_actual 0
+07:47:38,970 DBG program: Return code: 0
+07:47:38,972 INF program: Running... dbus-daemon --print-address --syslog --config-file=/usr/share/anaconda/dbus/anaconda-bus.conf
+07:47:51,262 INF program: Running... losetup --list
+07:47:51,310 INF program: Running... udevadm settle --timeout=300
+07:47:51,333 DBG program: Return code: 0
+07:47:51,540 INF program: Running... udevadm settle --timeout=300
+07:47:51,575 DBG program: Return code: 0
+07:47:51,603 INF program: Running... hwclock --hctosys --utc
+07:47:53,000 DBG program: Return code: 0
+07:51:07,896 INF program: Running in chroot '/mnt/sysroot'... /bin/sh /tmp/ks-script-7dziql9q
+07:51:07,961 INF program: + LANG=en_US
+07:51:07,962 INF program: + echo '%_install_langs en_US'
+07:51:07,962 INF program: + echo 'LANG="C.UTF-8"'
+07:51:07,962 INF program: + echo 'Import RPM GPG key'
+07:51:07,962 INF program: Import RPM GPG key
+07:51:07,963 INF program: ++ rpm --eval '%{?fedora}'
+07:51:07,963 INF program: + releasever=39
+07:51:07,963 INF program: + '[' -z 39 ']'
+07:51:07,963 INF program: + rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-39-primary
+07:51:07,963 INF program: + echo '# fstab intentionally empty for containers'
+07:51:07,964 INF program: + rm -f /etc/machine-id
+07:51:07,964 INF program: + touch /etc/machine-id
+07:51:07,964 INF program: + echo '# resolv placeholder'
+07:51:07,964 INF program: + chmod 644 /etc/resolv.conf
+07:51:07,964 DBG program: Return code: 0
+07:51:07,965 INF program: Running in chroot '/mnt/sysroot'... /bin/sh /tmp/ks-script-neqd8e_k
+07:51:07,987 INF program: removed directory '/var/cache/bpf'
+07:51:07,987 INF program: removed directory '/var/cache/dnf'
+07:51:07,987 INF program: removed '/var/cache/ldconfig/aux-cache'
+07:51:07,988 INF program: removed directory '/var/cache/ldconfig'
+07:51:07,988 DBG program: Return code: 0
+07:51:07,989 INF program: Running... /bin/sh /tmp/ks-script-okdispmv
+07:51:08,011 INF program: + KEEPLANG=en_US
+07:51:08,011 INF program: + for dir in locale i18n
+07:51:08,011 INF program: + find /mnt/sysimage/usr/share/locale -mindepth 1 -maxdepth 1 -type d -not '(' -name en_US -o -name POSIX ')' -exec rm -rfv '{}' +
+07:51:08,012 INF program: removed '/mnt/sysimage/usr/share/locale/en_GB/LC_MESSAGES/glib20.mo'
+07:51:08,012 INF program: removed '/mnt/sysimage/usr/share/locale/en_GB/LC_MESSAGES/dnf.mo'
+07:51:08,012 INF program: removed '/mnt/sysimage/usr/share/locale/en_GB/LC_MESSAGES/p11-kit.mo'
+07:51:08,012 INF program: removed directory '/mnt/sysimage/usr/share/locale/en_GB/LC_MESSAGES'
+07:51:08,013 INF program: removed directory '/mnt/sysimage/usr/share/locale/en_GB'
+07:51:08,013 INF program: removed directory '/mnt/sysimage/usr/share/locale/en@piglatin/LC_MESSAGES'
+07:51:08,013 INF program: removed directory '/mnt/sysimage/usr/share/locale/en@piglatin'
+07:51:08,013 INF program: removed directory '/mnt/sysimage/usr/share/locale/en@boldquot/LC_MESSAGES'
+07:51:08,013 INF program: removed directory '/mnt/sysimage/usr/share/locale/en@boldquot'
+07:51:08,013 INF program: removed directory '/mnt/sysimage/usr/share/locale/en@arabic/LC_MESSAGES'
+07:51:08,014 INF program: removed directory '/mnt/sysimage/usr/share/locale/en@arabic'
+07:51:08,014 INF program: removed directory '/mnt/sysimage/usr/share/locale/en@quot/LC_MESSAGES'
+07:51:08,014 INF program: removed directory '/mnt/sysimage/usr/share/locale/en@quot'
+07:51:08,014 INF program: removed directory '/mnt/sysimage/usr/share/locale/en@greek/LC_MESSAGES'
+07:51:08,014 INF program: removed directory '/mnt/sysimage/usr/share/locale/en@greek'
+07:51:08,015 INF program: removed directory '/mnt/sysimage/usr/share/locale/en@hebrew/LC_MESSAGES'
+07:51:08,015 INF program: removed directory '/mnt/sysimage/usr/share/locale/en@hebrew'
+07:51:08,015 INF program: removed '/mnt/sysimage/usr/share/locale/en_CA/LC_MESSAGES/glib20.mo'
+07:51:08,015 INF program: removed directory '/mnt/sysimage/usr/share/locale/en_CA/LC_MESSAGES'
+07:51:08,015 INF program: removed directory '/mnt/sysimage/usr/share/locale/en_CA'
+07:51:08,016 INF program: removed directory '/mnt/sysimage/usr/share/locale/en/LC_MESSAGES'
+07:51:08,016 INF program: removed directory '/mnt/sysimage/usr/share/locale/en'
+07:51:08,016 INF program: removed directory '/mnt/sysimage/usr/share/locale/en@shaw/LC_MESSAGES'
+07:51:08,016 INF program: removed directory '/mnt/sysimage/usr/share/locale/en@shaw'
+07:51:08,016 INF program: removed directory '/mnt/sysimage/usr/share/locale/en@cyrillic/LC_MESSAGES'
+07:51:08,016 INF program: removed directory '/mnt/sysimage/usr/share/locale/en@cyrillic'
+07:51:08,017 INF program: + for dir in locale i18n
+07:51:08,017 INF program: + find /mnt/sysimage/usr/share/i18n -mindepth 1 -maxdepth 1 -type d -not '(' -name en_US -o -name POSIX ')' -exec rm -rfv '{}' +
+07:51:08,017 INF program: removed directory '/mnt/sysimage/usr/share/i18n/locales'
+07:51:08,017 INF program: removed directory '/mnt/sysimage/usr/share/i18n/charmaps'
+07:51:08,017 DBG program: Return code: 0

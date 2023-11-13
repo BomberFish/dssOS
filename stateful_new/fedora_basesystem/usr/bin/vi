@@ -1,0 +1,23 @@
+#!/usr/bin/sh
+
+# run vim if:
+# - 'vi' command is used and 'vim' binary is available
+# - 'vim' command is used
+# NOTE: Set up a local alias if you want vim -> vi functionality. We will not
+# do it globally, because it messes up with available startup options (see 
+# ':help starting', 'vi' is not capable of '-d'). The introducing an environment
+# variable, which an user must set to get the feature, will do the same trick
+# as setting an alias (needs user input, does not work with sudo), so it is left
+# on user whether he decides to use an alias:
+#
+# alias vim=vi
+#
+# in bashrc file.
+
+if test -f /usr/bin/vim
+then
+  exec /usr/bin/vim "$@"
+fi
+
+# run vi otherwise
+exec /usr/libexec/vi "$@"

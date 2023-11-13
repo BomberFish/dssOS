@@ -1,0 +1,1724 @@
+DEBUG:anaconda.modules.common:The configuration is loaded from: ['/run/anaconda/anaconda.conf']
+WARNING:py.warnings:/usr/lib/python3.12/site-packages/requests_ftp/ftp.py:9: DeprecationWarning: 'cgi' is deprecated and slated for removal in Python 3.13
+  import cgi
+
+DEBUG:anaconda.modules.common.base.base:Publish the service.
+DEBUG:dasbus.connection:Publishing an object at /org/fedoraproject/Anaconda/Modules/Payloads.
+INFO:anaconda.core.dbus:Connecting to the Anaconda bus at unix:path=/tmp/dbus-94IB0aBWDP,guid=124dd4c18cf8317bf2c94dd2654f319b.
+DEBUG:dasbus.connection:Registering a service name org.fedoraproject.Anaconda.Modules.Payloads.
+DEBUG:anaconda.modules.common.base.base:Start the loop.
+DEBUG:anaconda.modules.common.base.base:Reading kickstart...
+INFO:root:reading file=<gzip _io.BufferedReader name='/usr/lib/python3.12/site-packages/langtable/data/territories.xml.gz' 0x7f63c07e1db0>
+INFO:root:reading file=<gzip _io.BufferedReader name='/usr/lib/python3.12/site-packages/langtable/data/languages.xml.gz' 0x7f63c0f3e230>
+INFO:root:reading file=<gzip _io.BufferedReader name='/usr/lib/python3.12/site-packages/langtable/data/keyboards.xml.gz' 0x7f63b2f07910>
+INFO:root:reading file=<gzip _io.BufferedReader name='/usr/lib/python3.12/site-packages/langtable/data/timezones.xml.gz' 0x7f63c0f3e230>
+INFO:root:reading file=<gzip _io.BufferedReader name='/usr/lib/python3.12/site-packages/langtable/data/timezoneidparts.xml.gz' 0x7f63c07414b0>
+INFO:librepo:Librepo version: 1.17.0 with CURL_GLOBAL_ACK_EINTR support (libcurl/8.2.1 OpenSSL/3.1.1 zlib/1.2.13 brotli/1.1.0 libidn2/2.3.4 libpsl/0.21.2 (+libidn2/2.3.4) libssh/0.10.5/openssl/zlib nghttp2/1.55.1 OpenLDAP/2.6.6)
+DEBUG:anaconda.modules.payloads.payloads:Created the payload PayloadType.DNF.
+DEBUG:anaconda.modules.payloads.source.source_base:The configuration is set to: RepoConfigurationData(cost=1000, enabled=True, excluded_packages=[], included_packages=[], installation_enabled=False, name='', origin='USER', proxy='', ssl_configuration=SSLConfigurationData(), ssl_verification_enabled=True, type='BASEURL', url='https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/')
+DEBUG:anaconda.modules.payloads.source.source_base:The repository is set to: RepoConfigurationData(cost=1000, enabled=True, excluded_packages=[], included_packages=[], installation_enabled=False, name='', origin='USER', proxy='', ssl_configuration=SSLConfigurationData(), ssl_verification_enabled=True, type='BASEURL', url='https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/')
+DEBUG:anaconda.modules.payloads.payload.payload_base:New sources [Source(type='URL', url='https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/')] were added.
+DEBUG:anaconda.modules.payloads.payload.dnf.dnf:Repositories are set to: [RepoConfigurationData(cost=1000, enabled=True, excluded_packages=[], included_packages=[], installation_enabled=False, name='koji-override-0', origin='USER', proxy='', ssl_configuration=SSLConfigurationData(), ssl_verification_enabled=True, type='BASEURL', url='https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/'), RepoConfigurationData(cost=1000, enabled=True, excluded_packages=[], included_packages=[], installation_enabled=False, name='koji-override-1', origin='USER', proxy='', ssl_configuration=SSLConfigurationData(), ssl_verification_enabled=True, type='BASEURL', url='https://kojipkgs.fedoraproject.org/compose/updates/f39-updates/compose/Everything/x86_64/os/')]
+DEBUG:anaconda.modules.payloads.payload.dnf.dnf:Packages selection is set to 'PackagesSelectionData(core_group_enabled=False, default_environment_enabled=False, disabled_modules=[], environment='', excluded_groups=[], excluded_packages=['dosfstools', 'e2fsprogs', 'fuse-libs', 'glibc-langpack-en', 'gnupg2-smime', 'grubby', 'kernel', 'langpacks-en', 'langpacks-en_GB', 'libss', 'pinentry', 'shared-mime-info', 'sssd-client', 'trousers', 'util-linux', 'xkeyboard-config'], groups=[], groups_package_types={}, modules=[], packages=['bash', 'coreutils', 'dnf', 'dnf-yum', 'fedora-release-container', 'glibc-minimal-langpack', 'rootfiles', 'rpm', 'sudo', 'tar', 'util-linux-core', 'vim-minimal'])'.
+DEBUG:anaconda.modules.payloads.payload.dnf.dnf:Are the packages set from a kickstart? True
+DEBUG:anaconda.modules.payloads.payload.dnf.dnf:Packages configuration is set to 'PackagesConfigurationData(broken_ignored=False, docs_excluded=True, languages='en', missing_ignored=False, multilib_policy='best', retries=-1, timeout=-1, weakdeps_excluded=True)'.
+DEBUG:anaconda.modules.payloads.payloads:Activated the payload PayloadType.DNF.
+DEBUG:anaconda.modules.common.base.base:Kickstarted is set to True.
+DEBUG:dasbus.connection:Publishing an object at /org/fedoraproject/Anaconda/Modules/Payloads/Payload/1.
+DEBUG:dasbus.connection:Publishing an object at /org/fedoraproject/Anaconda/Modules/Payloads/Source/1.
+DEBUG:anaconda.modules.payloads.source.source_base:The configuration is set to: RepoConfigurationData(cost=1000, enabled=True, excluded_packages=[], included_packages=[], installation_enabled=False, name='', origin='USER', proxy='', ssl_configuration=SSLConfigurationData(), ssl_verification_enabled=True, type='BASEURL', url='https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/')
+DEBUG:anaconda.modules.payloads.source.source_base:The repository is set to: RepoConfigurationData(cost=1000, enabled=True, excluded_packages=[], included_packages=[], installation_enabled=False, name='', origin='USER', proxy='', ssl_configuration=SSLConfigurationData(), ssl_verification_enabled=True, type='BASEURL', url='https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/')
+DEBUG:anaconda.modules.common.base.base:Locale is set to en_US.UTF-8.
+DEBUG:dasbus.connection:Publishing an object at /org/fedoraproject/Anaconda/Modules/Payloads/Task/1.
+INFO:anaconda.core.threads:Running Thread: AnaTaskThread-TearDownDNFSourcesTask-1 (140066167301824)
+INFO:anaconda.modules.common.task.task:Tear down installation sources
+DEBUG:anaconda.modules.payloads.base.initialization:Tearing down sources...
+DEBUG:anaconda.modules.payloads.base.initialization:Tearing down a source: Source(type='URL', url='https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/')
+DEBUG:anaconda.modules.payloads.payload.dnf.dnf_manager:The DNF base has been reset.
+INFO:anaconda.core.threads:Thread Done: AnaTaskThread-TearDownDNFSourcesTask-1 (140066167301824)
+DEBUG:dasbus.connection:Publishing an object at /org/fedoraproject/Anaconda/Modules/Payloads/Task/2.
+INFO:anaconda.core.threads:Running Thread: AnaTaskThread-SetUpDNFSourcesTask-1 (140066167301824)
+INFO:anaconda.modules.common.task.task:Set up installation sources
+DEBUG:anaconda.modules.payloads.base.initialization:Setting up sources...
+DEBUG:anaconda.modules.payloads.base.initialization:Setting up a source: Source(type='URL', url='https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/')
+DEBUG:anaconda.modules.payloads.payload.dnf.tree_info:Reload treeinfo metadata.
+DEBUG:anaconda.modules.payloads.payload.dnf.tree_info:Load treeinfo metadata for 'https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/'.
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): kojipkgs.fedoraproject.org:443
+DEBUG:urllib3.connectionpool:https://kojipkgs.fedoraproject.org:443 "GET /compose/39/latest-Fedora-39/compose/Everything/x86_64/os//.treeinfo HTTP/1.1" 200 1427
+DEBUG:charset_normalizer:Encoding detection: ascii is most likely the one.
+DEBUG:anaconda.modules.payloads.payload.dnf.tree_info:Loaded treeinfo metadata:
+[checksums]
+images/boot.iso = sha256:66f17788811d978badc598b106b7f791f4ebaf530ef25918e2e40277810a6b66
+images/eltorito.img = sha256:bc68bd603ca3729cc04c8e1f6f7548722548700c34b782f90b1d0b8b563bce8e
+images/install.img = sha256:c50881f9170b53f88d3c142473d332aaf20606ce9cdb4a68be36ec1bdf7a16cf
+images/pxeboot/initrd.img = sha256:31595ea8d8b400855031b224097a1cac4b2af79824aba3d32171adcd2bf4345a
+images/pxeboot/vmlinuz = sha256:5f2ef0de47f8d79d5ee9bf8b0ee6d5ba4d987c2f9a16b8b511a7c69e53931fe3
+
+[general]
+; WARNING.0 = This section provides compatibility with pre-productmd treeinfos.
+; WARNING.1 = Read productmd documentation for details about new format.
+arch = x86_64
+family = Fedora
+name = Fedora 39
+packagedir = Packages
+platforms = x86_64,xen
+repository = .
+timestamp = 1698800197
+variant = Everything
+variants = Everything
+version = 39
+
+[header]
+type = productmd.treeinfo
+version = 1.2
+
+[images-x86_64]
+boot.iso = images/boot.iso
+eltorito.img = images/eltorito.img
+initrd = images/pxeboot/initrd.img
+kernel = images/pxeboot/vmlinuz
+
+[images-xen]
+initrd = images/pxeboot/initrd.img
+kernel = images/pxeboot/vmlinuz
+
+[release]
+name = Fedora
+short = Fedora
+version = 39
+
+[stage2]
+mainimage = images/install.img
+
+[tree]
+arch = x86_64
+build_timestamp = 1698800197
+platforms = x86_64,xen
+variants = Everything
+
+[variant-Everything]
+id = Everything
+name = Everything
+packages = Packages
+repository = .
+type = variant
+uid = Everything
+
+
+DEBUG:anaconda.modules.payloads.payload.dnf.tree_info:Processing the 'Everything' variant.
+DEBUG:anaconda.modules.payloads.payload.dnf.tree_info:The treeinfo metadata is loaded.
+DEBUG:anaconda.modules.payloads.payload.dnf.repositories:Update treeinfo repositories...
+DEBUG:anaconda.modules.payloads.payload.dnf.repositories:Remove all treeinfo repositories.
+DEBUG:anaconda.modules.payloads.payload.dnf.initialization:Preparing the DNF base...
+INFO:librepo:Librepo version: 1.17.0 with CURL_GLOBAL_ACK_EINTR support (libcurl/8.2.1 OpenSSL/3.1.1 zlib/1.2.13 brotli/1.1.0 libidn2/2.3.4 libpsl/0.21.2 (+libidn2/2.3.4) libssh/0.10.5/openssl/zlib nghttp2/1.55.1 OpenLDAP/2.6.6)
+DEBUG:dnf:User-Agent: constructed: 'libdnf (Fedora Linux 39; generic; Linux.x86_64)'
+DEBUG:anaconda.modules.payloads.payload.dnf.utils:Release version of Fedora is 39.
+DDEBUG:dnf:Getting group metadata
+DDEBUG:dnf:timer: loading comps: 0 ms
+DEBUG:anaconda.modules.payloads.payload.dnf.dnf_manager:The DNF base has been created.
+DEBUG:anaconda.modules.payloads.payload.dnf.dnf_manager:The DNF cache has been cleared.
+DEBUG:anaconda.modules.payloads.payload.dnf.dnf_manager:The $releasever variable is set to '39'.
+DEBUG:anaconda.modules.payloads.payload.dnf.dnf_manager:DNF configuration:
+[main]
+allow_vendor_change = 1
+assumeno = 0
+assumeyes = 0
+autocheck_running_kernel = 1
+bandwidth = 0
+best = 0
+bugtracker_url = https://bugzilla.redhat.com/enter_bug.cgi?product=Fedora&component=dnf
+cachedir = /tmp/dnf.cache
+cacheonly = 0
+check_config_file_age = 1
+clean_requirements_on_remove = 1
+color = auto
+color_list_available_downgrade = magenta
+color_list_available_install = bold,cyan
+color_list_available_reinstall = bold,underline,green
+color_list_available_upgrade = bold,blue
+color_list_installed_extra = bold,red
+color_list_installed_newer = bold,yellow
+color_list_installed_older = yellow
+color_list_installed_reinstall = cyan
+color_search_match = bold,magenta
+color_update_installed = red
+color_update_local = green
+color_update_remote = bold,green
+config_file_path = /etc/dnf/dnf.conf
+countme = 0
+debug_solver = 0
+debuglevel = 2
+defaultyes = 0
+deltarpm = 1
+deltarpm_percentage = 75
+disable_excludes = 
+diskspacecheck = 1
+enabled = 1
+enablegroups = 1
+errorlevel = 3
+exclude = 
+exclude_from_weak = 
+exclude_from_weak_autodetect = 1
+excludepkgs = 
+exit_on_lock = 0
+fastestmirror = 0
+gpgcheck = 0
+gpgkey_dns_verification = 0
+group_package_types = mandatory, default, conditional
+history_list_view = commands
+history_record = 1
+history_record_packages = dnf, rpm
+ignorearch = 0
+includepkgs = 
+install_weak_deps = 0
+installonly_limit = 3
+installonlypkgs = kernel, kernel-PAE, installonlypkg(kernel), installonlypkg(kernel-module), installonlypkg(vm), multiversion(kernel)
+installroot = /mnt/sysroot
+ip_resolve = whatever
+keepcache = 0
+localpkg_gpgcheck = 0
+log_compress = 0
+log_rotate = 4
+log_size = 1048576
+logdir = /tmp/
+logfilelevel = 9
+max_downloads_per_mirror = 3
+max_parallel_downloads = 3
+metadata_expire = 172800
+metadata_timer_sync = 10800
+minrate = 1000
+module_obsoletes = 0
+module_platform_id = platform:f39
+module_stream_switch = 0
+multilib_policy = best
+obsoletes = 1
+password = 
+persistdir = /mnt/sysroot/var/lib/dnf
+pluginconfpath = /tmp/dnf.pluginconf
+pluginpath = /usr/lib/python3.12/site-packages/dnf-plugins
+plugins = 1
+protect_running_kernel = 1
+protected_packages = dnf, grub2-efi-ia32, grub2-efi-x64, grub2-tools-minimal, setup, shim-aa64, shim-arm, shim-ia32, shim-x64, systemd, systemd-udev
+proxy = 
+proxy_auth_method = any
+proxy_password = 
+proxy_sslcacert = 
+proxy_sslclientcert = 
+proxy_sslclientkey = 
+proxy_sslverify = 1
+proxy_username = 
+recent = 7
+repo_gpgcheck = 0
+reposdir = /etc/yum.repos.d, /etc/anaconda.repos.d
+reset_nice = 1
+retries = 10
+rpmverbosity = info
+showdupesfromrepos = 0
+skip_broken = 0
+skip_if_unavailable = 0
+sslcacert = 
+sslclientcert = 
+sslclientkey = 
+sslverify = 1
+sslverifystatus = 0
+strict = 1
+system_cachedir = /var/cache/dnf
+throttle = 0
+timeout = 30
+transformdb = 1
+tsflags = 
+upgrade_group_objects_upgrade = 1
+user_agent = libdnf (Fedora Linux 39; generic; Linux.x86_64)
+username = 
+varsdir = /etc/yum/vars, /etc/dnf/vars
+zchunk = 1
+substitutions = {'arch': 'x86_64', 'basearch': 'x86_64', 'releasever': '39', 'releasever_major': '39', 'releasever_minor': ''}
+DEBUG:anaconda.modules.payloads.payload.dnf.dnf_manager:Read system repositories.
+DEBUG:anaconda.modules.payloads.payload.dnf.dnf_manager:Disable system repositories.
+DEBUG:anaconda.modules.payloads.source.source_base:The configuration is set to: RepoConfigurationData(cost=1000, enabled=True, excluded_packages=[], included_packages=[], installation_enabled=False, name='koji-override-0', origin='USER', proxy='', ssl_configuration=SSLConfigurationData(), ssl_verification_enabled=True, type='BASEURL', url='https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/')
+DEBUG:anaconda.modules.payloads.source.source_base:The repository is set to: RepoConfigurationData(cost=1000, enabled=True, excluded_packages=[], included_packages=[], installation_enabled=False, name='koji-override-0', origin='USER', proxy='', ssl_configuration=SSLConfigurationData(), ssl_verification_enabled=True, type='BASEURL', url='https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/')
+DEBUG:anaconda.modules.payloads.source.source_base:The configuration is set to: RepoConfigurationData(cost=1000, enabled=True, excluded_packages=[], included_packages=[], installation_enabled=False, name='koji-override-1', origin='USER', proxy='', ssl_configuration=SSLConfigurationData(), ssl_verification_enabled=True, type='BASEURL', url='https://kojipkgs.fedoraproject.org/compose/updates/f39-updates/compose/Everything/x86_64/os/')
+DEBUG:anaconda.modules.payloads.source.source_base:The repository is set to: RepoConfigurationData(cost=1000, enabled=True, excluded_packages=[], included_packages=[], installation_enabled=False, name='koji-override-1', origin='USER', proxy='', ssl_configuration=SSLConfigurationData(), ssl_verification_enabled=True, type='BASEURL', url='https://kojipkgs.fedoraproject.org/compose/updates/f39-updates/compose/Everything/x86_64/os/')
+DEBUG:anaconda.modules.payloads.base.initialization:Setting up a source: Source(type='URL', url='https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/')
+DEBUG:anaconda.modules.payloads.base.initialization:Setting up a source: Source(type='URL', url='https://kojipkgs.fedoraproject.org/compose/updates/f39-updates/compose/Everything/x86_64/os/')
+DEBUG:anaconda.modules.payloads.payload.dnf.repositories:Add the 'anaconda' repository (RepoConfigurationData(cost=1000, enabled=True, excluded_packages=[], included_packages=[], installation_enabled=False, name='anaconda', origin='TREEINFO', proxy='', ssl_configuration=SSLConfigurationData(), ssl_verification_enabled=True, type='BASEURL', url='https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/')).
+INFO:anaconda.modules.payloads.payload.dnf.dnf_manager:Added the 'anaconda' repository: [anaconda]
+bandwidth: 0
+baseurl: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/
+cachedir: /tmp/dnf.cache
+cost: 1000
+countme: 0
+deltarpm: 1
+deltarpm_percentage: 75
+enabled: 1
+enabled_metadata: 
+enablegroups: 1
+exclude: 
+excludepkgs: 
+fastestmirror: 0
+gpgcheck: 0
+gpgkey: 
+includepkgs: 
+ip_resolve: whatever
+max_downloads_per_mirror: 3
+max_parallel_downloads: 3
+mediaid: 
+metadata_expire: 172800
+metalink: 
+minrate: 1000
+mirrorlist: 
+module_hotfixes: 0
+name: anaconda
+password: 
+priority: 99
+protected_packages: dnf, grub2-efi-ia32, grub2-efi-x64, grub2-tools-minimal, setup, shim-aa64, shim-arm, shim-ia32, shim-x64, systemd, systemd-udev
+proxy: 
+proxy_auth_method: any
+proxy_password: 
+proxy_sslcacert: 
+proxy_sslclientcert: 
+proxy_sslclientkey: 
+proxy_sslverify: 1
+proxy_username: 
+repo_gpgcheck: 0
+retries: 10
+skip_if_unavailable: 0
+sslcacert: 
+sslclientcert: 
+sslclientkey: 
+sslverify: 1
+sslverifystatus: 0
+throttle: 0
+timeout: 30
+type: 
+user_agent: libdnf (Fedora Linux 39; generic; Linux.x86_64)
+username: 
+DEBUG:anaconda.modules.payloads.payload.dnf.dnf_manager:Load metadata for the 'anaconda' repository.
+DEBUG:dnf:repo: downloading from remote: anaconda
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/repodata/repomd.xml
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/repodata/bdd852babb8d6f012c9522ad194b37fa7df83d3ad1a9f4b2c2140e19528b9c96-primary.xml.zck
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/repodata/8e09489af54bbd4ab85470d449f0b0afa4a26fc3eb97c1665c741427bbc8f060-filelists.xml.zck
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/repodata/e656f7cad33729c167f7e95017efaf527354ae1cc33f5be340f05b386a8f12a6-comps-Everything.x86_64.xml
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/repodata/8e09489af54bbd4ab85470d449f0b0afa4a26fc3eb97c1665c741427bbc8f060-filelists.xml.zck
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/repodata/bdd852babb8d6f012c9522ad194b37fa7df83d3ad1a9f4b2c2140e19528b9c96-primary.xml.zck
+INFO:anaconda.modules.payloads.payload.dnf.dnf_manager:Loaded metadata from '['https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/']'.
+DEBUG:anaconda.modules.payloads.payload.dnf.repositories:Add the 'koji-override-0' repository (RepoConfigurationData(cost=1000, enabled=True, excluded_packages=[], included_packages=[], installation_enabled=False, name='koji-override-0', origin='USER', proxy='', ssl_configuration=SSLConfigurationData(), ssl_verification_enabled=True, type='BASEURL', url='https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/')).
+INFO:anaconda.modules.payloads.payload.dnf.dnf_manager:Added the 'koji-override-0' repository: [koji-override-0]
+bandwidth: 0
+baseurl: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/
+cachedir: /tmp/dnf.cache
+cost: 1000
+countme: 0
+deltarpm: 1
+deltarpm_percentage: 75
+enabled: 1
+enabled_metadata: 
+enablegroups: 1
+exclude: 
+excludepkgs: 
+fastestmirror: 0
+gpgcheck: 0
+gpgkey: 
+includepkgs: 
+ip_resolve: whatever
+max_downloads_per_mirror: 3
+max_parallel_downloads: 3
+mediaid: 
+metadata_expire: 172800
+metalink: 
+minrate: 1000
+mirrorlist: 
+module_hotfixes: 0
+name: koji-override-0
+password: 
+priority: 99
+protected_packages: dnf, grub2-efi-ia32, grub2-efi-x64, grub2-tools-minimal, setup, shim-aa64, shim-arm, shim-ia32, shim-x64, systemd, systemd-udev
+proxy: 
+proxy_auth_method: any
+proxy_password: 
+proxy_sslcacert: 
+proxy_sslclientcert: 
+proxy_sslclientkey: 
+proxy_sslverify: 1
+proxy_username: 
+repo_gpgcheck: 0
+retries: 10
+skip_if_unavailable: 0
+sslcacert: 
+sslclientcert: 
+sslclientkey: 
+sslverify: 1
+sslverifystatus: 0
+throttle: 0
+timeout: 30
+type: 
+user_agent: libdnf (Fedora Linux 39; generic; Linux.x86_64)
+username: 
+DEBUG:anaconda.modules.payloads.payload.dnf.dnf_manager:Load metadata for the 'koji-override-0' repository.
+DEBUG:dnf:repo: downloading from remote: koji-override-0
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/repodata/repomd.xml
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/repodata/bdd852babb8d6f012c9522ad194b37fa7df83d3ad1a9f4b2c2140e19528b9c96-primary.xml.zck
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/repodata/8e09489af54bbd4ab85470d449f0b0afa4a26fc3eb97c1665c741427bbc8f060-filelists.xml.zck
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/repodata/e656f7cad33729c167f7e95017efaf527354ae1cc33f5be340f05b386a8f12a6-comps-Everything.x86_64.xml
+INFO:anaconda.modules.payloads.payload.dnf.dnf_manager:Loaded metadata from '['https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/']'.
+DEBUG:anaconda.modules.payloads.payload.dnf.repositories:Add the 'koji-override-1' repository (RepoConfigurationData(cost=1000, enabled=True, excluded_packages=[], included_packages=[], installation_enabled=False, name='koji-override-1', origin='USER', proxy='', ssl_configuration=SSLConfigurationData(), ssl_verification_enabled=True, type='BASEURL', url='https://kojipkgs.fedoraproject.org/compose/updates/f39-updates/compose/Everything/x86_64/os/')).
+INFO:anaconda.modules.payloads.payload.dnf.dnf_manager:Added the 'koji-override-1' repository: [koji-override-1]
+bandwidth: 0
+baseurl: https://kojipkgs.fedoraproject.org/compose/updates/f39-updates/compose/Everything/x86_64/os/
+cachedir: /tmp/dnf.cache
+cost: 1000
+countme: 0
+deltarpm: 1
+deltarpm_percentage: 75
+enabled: 1
+enabled_metadata: 
+enablegroups: 1
+exclude: 
+excludepkgs: 
+fastestmirror: 0
+gpgcheck: 0
+gpgkey: 
+includepkgs: 
+ip_resolve: whatever
+max_downloads_per_mirror: 3
+max_parallel_downloads: 3
+mediaid: 
+metadata_expire: 172800
+metalink: 
+minrate: 1000
+mirrorlist: 
+module_hotfixes: 0
+name: koji-override-1
+password: 
+priority: 99
+protected_packages: dnf, grub2-efi-ia32, grub2-efi-x64, grub2-tools-minimal, setup, shim-aa64, shim-arm, shim-ia32, shim-x64, systemd, systemd-udev
+proxy: 
+proxy_auth_method: any
+proxy_password: 
+proxy_sslcacert: 
+proxy_sslclientcert: 
+proxy_sslclientkey: 
+proxy_sslverify: 1
+proxy_username: 
+repo_gpgcheck: 0
+retries: 10
+skip_if_unavailable: 0
+sslcacert: 
+sslclientcert: 
+sslclientkey: 
+sslverify: 1
+sslverifystatus: 0
+throttle: 0
+timeout: 30
+type: 
+user_agent: libdnf (Fedora Linux 39; generic; Linux.x86_64)
+username: 
+DEBUG:anaconda.modules.payloads.payload.dnf.dnf_manager:Load metadata for the 'koji-override-1' repository.
+DEBUG:dnf:repo: downloading from remote: koji-override-1
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/updates/f39-updates/compose/Everything/x86_64/os/repodata/repomd.xml
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/updates/f39-updates/compose/Everything/x86_64/os/repodata/ac400ade28f345ecbd03a12e6e6ca79aa6968910b3e2d9ad41b49031c7ecc6ae-primary.xml.zck
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/updates/f39-updates/compose/Everything/x86_64/os/repodata/af6ff58e645114b378798e2fce13363e64f2c97f385144532e9b7f6428ae77d7-filelists.xml.zck
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/updates/f39-updates/compose/Everything/x86_64/os/repodata/8b5022be1300c91aa49ab97f6ccbdf03a0229a3f4d58572431a8784510de33f7-comps-Everything.x86_64.xml.gz
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/updates/f39-updates/compose/Everything/x86_64/os/repodata/ac400ade28f345ecbd03a12e6e6ca79aa6968910b3e2d9ad41b49031c7ecc6ae-primary.xml.zck
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/updates/f39-updates/compose/Everything/x86_64/os/repodata/af6ff58e645114b378798e2fce13363e64f2c97f385144532e9b7f6428ae77d7-filelists.xml.zck
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/updates/f39-updates/compose/Everything/x86_64/os/repodata/c06e8e548794ade1f15231a1dd20c2fceb6fa417e978407ab8aebdfb4c6048e0-prestodelta.xml.zck
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/updates/f39-updates/compose/Everything/x86_64/os/repodata/1001552d9537ef53f283a6c8b7c05f2bf3a271be8c40cdb30f136ce65e06771c-updateinfo.xml.zck
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/updates/f39-updates/compose/Everything/x86_64/os/repodata/1001552d9537ef53f283a6c8b7c05f2bf3a271be8c40cdb30f136ce65e06771c-updateinfo.xml.zck
+INFO:anaconda.modules.payloads.payload.dnf.dnf_manager:Loaded metadata from '['https://kojipkgs.fedoraproject.org/compose/updates/f39-updates/compose/Everything/x86_64/os/']'.
+DEBUG:anaconda.modules.payloads.payload.dnf.dnf_manager:Load metadata for the 'anaconda' repository.
+DEBUG:dnf:repo: using cache for: anaconda
+INFO:anaconda.modules.payloads.payload.dnf.dnf_manager:Loaded metadata from '['https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/']'.
+DEBUG:anaconda.modules.payloads.payload.dnf.dnf_manager:Load metadata for the 'koji-override-0' repository.
+DEBUG:dnf:repo: using cache for: koji-override-0
+INFO:anaconda.modules.payloads.payload.dnf.dnf_manager:Loaded metadata from '['https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/']'.
+DEBUG:anaconda.modules.payloads.payload.dnf.dnf_manager:Load metadata for the 'koji-override-1' repository.
+DEBUG:dnf:repo: using cache for: koji-override-1
+INFO:anaconda.modules.payloads.payload.dnf.dnf_manager:Loaded metadata from '['https://kojipkgs.fedoraproject.org/compose/updates/f39-updates/compose/Everything/x86_64/os/']'.
+DEBUG:dnf:repo: using cache for: anaconda
+DEBUG:dnf:anaconda: using metadata from Wed 01 Nov 2023 12:12:39 AM UTC.
+DEBUG:dnf:repo: using cache for: koji-override-0
+DEBUG:dnf:koji-override-0: using metadata from Wed 01 Nov 2023 12:12:39 AM UTC.
+DEBUG:dnf:repo: using cache for: koji-override-1
+DEBUG:dnf:koji-override-1: using metadata from Sat 11 Nov 2023 06:01:20 AM UTC.
+INFO:dnf:Last metadata expiration check: 0:00:40 ago on Sat 11 Nov 2023 07:48:00 AM UTC.
+DDEBUG:dnf:timer: sack setup: 153956 ms
+DEBUG:dnf:User-Agent: constructed: 'libdnf (Fedora Linux 39; generic; Linux.x86_64)'
+DDEBUG:dnf:Getting group metadata
+DDEBUG:dnf:Adding group file from repository: anaconda
+DDEBUG:dnf:Adding group file from repository: koji-override-0
+DDEBUG:dnf:Adding group file from repository: koji-override-1
+DDEBUG:dnf:timer: loading comps: 399 ms
+INFO:anaconda.modules.payloads.payload.dnf.dnf_manager:Loaded packages and group metadata.
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os//repodata/repomd.xml
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os//repodata/repomd.xml
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/updates/f39-updates/compose/Everything/x86_64/os//repodata/repomd.xml
+DEBUG:anaconda.modules.payloads.payload.dnf.dnf_manager:Loaded repomd.xml hashes: {'anaconda': b'I\x80\x99\xe3\xb0U\x13c\xa6\xec\x8e\xcb\xb8\x19%\xf5:\x97\x96\x98\x18B.\xc2\x1c4\xb8n\x00\xf0\x10\t', 'koji-override-0': b'I\x80\x99\xe3\xb0U\x13c\xa6\xec\x8e\xcb\xb8\x19%\xf5:\x97\x96\x98\x18B.\xc2\x1c4\xb8n\x00\xf0\x10\t', 'koji-override-1': b'\xbdS\xe2\x0f\xdc\xads\xde\xbf\xa2L_\xb6T\x9f\xe5H\x8fI\x80v\xf9\xba\x8a}b]\xab\xfeU\xed\xc6'}
+INFO:anaconda.core.threads:Thread Done: AnaTaskThread-SetUpDNFSourcesTask-1 (140066167301824)
+DEBUG:anaconda.modules.payloads.payload.dnf.dnf:The DNF manager is set.
+DEBUG:anaconda.modules.payloads.payload.dnf.dnf:Repositories are set to: [RepoConfigurationData(cost=1000, enabled=True, excluded_packages=[], included_packages=[], installation_enabled=False, name='koji-override-0', origin='USER', proxy='', ssl_configuration=SSLConfigurationData(), ssl_verification_enabled=True, type='BASEURL', url='https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/'), RepoConfigurationData(cost=1000, enabled=True, excluded_packages=[], included_packages=[], installation_enabled=False, name='koji-override-1', origin='USER', proxy='', ssl_configuration=SSLConfigurationData(), ssl_verification_enabled=True, type='BASEURL', url='https://kojipkgs.fedoraproject.org/compose/updates/f39-updates/compose/Everything/x86_64/os/')]
+DEBUG:dasbus.connection:Publishing an object at /org/fedoraproject/Anaconda/Modules/Payloads/Task/3.
+INFO:anaconda.core.threads:Running Thread: AnaTaskThread-CheckPackagesSelectionTask-1 (140066167301824)
+INFO:anaconda.modules.common.task.task:Check the software selection
+DEBUG:anaconda.modules.payloads.payload.dnf.dnf_manager:The software selection has been cleared.
+DEBUG:anaconda.modules.payloads.payload.dnf.validation:Collecting selected specs.
+INFO:anaconda.modules.payloads.payload.dnf.utils:Skipping @core group; system may not be complete.
+DEBUG:anaconda.modules.payloads.payload.dnf.validation:Collecting required specs.
+DEBUG:anaconda.modules.payloads.payload.dnf.validation:Resolving the software selection.
+DEBUG:anaconda.modules.payloads.payload.dnf.dnf_manager:Disabling modules: []
+DEBUG:anaconda.modules.payloads.payload.dnf.dnf_manager:Enabling modules: []
+INFO:anaconda.modules.payloads.payload.dnf.dnf_manager:Including specs: ['bash', 'coreutils', 'dnf', 'dnf-yum', 'fedora-release-container', 'glibc-minimal-langpack', 'rootfiles', 'rpm', 'sudo', 'tar', 'util-linux-core', 'vim-minimal']
+INFO:anaconda.modules.payloads.payload.dnf.dnf_manager:Excluding specs: ['@core', 'dosfstools', 'e2fsprogs', 'fuse-libs', 'glibc-langpack-en', 'gnupg2-smime', 'grubby', 'kernel', 'langpacks-en', 'langpacks-en_GB', 'libss', 'pinentry', 'shared-mime-info', 'sssd-client', 'trousers', 'util-linux', 'xkeyboard-config']
+DEBUG:anaconda.modules.payloads.payload.dnf.dnf_manager:Resolving the software selection.
+DDEBUG:dnf:timer: depsolve: 46 ms
+INFO:anaconda.modules.payloads.payload.dnf.dnf_manager:The software selection has been resolved (142 packages selected).
+DEBUG:anaconda.modules.payloads.payload.dnf.validation:Resolving has been completed: ValidationReport(error_messages=[], warning_messages=[])
+INFO:anaconda.core.threads:Thread Done: AnaTaskThread-CheckPackagesSelectionTask-1 (140066167301824)
+INFO:anaconda.modules.payloads.payload.dnf.dnf_manager:Total install size: 411.25 MiB
+INFO:anaconda.modules.payloads.payload.dnf.dnf_manager:Total download size: 210.54 MiB
+INFO:program:Running... df --output=target,avail
+INFO:program:Mounted on        Avail
+INFO:program:/               1542040
+INFO:program:/dev               4096
+INFO:program:/dev/shm        4058400
+INFO:program:/run            1542040
+INFO:program:/run/rootfsbase       0
+INFO:program:/tmp            3601404
+DEBUG:program:Return code: 0
+DEBUG:anaconda.modules.payloads.payload.dnf.utils:Considering /mnt/sysroot (4.25 GiB) for download and install.
+DEBUG:anaconda.modules.payloads.payload.dnf.utils:The install and download space is required.
+DEBUG:anaconda.modules.payloads.payload.dnf.utils:The package installation requires 621.79 MiB.
+DEBUG:dasbus.connection:Publishing an object at /org/fedoraproject/Anaconda/Modules/Payloads/Task/4.
+DEBUG:dasbus.connection:Publishing an object at /org/fedoraproject/Anaconda/Modules/Payloads/Task/5.
+DEBUG:dasbus.connection:Publishing an object at /org/fedoraproject/Anaconda/Modules/Payloads/Task/6.
+DEBUG:dasbus.connection:Publishing an object at /org/fedoraproject/Anaconda/Modules/Payloads/Task/7.
+DEBUG:dasbus.connection:Publishing an object at /org/fedoraproject/Anaconda/Modules/Payloads/Task/8.
+DEBUG:dasbus.connection:Publishing an object at /org/fedoraproject/Anaconda/Modules/Payloads/Task/9.
+DEBUG:dasbus.connection:Publishing an object at /org/fedoraproject/Anaconda/Modules/Payloads/Task/10.
+INFO:anaconda.core.threads:Running Thread: AnaTaskThread-PrepareSystemForInstallationTask-1 (140066167301824)
+INFO:anaconda.modules.common.task.task:Prepare system for installation
+INFO:anaconda.core.threads:Thread Done: AnaTaskThread-PrepareSystemForInstallationTask-1 (140066167301824)
+INFO:anaconda.core.threads:Running Thread: AnaTaskThread-SetRPMMacrosTask-1 (140066167301824)
+INFO:anaconda.modules.common.task.task:Set RPM macros
+DEBUG:anaconda.modules.payloads.payload.dnf.installation:Set '__dbi_htconfig' to 'hash nofsync %{__dbi_other} %{__dbi_perms}'.
+DEBUG:anaconda.modules.payloads.payload.dnf.installation:Set '_excludedocs' to '1'.
+DEBUG:anaconda.modules.payloads.payload.dnf.installation:Set '_install_langs' to 'en'.
+DEBUG:anaconda.modules.payloads.payload.dnf.installation:Set '__file_context_path' to '/etc/selinux/targeted/contexts/files/file_contexts'.
+INFO:anaconda.core.threads:Thread Done: AnaTaskThread-SetRPMMacrosTask-1 (140066167301824)
+INFO:anaconda.core.threads:Running Thread: AnaTaskThread-ResolvePackagesTask-2 (140066167301824)
+INFO:anaconda.modules.common.task.task:Resolve packages
+DEBUG:anaconda.modules.payloads.payload.dnf.dnf_manager:The software selection has been cleared.
+DEBUG:anaconda.modules.payloads.payload.dnf.validation:Collecting selected specs.
+INFO:anaconda.modules.payloads.payload.dnf.utils:Skipping @core group; system may not be complete.
+DEBUG:anaconda.modules.payloads.payload.dnf.validation:Collecting required specs.
+INFO:root:localeId contains invalid locale id=core-af
+INFO:root:localeId contains invalid locale id=core-am
+INFO:root:localeId contains invalid locale id=core-ar
+INFO:root:localeId contains invalid locale id=core-as
+INFO:root:localeId contains invalid locale id=core-ast
+INFO:root:localeId contains invalid locale id=core-be
+INFO:root:localeId contains invalid locale id=core-bg
+INFO:root:localeId contains invalid locale id=core-bn
+INFO:root:localeId contains invalid locale id=core-bo
+INFO:root:localeId contains invalid locale id=core-br
+INFO:root:localeId contains invalid locale id=core-bs
+INFO:root:localeId contains invalid locale id=core-ca
+INFO:root:localeId contains invalid locale id=core-chr
+INFO:root:localeId contains invalid locale id=core-cs
+INFO:root:localeId contains invalid locale id=core-cy
+INFO:root:localeId contains invalid locale id=core-da
+INFO:root:localeId contains invalid locale id=core-de
+INFO:root:localeId contains invalid locale id=core-dv
+INFO:root:localeId contains invalid locale id=core-dz
+INFO:root:localeId contains invalid locale id=core-el
+INFO:root:localeId contains invalid locale id=core-en
+INFO:root:localeId contains invalid locale id=core-en_GB
+INFO:root:localeId contains invalid locale id=core-eo
+INFO:root:localeId contains invalid locale id=core-es
+INFO:root:localeId contains invalid locale id=core-et
+INFO:root:localeId contains invalid locale id=core-eu
+INFO:root:localeId contains invalid locale id=core-fa
+INFO:root:localeId contains invalid locale id=core-fi
+INFO:root:localeId contains invalid locale id=core-fr
+INFO:root:localeId contains invalid locale id=core-ga
+INFO:root:localeId contains invalid locale id=core-gl
+INFO:root:localeId contains invalid locale id=core-gu
+INFO:root:localeId contains invalid locale id=core-he
+INFO:root:localeId contains invalid locale id=core-hi
+INFO:root:localeId contains invalid locale id=core-hr
+INFO:root:localeId contains invalid locale id=core-hu
+INFO:root:localeId contains invalid locale id=core-hy
+INFO:root:localeId contains invalid locale id=core-ia
+INFO:root:localeId contains invalid locale id=core-id
+INFO:root:localeId contains invalid locale id=core-is
+INFO:root:localeId contains invalid locale id=core-it
+INFO:root:localeId contains invalid locale id=core-iu
+INFO:root:localeId contains invalid locale id=core-ja
+INFO:root:localeId contains invalid locale id=core-ka
+INFO:root:localeId contains invalid locale id=core-kk
+INFO:root:localeId contains invalid locale id=core-km
+INFO:root:localeId contains invalid locale id=core-kn
+INFO:root:localeId contains invalid locale id=core-ko
+INFO:root:localeId contains invalid locale id=core-ku
+INFO:root:localeId contains invalid locale id=core-lo
+INFO:root:localeId contains invalid locale id=core-lt
+INFO:root:localeId contains invalid locale id=core-lv
+INFO:root:localeId contains invalid locale id=core-mai
+INFO:root:localeId contains invalid locale id=core-mk
+INFO:root:localeId contains invalid locale id=core-ml
+INFO:root:localeId contains invalid locale id=core-mr
+INFO:root:localeId contains invalid locale id=core-ms
+INFO:root:localeId contains invalid locale id=core-my
+INFO:root:localeId contains invalid locale id=core-nb
+INFO:root:localeId contains invalid locale id=core-ne
+INFO:root:localeId contains invalid locale id=core-nl
+INFO:root:localeId contains invalid locale id=core-nn
+INFO:root:localeId contains invalid locale id=core-nr
+INFO:root:localeId contains invalid locale id=core-nso
+INFO:root:localeId contains invalid locale id=core-or
+INFO:root:localeId contains invalid locale id=core-pa
+INFO:root:localeId contains invalid locale id=core-pl
+INFO:root:localeId contains invalid locale id=core-pt
+INFO:root:localeId contains invalid locale id=core-pt_BR
+INFO:root:localeId contains invalid locale id=core-ro
+INFO:root:localeId contains invalid locale id=core-ru
+INFO:root:localeId contains invalid locale id=core-si
+INFO:root:localeId contains invalid locale id=core-sk
+INFO:root:localeId contains invalid locale id=core-sl
+INFO:root:localeId contains invalid locale id=core-sq
+INFO:root:localeId contains invalid locale id=core-sr
+INFO:root:localeId contains invalid locale id=core-ss
+INFO:root:localeId contains invalid locale id=core-sv
+INFO:root:localeId contains invalid locale id=core-ta
+INFO:root:localeId contains invalid locale id=core-te
+INFO:root:localeId contains invalid locale id=core-th
+INFO:root:localeId contains invalid locale id=core-tn
+INFO:root:localeId contains invalid locale id=core-tr
+INFO:root:localeId contains invalid locale id=core-ts
+INFO:root:localeId contains invalid locale id=core-uk
+INFO:root:localeId contains invalid locale id=core-ur
+INFO:root:localeId contains invalid locale id=core-ve
+INFO:root:localeId contains invalid locale id=core-vi
+INFO:root:localeId contains invalid locale id=core-xh
+INFO:root:localeId contains invalid locale id=core-yi
+INFO:root:localeId contains invalid locale id=core-zh_CN
+INFO:root:localeId contains invalid locale id=core-zh_HK
+INFO:root:localeId contains invalid locale id=core-zh_TW
+INFO:root:localeId contains invalid locale id=core-zu
+INFO:root:localeId contains invalid locale id=fonts-af
+INFO:root:localeId contains invalid locale id=fonts-am
+INFO:root:localeId contains invalid locale id=fonts-ar
+INFO:root:localeId contains invalid locale id=fonts-as
+INFO:root:localeId contains invalid locale id=fonts-ast
+INFO:root:localeId contains invalid locale id=fonts-be
+INFO:root:localeId contains invalid locale id=fonts-bg
+INFO:root:localeId contains invalid locale id=fonts-bn
+INFO:root:localeId contains invalid locale id=fonts-bo
+INFO:root:localeId contains invalid locale id=fonts-br
+INFO:root:localeId contains invalid locale id=fonts-bs
+INFO:root:localeId contains invalid locale id=fonts-ca
+INFO:root:localeId contains invalid locale id=fonts-chr
+INFO:root:localeId contains invalid locale id=fonts-cs
+INFO:root:localeId contains invalid locale id=fonts-cy
+INFO:root:localeId contains invalid locale id=fonts-da
+INFO:root:localeId contains invalid locale id=fonts-de
+INFO:root:localeId contains invalid locale id=fonts-dv
+INFO:root:localeId contains invalid locale id=fonts-dz
+INFO:root:localeId contains invalid locale id=fonts-el
+INFO:root:localeId contains invalid locale id=fonts-en
+INFO:root:localeId contains invalid locale id=fonts-eo
+INFO:root:localeId contains invalid locale id=fonts-es
+INFO:root:localeId contains invalid locale id=fonts-et
+INFO:root:localeId contains invalid locale id=fonts-eu
+INFO:root:localeId contains invalid locale id=fonts-fa
+INFO:root:localeId contains invalid locale id=fonts-fi
+INFO:root:localeId contains invalid locale id=fonts-fr
+INFO:root:localeId contains invalid locale id=fonts-ga
+INFO:root:localeId contains invalid locale id=fonts-gl
+INFO:root:localeId contains invalid locale id=fonts-gu
+INFO:root:localeId contains invalid locale id=fonts-he
+INFO:root:localeId contains invalid locale id=fonts-hi
+INFO:root:localeId contains invalid locale id=fonts-hr
+INFO:root:localeId contains invalid locale id=fonts-hu
+INFO:root:localeId contains invalid locale id=fonts-hy
+INFO:root:localeId contains invalid locale id=fonts-ia
+INFO:root:localeId contains invalid locale id=fonts-id
+INFO:root:localeId contains invalid locale id=fonts-is
+INFO:root:localeId contains invalid locale id=fonts-it
+INFO:root:localeId contains invalid locale id=fonts-iu
+INFO:root:localeId contains invalid locale id=fonts-ja
+INFO:root:localeId contains invalid locale id=fonts-ka
+INFO:root:localeId contains invalid locale id=fonts-kk
+INFO:root:localeId contains invalid locale id=fonts-km
+INFO:root:localeId contains invalid locale id=fonts-kn
+INFO:root:localeId contains invalid locale id=fonts-ko
+INFO:root:localeId contains invalid locale id=fonts-ku
+INFO:root:localeId contains invalid locale id=fonts-lo
+INFO:root:localeId contains invalid locale id=fonts-lt
+INFO:root:localeId contains invalid locale id=fonts-lv
+INFO:root:localeId contains invalid locale id=fonts-mai
+INFO:root:localeId contains invalid locale id=fonts-mk
+INFO:root:localeId contains invalid locale id=fonts-ml
+INFO:root:localeId contains invalid locale id=fonts-mr
+INFO:root:localeId contains invalid locale id=fonts-ms
+INFO:root:localeId contains invalid locale id=fonts-my
+INFO:root:localeId contains invalid locale id=fonts-nb
+INFO:root:localeId contains invalid locale id=fonts-ne
+INFO:root:localeId contains invalid locale id=fonts-nl
+INFO:root:localeId contains invalid locale id=fonts-nn
+INFO:root:localeId contains invalid locale id=fonts-nr
+INFO:root:localeId contains invalid locale id=fonts-nso
+INFO:root:localeId contains invalid locale id=fonts-or
+INFO:root:localeId contains invalid locale id=fonts-pa
+INFO:root:localeId contains invalid locale id=fonts-pl
+INFO:root:localeId contains invalid locale id=fonts-pt
+INFO:root:localeId contains invalid locale id=fonts-ro
+INFO:root:localeId contains invalid locale id=fonts-ru
+INFO:root:localeId contains invalid locale id=fonts-si
+INFO:root:localeId contains invalid locale id=fonts-sk
+INFO:root:localeId contains invalid locale id=fonts-sl
+INFO:root:localeId contains invalid locale id=fonts-sq
+INFO:root:localeId contains invalid locale id=fonts-sr
+INFO:root:localeId contains invalid locale id=fonts-ss
+INFO:root:localeId contains invalid locale id=fonts-sv
+INFO:root:localeId contains invalid locale id=fonts-ta
+INFO:root:localeId contains invalid locale id=fonts-te
+INFO:root:localeId contains invalid locale id=fonts-th
+INFO:root:localeId contains invalid locale id=fonts-tn
+INFO:root:localeId contains invalid locale id=fonts-tr
+INFO:root:localeId contains invalid locale id=fonts-ts
+INFO:root:localeId contains invalid locale id=fonts-uk
+INFO:root:localeId contains invalid locale id=fonts-ur
+INFO:root:localeId contains invalid locale id=fonts-ve
+INFO:root:localeId contains invalid locale id=fonts-vi
+INFO:root:localeId contains invalid locale id=fonts-xh
+INFO:root:localeId contains invalid locale id=fonts-yi
+INFO:root:localeId contains invalid locale id=fonts-zh_CN
+INFO:root:localeId contains invalid locale id=fonts-zh_HK
+INFO:root:localeId contains invalid locale id=fonts-zh_TW
+INFO:root:localeId contains invalid locale id=fonts-zu
+INFO:root:localeId contains invalid locale id=core-af
+INFO:root:localeId contains invalid locale id=core-am
+INFO:root:localeId contains invalid locale id=core-ar
+INFO:root:localeId contains invalid locale id=core-as
+INFO:root:localeId contains invalid locale id=core-ast
+INFO:root:localeId contains invalid locale id=core-be
+INFO:root:localeId contains invalid locale id=core-bg
+INFO:root:localeId contains invalid locale id=core-bn
+INFO:root:localeId contains invalid locale id=core-bo
+INFO:root:localeId contains invalid locale id=core-br
+INFO:root:localeId contains invalid locale id=core-bs
+INFO:root:localeId contains invalid locale id=core-ca
+INFO:root:localeId contains invalid locale id=core-chr
+INFO:root:localeId contains invalid locale id=core-cs
+INFO:root:localeId contains invalid locale id=core-cy
+INFO:root:localeId contains invalid locale id=core-da
+INFO:root:localeId contains invalid locale id=core-de
+INFO:root:localeId contains invalid locale id=core-dv
+INFO:root:localeId contains invalid locale id=core-dz
+INFO:root:localeId contains invalid locale id=core-el
+INFO:root:localeId contains invalid locale id=core-en
+INFO:root:localeId contains invalid locale id=core-en_GB
+INFO:root:localeId contains invalid locale id=core-eo
+INFO:root:localeId contains invalid locale id=core-es
+INFO:root:localeId contains invalid locale id=core-et
+INFO:root:localeId contains invalid locale id=core-eu
+INFO:root:localeId contains invalid locale id=core-fa
+INFO:root:localeId contains invalid locale id=core-fi
+INFO:root:localeId contains invalid locale id=core-fr
+INFO:root:localeId contains invalid locale id=core-ga
+INFO:root:localeId contains invalid locale id=core-gl
+INFO:root:localeId contains invalid locale id=core-gu
+INFO:root:localeId contains invalid locale id=core-he
+INFO:root:localeId contains invalid locale id=core-hi
+INFO:root:localeId contains invalid locale id=core-hr
+INFO:root:localeId contains invalid locale id=core-hu
+INFO:root:localeId contains invalid locale id=core-hy
+INFO:root:localeId contains invalid locale id=core-ia
+INFO:root:localeId contains invalid locale id=core-id
+INFO:root:localeId contains invalid locale id=core-is
+INFO:root:localeId contains invalid locale id=core-it
+INFO:root:localeId contains invalid locale id=core-iu
+INFO:root:localeId contains invalid locale id=core-ja
+INFO:root:localeId contains invalid locale id=core-ka
+INFO:root:localeId contains invalid locale id=core-kk
+INFO:root:localeId contains invalid locale id=core-km
+INFO:root:localeId contains invalid locale id=core-kn
+INFO:root:localeId contains invalid locale id=core-ko
+INFO:root:localeId contains invalid locale id=core-ku
+INFO:root:localeId contains invalid locale id=core-lo
+INFO:root:localeId contains invalid locale id=core-lt
+INFO:root:localeId contains invalid locale id=core-lv
+INFO:root:localeId contains invalid locale id=core-mai
+INFO:root:localeId contains invalid locale id=core-mk
+INFO:root:localeId contains invalid locale id=core-ml
+INFO:root:localeId contains invalid locale id=core-mr
+INFO:root:localeId contains invalid locale id=core-ms
+INFO:root:localeId contains invalid locale id=core-my
+INFO:root:localeId contains invalid locale id=core-nb
+INFO:root:localeId contains invalid locale id=core-ne
+INFO:root:localeId contains invalid locale id=core-nl
+INFO:root:localeId contains invalid locale id=core-nn
+INFO:root:localeId contains invalid locale id=core-nr
+INFO:root:localeId contains invalid locale id=core-nso
+INFO:root:localeId contains invalid locale id=core-or
+INFO:root:localeId contains invalid locale id=core-pa
+INFO:root:localeId contains invalid locale id=core-pl
+INFO:root:localeId contains invalid locale id=core-pt
+INFO:root:localeId contains invalid locale id=core-pt_BR
+INFO:root:localeId contains invalid locale id=core-ro
+INFO:root:localeId contains invalid locale id=core-ru
+INFO:root:localeId contains invalid locale id=core-si
+INFO:root:localeId contains invalid locale id=core-sk
+INFO:root:localeId contains invalid locale id=core-sl
+INFO:root:localeId contains invalid locale id=core-sq
+INFO:root:localeId contains invalid locale id=core-sr
+INFO:root:localeId contains invalid locale id=core-ss
+INFO:root:localeId contains invalid locale id=core-sv
+INFO:root:localeId contains invalid locale id=core-ta
+INFO:root:localeId contains invalid locale id=core-te
+INFO:root:localeId contains invalid locale id=core-th
+INFO:root:localeId contains invalid locale id=core-tn
+INFO:root:localeId contains invalid locale id=core-tr
+INFO:root:localeId contains invalid locale id=core-ts
+INFO:root:localeId contains invalid locale id=core-uk
+INFO:root:localeId contains invalid locale id=core-ur
+INFO:root:localeId contains invalid locale id=core-ve
+INFO:root:localeId contains invalid locale id=core-vi
+INFO:root:localeId contains invalid locale id=core-xh
+INFO:root:localeId contains invalid locale id=core-yi
+INFO:root:localeId contains invalid locale id=core-zh_CN
+INFO:root:localeId contains invalid locale id=core-zh_HK
+INFO:root:localeId contains invalid locale id=core-zh_TW
+INFO:root:localeId contains invalid locale id=core-zu
+INFO:root:localeId contains invalid locale id=fonts-af
+INFO:root:localeId contains invalid locale id=fonts-am
+INFO:root:localeId contains invalid locale id=fonts-ar
+INFO:root:localeId contains invalid locale id=fonts-as
+INFO:root:localeId contains invalid locale id=fonts-ast
+INFO:root:localeId contains invalid locale id=fonts-be
+INFO:root:localeId contains invalid locale id=fonts-bg
+INFO:root:localeId contains invalid locale id=fonts-bn
+INFO:root:localeId contains invalid locale id=fonts-bo
+INFO:root:localeId contains invalid locale id=fonts-br
+INFO:root:localeId contains invalid locale id=fonts-bs
+INFO:root:localeId contains invalid locale id=fonts-ca
+INFO:root:localeId contains invalid locale id=fonts-chr
+INFO:root:localeId contains invalid locale id=fonts-cs
+INFO:root:localeId contains invalid locale id=fonts-cy
+INFO:root:localeId contains invalid locale id=fonts-da
+INFO:root:localeId contains invalid locale id=fonts-de
+INFO:root:localeId contains invalid locale id=fonts-dv
+INFO:root:localeId contains invalid locale id=fonts-dz
+INFO:root:localeId contains invalid locale id=fonts-el
+INFO:root:localeId contains invalid locale id=fonts-en
+INFO:root:localeId contains invalid locale id=fonts-eo
+INFO:root:localeId contains invalid locale id=fonts-es
+INFO:root:localeId contains invalid locale id=fonts-et
+INFO:root:localeId contains invalid locale id=fonts-eu
+INFO:root:localeId contains invalid locale id=fonts-fa
+INFO:root:localeId contains invalid locale id=fonts-fi
+INFO:root:localeId contains invalid locale id=fonts-fr
+INFO:root:localeId contains invalid locale id=fonts-ga
+INFO:root:localeId contains invalid locale id=fonts-gl
+INFO:root:localeId contains invalid locale id=fonts-gu
+INFO:root:localeId contains invalid locale id=fonts-he
+INFO:root:localeId contains invalid locale id=fonts-hi
+INFO:root:localeId contains invalid locale id=fonts-hr
+INFO:root:localeId contains invalid locale id=fonts-hu
+INFO:root:localeId contains invalid locale id=fonts-hy
+INFO:root:localeId contains invalid locale id=fonts-ia
+INFO:root:localeId contains invalid locale id=fonts-id
+INFO:root:localeId contains invalid locale id=fonts-is
+INFO:root:localeId contains invalid locale id=fonts-it
+INFO:root:localeId contains invalid locale id=fonts-iu
+INFO:root:localeId contains invalid locale id=fonts-ja
+INFO:root:localeId contains invalid locale id=fonts-ka
+INFO:root:localeId contains invalid locale id=fonts-kk
+INFO:root:localeId contains invalid locale id=fonts-km
+INFO:root:localeId contains invalid locale id=fonts-kn
+INFO:root:localeId contains invalid locale id=fonts-ko
+INFO:root:localeId contains invalid locale id=fonts-ku
+INFO:root:localeId contains invalid locale id=fonts-lo
+INFO:root:localeId contains invalid locale id=fonts-lt
+INFO:root:localeId contains invalid locale id=fonts-lv
+INFO:root:localeId contains invalid locale id=fonts-mai
+INFO:root:localeId contains invalid locale id=fonts-mk
+INFO:root:localeId contains invalid locale id=fonts-ml
+INFO:root:localeId contains invalid locale id=fonts-mr
+INFO:root:localeId contains invalid locale id=fonts-ms
+INFO:root:localeId contains invalid locale id=fonts-my
+INFO:root:localeId contains invalid locale id=fonts-nb
+INFO:root:localeId contains invalid locale id=fonts-ne
+INFO:root:localeId contains invalid locale id=fonts-nl
+INFO:root:localeId contains invalid locale id=fonts-nn
+INFO:root:localeId contains invalid locale id=fonts-nr
+INFO:root:localeId contains invalid locale id=fonts-nso
+INFO:root:localeId contains invalid locale id=fonts-or
+INFO:root:localeId contains invalid locale id=fonts-pa
+INFO:root:localeId contains invalid locale id=fonts-pl
+INFO:root:localeId contains invalid locale id=fonts-pt
+INFO:root:localeId contains invalid locale id=fonts-ro
+INFO:root:localeId contains invalid locale id=fonts-ru
+INFO:root:localeId contains invalid locale id=fonts-si
+INFO:root:localeId contains invalid locale id=fonts-sk
+INFO:root:localeId contains invalid locale id=fonts-sl
+INFO:root:localeId contains invalid locale id=fonts-sq
+INFO:root:localeId contains invalid locale id=fonts-sr
+INFO:root:localeId contains invalid locale id=fonts-ss
+INFO:root:localeId contains invalid locale id=fonts-sv
+INFO:root:localeId contains invalid locale id=fonts-ta
+INFO:root:localeId contains invalid locale id=fonts-te
+INFO:root:localeId contains invalid locale id=fonts-th
+INFO:root:localeId contains invalid locale id=fonts-tn
+INFO:root:localeId contains invalid locale id=fonts-tr
+INFO:root:localeId contains invalid locale id=fonts-ts
+INFO:root:localeId contains invalid locale id=fonts-uk
+INFO:root:localeId contains invalid locale id=fonts-ur
+INFO:root:localeId contains invalid locale id=fonts-ve
+INFO:root:localeId contains invalid locale id=fonts-vi
+INFO:root:localeId contains invalid locale id=fonts-xh
+INFO:root:localeId contains invalid locale id=fonts-yi
+INFO:root:localeId contains invalid locale id=fonts-zh_CN
+INFO:root:localeId contains invalid locale id=fonts-zh_HK
+INFO:root:localeId contains invalid locale id=fonts-zh_TW
+INFO:root:localeId contains invalid locale id=fonts-zu
+WARNING:anaconda.modules.payloads.payload.dnf.requirements:Selected locale 'en_US.UTF-8' does not match any available langpacks.
+INFO:program:Running... systemd-detect-virt
+INFO:program:kvm
+DEBUG:program:Return code: 0
+WARNING:anaconda.modules.payloads.payload.dnf.requirements:Platform group platform-kvm not available.
+DEBUG:anaconda.modules.payloads.payload.dnf.requirements:Applying requirements: [Requirement(name='e2fsprogs', reason='Required to manage storage devices.', type='package')]
+DEBUG:anaconda.modules.payloads.payload.dnf.requirements:Requirement 'e2fsprogs' is ignored because it's excluded.
+DEBUG:anaconda.modules.payloads.payload.dnf.validation:Resolving the software selection.
+DEBUG:anaconda.modules.payloads.payload.dnf.dnf_manager:Disabling modules: []
+DEBUG:anaconda.modules.payloads.payload.dnf.dnf_manager:Enabling modules: []
+INFO:anaconda.modules.payloads.payload.dnf.dnf_manager:Including specs: ['bash', 'coreutils', 'dnf', 'dnf-yum', 'fedora-release-container', 'glibc-minimal-langpack', 'rootfiles', 'rpm', 'sudo', 'tar', 'util-linux-core', 'vim-minimal']
+INFO:anaconda.modules.payloads.payload.dnf.dnf_manager:Excluding specs: ['@core', 'dosfstools', 'e2fsprogs', 'fuse-libs', 'glibc-langpack-en', 'gnupg2-smime', 'grubby', 'kernel', 'langpacks-en', 'langpacks-en_GB', 'libss', 'pinentry', 'shared-mime-info', 'sssd-client', 'trousers', 'util-linux', 'xkeyboard-config']
+DEBUG:anaconda.modules.payloads.payload.dnf.dnf_manager:Resolving the software selection.
+DDEBUG:dnf:timer: depsolve: 48 ms
+INFO:anaconda.modules.payloads.payload.dnf.dnf_manager:The software selection has been resolved (142 packages selected).
+DEBUG:anaconda.modules.payloads.payload.dnf.validation:Resolving has been completed: ValidationReport(error_messages=[], warning_messages=[])
+INFO:anaconda.core.threads:Thread Done: AnaTaskThread-ResolvePackagesTask-2 (140066167301824)
+INFO:anaconda.core.threads:Running Thread: AnaTaskThread-PrepareDownloadLocationTask-1 (140066167301824)
+INFO:anaconda.modules.common.task.task:Prepare the package download
+INFO:anaconda.modules.payloads.payload.dnf.dnf_manager:Total download size: 210.54 MiB
+INFO:anaconda.modules.payloads.payload.dnf.dnf_manager:Total install size: 411.25 MiB
+INFO:program:Running... df --output=target,avail
+INFO:program:Mounted on             Avail
+INFO:program:/                    1541992
+INFO:program:/dev                    4096
+INFO:program:/dev/shm             4058400
+INFO:program:/run                 1541992
+INFO:program:/run/rootfsbase            0
+INFO:program:/tmp                 3601256
+INFO:program:/mnt/sysroot         4792628
+INFO:program:/mnt/sysroot/dev/shm 4058416
+INFO:program:/mnt/sysroot/tmp     4058416
+DEBUG:program:Return code: 0
+DEBUG:anaconda.modules.payloads.payload.dnf.utils:Considering /mnt/sysroot (4.57 GiB) for download and install.
+DEBUG:anaconda.modules.payloads.payload.dnf.utils:Considering /mnt/sysroot/tmp (3.87 GiB) for download and install.
+INFO:anaconda.modules.payloads.payload.dnf.utils:Mount point /mnt/sysroot/tmp picked as download location
+INFO:anaconda.core.threads:Thread Done: AnaTaskThread-PrepareDownloadLocationTask-1 (140066167301824)
+INFO:anaconda.core.threads:Running Thread: AnaTaskThread-DownloadPackagesTask-1 (140066167301824)
+INFO:anaconda.modules.common.task.task:Download packages
+INFO:anaconda.modules.payloads.payload.dnf.dnf_manager:Downloading packages to /mnt/sysroot/tmp/dnf.package.cache.
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/a/audit-libs-3.1.2-4.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/t/tar-1.35-2.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/updates/f39-updates/compose/Everything/x86_64/os/Packages/l/libcomps-0.1.20-1.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/o/openldap-2.6.6-1.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/f/file-libs-5.44-5.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/c/cyrus-sasl-lib-2.1.28-11.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/a/authselect-1.4.3-1.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/s/setup-2.14.4-1.fc39.noarch.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/a/authselect-libs-1.4.3-1.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/f/filesystem-3.18-6.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/p/python3-hawkey-0.72.0-1.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/l/libgpg-error-1.47-2.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/updates/f39-updates/compose/Everything/x86_64/os/Packages/s/shadow-utils-4.14.0-2.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/f/findutils-4.9.0-5.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/l/libarchive-3.7.1-1.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/l/libcom_err-1.47.0-2.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/p/popt-1.19-3.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/g/gawk-5.2.2-2.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/l/libevent-2.1.12-9.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/z/zlib-1.2.13-4.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/t/tzdata-2023c-2.fc39.noarch.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/updates/f39-updates/compose/Everything/x86_64/os/Packages/l/libgcc-13.2.1-4.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/s/sudo-1.9.14-1.p3.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/l/libksba-1.6.4-2.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/c/coreutils-9.3-4.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/c/coreutils-common-9.3-4.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/l/libxcrypt-4.4.36-2.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/updates/f39-updates/compose/Everything/x86_64/os/Packages/p/python3-dnf-4.18.1-1.fc39.noarch.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/b/bzip2-libs-1.0.8-16.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/p/python3-3.12.0-1.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/l/libassuan-2.5.6-2.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/j/json-c-0.17-1.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/updates/f39-updates/compose/Everything/x86_64/os/Packages/l/libgomp-13.2.1-4.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/l/libpsl-0.21.2-4.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/l/lz4-libs-1.9.4-4.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/l/libcurl-8.2.1-3.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/updates/f39-updates/compose/Everything/x86_64/os/Packages/y/yum-4.18.1-1.fc39.noarch.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/l/libpwquality-1.4.5-6.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/updates/f39-updates/compose/Everything/x86_64/os/Packages/g/glibc-minimal-langpack-2.38-10.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/l/libselinux-3.5-5.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/l/libffi-3.4.4-4.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/n/nettle-3.9.1-2.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/l/libattr-2.5.1-8.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/l/libsemanage-3.5-4.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/c/ca-certificates-2023.2.60_v7.0.306-2.fc39.noarch.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/updates/f39-updates/compose/Everything/x86_64/os/Packages/z/zchunk-libs-1.3.2-1.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/a/alternatives-1.25-1.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/g/gnutls-3.8.1-1.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/l/libsepol-3.5-2.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/l/libnsl2-2.0.0-6.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/l/libxml2-2.10.4-3.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/k/keyutils-libs-1.6.1-7.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/l/libb2-0.98.1-9.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/l/libdb-5.3.28-56.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/updates/f39-updates/compose/Everything/x86_64/os/Packages/g/gnupg2-2.4.3-3.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/i/ima-evm-utils-1.5-2.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/l/libyaml-0.2.5-12.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/g/grep-3.11-3.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/c/cracklib-2.9.11-2.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/updates/f39-updates/compose/Everything/x86_64/os/Packages/p/python3-libcomps-0.1.20-1.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/l/libblkid-2.39.2-1.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/o/openssl-libs-3.1.1-4.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/l/libunistring-1.1-5.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/updates/f39-updates/compose/Everything/x86_64/os/Packages/l/libnghttp2-1.55.1-4.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/l/libsigsegv-2.14-5.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/l/libfsverity-1.4-10.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/g/gdbm-libs-1.23-4.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/f/fedora-gpg-keys-39-1.noarch.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/l/libsmartcols-2.39.2-1.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/e/expat-2.5.0-3.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/f/fedora-release-common-39-30.noarch.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/f/fedora-release-container-39-30.noarch.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/l/libidn2-2.3.4-3.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/s/sqlite-libs-3.42.0-7.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/f/fedora-release-identity-container-39-30.noarch.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/x/xz-libs-5.4.4-1.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/g/gmp-6.2.1-5.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/p/python3-rpm-4.19.0-1.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/l/libuuid-2.39.2-1.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/l/libgcrypt-1.10.2-2.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/c/crypto-policies-20230731-1.git5ed06e0.fc39.noarch.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/f/fedora-repos-39-1.noarch.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/l/libzstd-1.5.5-4.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/g/gzip-1.12-6.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/l/libbrotli-1.1.0-1.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/l/libdnf-0.72.0-1.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/l/lua-libs-5.4.6-3.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/l/libverto-0.3.2-6.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/updates/f39-updates/compose/Everything/x86_64/os/Packages/d/dnf-4.18.1-1.fc39.noarch.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/updates/f39-updates/compose/Everything/x86_64/os/Packages/d/dnf-data-4.18.1-1.fc39.noarch.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/b/basesystem-11-18.fc39.noarch.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/updates/f39-updates/compose/Everything/x86_64/os/Packages/p/p11-kit-0.25.2-1.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/b/bash-5.2.15-5.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/updates/f39-updates/compose/Everything/x86_64/os/Packages/k/krb5-libs-1.21.2-2.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/updates/f39-updates/compose/Everything/x86_64/os/Packages/p/p11-kit-trust-0.25.2-1.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/updates/f39-updates/compose/Everything/x86_64/os/Packages/l/libsolv-0.7.25-1.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/updates/f39-updates/compose/Everything/x86_64/os/Packages/p/pam-1.5.3-3.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/updates/f39-updates/compose/Everything/x86_64/os/Packages/p/pam-libs-1.5.3-3.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/r/rootfiles-8.1-34.fc39.noarch.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/t/tpm2-tss-4.0.1-4.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/updates/f39-updates/compose/Everything/x86_64/os/Packages/v/vim-data-9.0.2081-1.fc39.noarch.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/m/mpdecimal-2.5.1-7.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/updates/f39-updates/compose/Everything/x86_64/os/Packages/v/vim-minimal-9.0.2081-1.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/l/libssh-0.10.5-2.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/l/libssh-config-0.10.5-2.fc39.noarch.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/updates/f39-updates/compose/Everything/x86_64/os/Packages/l/libstdc%2b%2b-13.2.1-4.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/m/mpfr-4.2.0-3.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/p/python3-libdnf-0.72.0-1.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/n/ncurses-base-6.4-7.20230520.fc39.noarch.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/r/rpm-4.19.0-1.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/l/libcap-2.48-7.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/r/rpm-build-libs-4.19.0-1.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/l/libcap-ng-0.8.3-8.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/n/ncurses-libs-6.4-7.20230520.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/p/pcre2-10.42-1.fc39.2.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/r/rpm-libs-4.19.0-1.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/updates/f39-updates/compose/Everything/x86_64/os/Packages/e/elfutils-default-yama-scope-0.190-1.fc39.noarch.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/l/libmodulemd-2.15.0-5.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/updates/f39-updates/compose/Everything/x86_64/os/Packages/l/libtirpc-1.3.4-0.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/p/pcre2-syntax-10.42-1.fc39.2.noarch.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/updates/f39-updates/compose/Everything/x86_64/os/Packages/e/elfutils-libelf-0.190-1.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/s/systemd-libs-254.5-2.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/updates/f39-updates/compose/Everything/x86_64/os/Packages/e/elfutils-libs-0.190-1.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/updates/f39-updates/compose/Everything/x86_64/os/Packages/g/glib2-2.78.1-1.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/n/npth-1.6-14.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/r/rpm-sequoia-1.5.0-1.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/l/libmount-2.39.2-1.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/s/sed-4.8-14.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/p/python-pip-wheel-23.2.1-1.fc39.noarch.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/r/readline-8.2-4.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/r/rpm-sign-libs-4.19.0-1.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/updates/f39-updates/compose/Everything/x86_64/os/Packages/g/glibc-2.38-10.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/updates/f39-updates/compose/Everything/x86_64/os/Packages/g/glibc-common-2.38-10.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/p/python3-libs-3.12.0-1.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/l/librepo-1.17.0-1.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/c/curl-8.2.1-3.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/l/libeconf-0.5.2-1.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/l/libreport-filesystem-2.17.11-3.fc39.noarch.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/u/util-linux-core-2.39.2-1.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/l/libacl-2.3.1-8.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/l/libtasn1-4.19.0-3.fc39.x86_64.rpm
+INFO:librepo:Downloading: https://kojipkgs.fedoraproject.org/compose/39/latest-Fedora-39/compose/Everything/x86_64/os/Packages/p/publicsuffix-list-dafsa-20230812-1.fc39.noarch.rpm
+INFO:anaconda.core.threads:Thread Done: AnaTaskThread-DownloadPackagesTask-1 (140066167301824)
+INFO:anaconda.core.threads:Running Thread: AnaTaskThread-InstallPackagesTask-1 (140066167301824)
+INFO:anaconda.modules.common.task.task:Install packages
+DEBUG:anaconda.modules.payloads.payload.dnf.dnf_manager:Starting the transaction process...
+WARNING:py.warnings:/usr/lib64/python3.12/multiprocessing/popen_fork.py:66: DeprecationWarning: This process (pid=2716) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  self.pid = os.fork()
+
+DEBUG:anaconda.modules.payloads.payload.dnf.dnf_manager:Running the transaction...
+INFO:dnf:Running transaction check
+INFO:dnf:Transaction check succeeded.
+INFO:dnf:Running transaction test
+INFO:dnf:Transaction test succeeded.
+DDEBUG:dnf:timer: transaction test: 1327 ms
+INFO:dnf:Running transaction
+DEBUG:dnf:RPMDB altered outside of DNF.
+DDEBUG:dnf:RPM transaction start.
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Configuring (running scriptlet for): filesystem-3.18-6.fc39.x86_64 1689953784 a95ef45c3436fe932d45854a63e4c924f0f5a2c426cf347f2b29484193cc2e68
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: libgcc-13.2.1-4.fc39.x86_64 1697013499 f6bf4df8d570cadcb2783bbda13e19532709bb85db13c20448cc7fb69145ddb0
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Configuring (running scriptlet for): libgcc-13.2.1-4.fc39.x86_64 1697013499 f6bf4df8d570cadcb2783bbda13e19532709bb85db13c20448cc7fb69145ddb0
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: crypto-policies-20230731-1.git5ed06e0.fc39.noarch 1690801573 f1bc3a1a38eb208d051a54c90ff54ac3e4b829b7acc7104300a50d4081e83541
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Configuring (running scriptlet for): crypto-policies-20230731-1.git5ed06e0.fc39.noarch 1690801573 f1bc3a1a38eb208d051a54c90ff54ac3e4b829b7acc7104300a50d4081e83541
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: tzdata-2023c-2.fc39.noarch 1690045307 031ada654168f523bac80f25030a82d59935a219b8d5884e454d4ad2419c0eb0
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: fedora-release-identity-container-39-30.noarch 1696876154 29931b117624d92745a3cf7abaf3d49520993824ca18d82a442159576476cd1d
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: fedora-gpg-keys-39-1.noarch 1696876151 1ed1722c4db56ca2ec4a9baa5d1485486dc8e9ce7b8c644cb0dea86c4c2490df
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: fedora-repos-39-1.noarch 1696876151 4d3e51431aaee92d074c63c0c1c2fa005e0d7c0124f27a5b6c1ed748efcded9a
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: fedora-release-common-39-30.noarch 1696876154 855e4bbe2f44db7aff2e96c08289bed657c3504a650a95119f134f6eec10fc15
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: fedora-release-container-39-30.noarch 1696876154 04129cc9b65986cd09f31ae74354848ad2f021e4445fc4e4a4c1105f16f0e535
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: setup-2.14.4-1.fc39.noarch 1690369653 a1ada1e96dce04f7529fe28bbaac904d611cc118a41db9f202ebeecb949887f1
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Configuring (running scriptlet for): setup-2.14.4-1.fc39.noarch 1690369653 a1ada1e96dce04f7529fe28bbaac904d611cc118a41db9f202ebeecb949887f1
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: filesystem-3.18-6.fc39.x86_64 1689953784 a95ef45c3436fe932d45854a63e4c924f0f5a2c426cf347f2b29484193cc2e68
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: basesystem-11-18.fc39.noarch 1689777092 e4775892424bebf8e95b4c053315f544be44d3ec6b3ea073a13ff47ca478d02b
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: vim-data-2:9.0.2081-1.fc39.noarch 1698852138 87db48a5dcc8ad72c19a3bc1784dedde3b76403bf177960eb0a516a5fbd14552
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: publicsuffix-list-dafsa-20230812-1.fc39.noarch 1692137180 765070eb8657856f08de7ed748e25906197b207b90cbcb6c5ef9e18727b1336c
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: pcre2-syntax-10.42-1.fc39.2.noarch 1689880856 4e0009aaf790fd0522ecff87c2d718ba7637a3dcbbaf46498f6c22ac764bb729
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: ncurses-base-6.4-7.20230520.fc39.noarch 1692690929 0ab8567a70e710c0bb83a5c56677bf8d76ce68e53f88c5462f1e6c44b43533f3
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: bash-5.2.15-5.fc39.x86_64 1689777198 4e939a17df9f0aa222bca19157e4dd1b0aac6e58b3902b0cfa0791bfbbc73575
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Configuring (running scriptlet for): bash-5.2.15-5.fc39.x86_64 1689777198 4e939a17df9f0aa222bca19157e4dd1b0aac6e58b3902b0cfa0791bfbbc73575
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: ncurses-libs-6.4-7.20230520.fc39.x86_64 1692690982 1056e559b1d37b6c3c1e10ee52faa8d07ea90c3bb8e8941f0c0a79e8a1121533
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: glibc-common-2.38-10.fc39.x86_64 1698445690 ed8c04494840c51c30bf84f55fd1382c7a2b76de49e2e68f86f0c7e18d6c0f95
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: glibc-minimal-langpack-2.38-10.fc39.x86_64 1698445690 068c87aa7e223b815b4f3bc5aa9a0bdaa092dc7d34fe1a4688fb30e2d3549e30
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Configuring (running scriptlet for): glibc-2.38-10.fc39.x86_64 1698445690 ed83ae33f19b011b0462f6af3b6cc650579c40ad47bc01e12e101e50fd17577a
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: glibc-2.38-10.fc39.x86_64 1698445690 ed83ae33f19b011b0462f6af3b6cc650579c40ad47bc01e12e101e50fd17577a
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Configuring (running scriptlet for): glibc-2.38-10.fc39.x86_64 1698445690 ed83ae33f19b011b0462f6af3b6cc650579c40ad47bc01e12e101e50fd17577a
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: zlib-1.2.13-4.fc39.x86_64 1690055842 d049c9b207124493ba08fda0c7686524875dbfa278a120dc944a6a157703ca63
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: bzip2-libs-1.0.8-16.fc39.x86_64 1689859568 f621176691d5fed2368f2a62f234538a048b22b63d20659b773aacd959604eaf
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: libzstd-1.5.5-4.fc39.x86_64 1690055959 bb4c974f4e0be72d0c04622bc84e6eb0a2584b79739844536843470f88677c3f
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: xz-libs-5.4.4-1.fc39.x86_64 1690992258 4baf99c1d3629f655349aa3ef442ba9e815ef694f18828d3dc13c9c725486eca
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: gmp-1:6.2.1-5.fc39.x86_64 1689809616 b7a29ed1f07e5a3f8ff7e4b9ca7cde144842ef5e15410bc4fcd5176b26d7a913
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: libuuid-2.39.2-1.fc39.x86_64 1692269134 bc79a7a58012711f0341f0d5ebd5a6dd8c39c2f0c1a594e56c9a8f3493084a35
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: libxml2-2.10.4-3.fc39.x86_64 1689857051 018a97d0badb532421e32d31963bfed5efe066c9c5bc99118c8228ff7a87a63e
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: sqlite-libs-3.42.0-7.fc39.x86_64 1689992975 16d59fb0e30c2f386719890837f3faa8acf3f9680ceac51a0d17772259bd5a71
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: libcap-2.48-7.fc39.x86_64 1689849277 9f4e2d242c53604dc37208e812858bd501d12b71ea56fa89312380e4a39972ee
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: libgpg-error-1.47-2.fc39.x86_64 1689851346 80e0717d79910c07806a8fb171b1503312b1eb94aaa00db89f6ecac1b565d3e9
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: libxcrypt-4.4.36-2.fc39.x86_64 1689856957 0209377d13f4fc7bba04736adc692044145d1da0bb360f0a70fba48102d4a308
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: popt-1.19-3.fc39.x86_64 1689919991 e6e8216e2d1d8b0b758a00922df1d9c78dc4704ebbe9def575a76bebab7831da
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: libattr-2.5.1-8.fc39.x86_64 1689776087 18b75e78e0f35e9e7d162f02b4f8a3d6d7d1cefebab91aa378ab5131e77ae55a
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: libacl-2.3.1-8.fc39.x86_64 1689772285 702974e77543ceb2e69ed4486be452c25a1f246ee81eaa853e3f9e2c91fcb33c
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: libeconf-0.5.2-1.fc39.x86_64 1693261711 fef749faba37949b7e241f225efd372d0fd528218b1cec7c1fd8b1ca872503fb
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: libffi-3.4.4-4.fc39.x86_64 1689850697 7647100d549b97244c8d85c9e54711d2d9ecfaa01fd9c8ab206d9d08e8222221
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: libsmartcols-2.39.2-1.fc39.x86_64 1692269134 91720bd94bc6c953664bee3b743f502ed650fe984b33d2cd7de39cac3269c7a6
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: libtasn1-4.19.0-3.fc39.x86_64 1689855851 6360f39fbde9ec7dbbe0bd6e93b6711dc0e8ad9e52b51346e92328d1234c869a
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: p11-kit-0.25.2-1.fc39.x86_64 1698754551 74fc82d43a44ea09118ef2cf740cf184064dc9c285befe9090744104c10f48bc
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: libunistring-1.1-5.fc39.x86_64 1692599790 307760fa6b7e3b8629b42d44a2f0648c6a115d44dd7df8675bdc1d741faa00d3
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: libidn2-2.3.4-3.fc39.x86_64 1689851738 5913b24cd01cebc836caa6586f1ab0eba1f77509b25b92180f95c0c806043e65
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: pcre2-10.42-1.fc39.2.x86_64 1689880865 d8db7cf62c374e0c50f61e8b22c4c1067979efe1515ef35a7290c609cce4ec19
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: readline-8.2-4.fc39.x86_64 1689959142 c976b55c7772957201537d157d78254415619de938a11e0aac661a1a478f0bfa
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: libstdc++-13.2.1-4.fc39.x86_64 1697013499 7be17699d26f0f5c5467684b418b1cb1748b14fb6b4b91758f6e49d56c46d37e
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: libblkid-2.39.2-1.fc39.x86_64 1692269134 84779c8fba584a083c14f32c4062eae4e2138293920dc6b69ba1c9a990a2672b
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: elfutils-libelf-0.190-1.fc39.x86_64 1699048397 a8fd938670f641db20b85322d2732e1feb25b4a72543f4bc88a283e96998c5d3
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: expat-2.5.0-3.fc39.x86_64 1689794042 db3b047b493dc5437cfea04ed7b75dfbf908c5afe06468e521408a63a2a39bbd
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: gdbm-libs-1:1.23-4.fc39.x86_64 1689800513 5d73a027bc3b0091386afdc1a51f1a7bf5a9f1e9d36b94a748298ce6818aafd2
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: json-c-0.17-1.fc39.x86_64 1691948280 357634dc46327c25804625bba4f4020f14aa096955915808893d3c09b47d98bf
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: keyutils-libs-1.6.1-7.fc39.x86_64 1689843334 de30d373ecc4075fdcabbf1a0e9493dd717320707d9bdfbe1251610d284fb8fe
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: libcom_err-1.47.0-2.fc39.x86_64 1689790400 60a8e58868ab6d2c1146d2b22526d551dff7151b72f064206b8899f503199cd1
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: libsepol-3.5-2.fc39.x86_64 1689855221 4017b5534b3a40ae669175c204770e454f2fec85fbdda8581c785ee63965525d
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: libselinux-3.5-5.fc39.x86_64 1689855185 784f70249e31f734e7c1975d455e14e6ff4fc3fd5efb8d943883ab74f3d29edf
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: sed-4.8-14.fc39.x86_64 1689989426 befe59e70e87d208f1c3f2af833e2a779c3ab519a091a5913616ed22a68de5d5
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: libmount-2.39.2-1.fc39.x86_64 1692269134 24dec53eadf675c45c402491d9c9f4676c79c464425470bf982be56de5e954e3
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: lua-libs-5.4.6-3.fc39.x86_64 1690898924 ad93dbdf80326ff3fcc1353ee1be8ea077dd9b0904579d3af42add9e2ae531d5
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: lz4-libs-1.9.4-4.fc39.x86_64 1689860537 888294066d03ddbbd6bab053bd97326dbfbd6aa385578223ef04b83a615e885f
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: libgomp-13.2.1-4.fc39.x86_64 1697013499 f6beb8f944b8c3b7fb3b59f6f1aada310ae388f62a8d61060dc0d51f7b6b46ed
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: libb2-0.98.1-9.fc39.x86_64 1689848967 f747db8cc7ddc4c45a4e07ee99bce2bf69efb36804330ded60521e6e86a9c9f2
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: systemd-libs-254.5-2.fc39.x86_64 1695831509 dc480941cec22360f469a5d4deba5a6c384570055f60f2f63b50656ad271bdc9
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: findutils-1:4.9.0-5.fc39.x86_64 1689796113 b4813972733cba4041b2da4f097ecdc9d450d593bd2475e9133a67b5e2e8d3f3
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: cyrus-sasl-lib-2.1.28-11.fc39.x86_64 1689786689 1c2d3cc517ec544587f287f3c80bf602ea4b6230659ad7e7235c1c10ede8295a
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: libcomps-0.1.20-1.fc39.x86_64 1696500503 6ee4c4cc4a7a9e15216251be851c93f5b5eb8bb08bad5c82da16176e19e5b209
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: grep-3.11-3.fc39.x86_64 1689831837 01e5fc0d91e2216994b5aabdd1aa4625472326500690ea67d1ffe2e0f16a6b56
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: libpsl-0.21.2-4.fc39.x86_64 1689854175 13e3c508d51a9b7cc9a867103f72616c3f20e71703d23cfabb4775900a103017
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: libassuan-2.5.6-2.fc39.x86_64 1689848905 b18e3a7d8a7114746dcab82265a0311c3517514d2ba5f3cd15dbff6cb221c5ed
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: libgcrypt-1.10.2-2.fc39.x86_64 1689850923 cf529e4707071591a8385a6241926f5302c25e7bdbfba7d7b711a6138ca34d24
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: libksba-1.6.4-2.fc39.x86_64 1689852353 ae63d6e24cc5e1cd8a1181dbe37690c2879d5ff617ed2956ffe70dbc93245dea
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: mpfr-4.2.0-3.fc39.x86_64 1689869461 20658d08ed33560f6027b60b05153a991d25d83118f1074f5151b78b51c706eb
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: nettle-3.9.1-2.fc39.x86_64 1689871334 28cf2aa0feb04fc6e9d443e20024e8ecbcba815d5a8166f915fd8884b4e03494
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: file-libs-5.44-5.fc39.x86_64 1689796014 e5f4b5e5a1a3070e61c3da0cbaf97caabfb4ba0ba91eda40c2d0e67811d38a0c
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: alternatives-1.25-1.fc39.x86_64 1690977115 fcb9e3ed5df5ca5bef9b712aa42ea2aea3f5ed16468997756edbf1d40daab9db
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: p11-kit-trust-0.25.2-1.fc39.x86_64 1698754551 6122396a91e1cb215dd46656a80066701858d992839ad54ee6ee78c6b0d0147a
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Configuring (running scriptlet for): p11-kit-trust-0.25.2-1.fc39.x86_64 1698754551 6122396a91e1cb215dd46656a80066701858d992839ad54ee6ee78c6b0d0147a
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: gnutls-3.8.1-1.fc39.x86_64 1693213384 241db123e933e037a24c654729c6aa6edc2767e9e0f343644f025abe93f083a6
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: glib2-2.78.1-1.fc39.x86_64 1698337632 cd90ee7dc1c55969b38674f4af937b2332cccaaa473134da89b2ee0df2aa88d6
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: libbrotli-1.1.0-1.fc39.x86_64 1694795190 9ddbbe835f4fb31bd4cde4c752a35d6e2dd6f485f8618e66084d28d18e632bb2
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: libcap-ng-0.8.3-8.fc39.x86_64 1693843074 6c5f811b61fac07139f26716f14d4c413270846215d069304a54bae633a8b0af
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: audit-libs-3.1.2-4.fc39.x86_64 1694770290 05bad9222129b84443b116754194a9badb4a287024123e499cc13c40ed2cee01
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: pam-libs-1.5.3-3.fc39.x86_64 1697784292 82146dd6c56ec8cfcd0e588464512b615d240b96db85458c1e22a24f3305b7b6
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: libsemanage-3.5-4.fc39.x86_64 1689855272 b674f797cf2d8a70bdf64fdafdbc6597cd743e9678be416e3ef983945fa80fdf
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: shadow-utils-2:4.14.0-2.fc39.x86_64 1696321808 c05df5bf22e91f85cccdda1b6c4480a53690a374d3a6981bf88950446f4313db
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: libdb-5.3.28-56.fc39.x86_64 1689849928 3942e173cf0c80a325e056b1882c2b9150e91dc0b340f4d4f6e177e6356f767c
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: libsigsegv-2.14-5.fc39.x86_64 1689855387 ae36fde936d10df86229fa91397a7c4a28af28f98727b092616003b4fc476be0
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: gawk-5.2.2-2.fc39.x86_64 1689800243 05aafdc4e381aaf577c6b9899fad35a47f60fa23acde96084f53d19beb782d7d
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: libverto-0.3.2-6.fc39.x86_64 1689856575 69475bb36e14c99fce036f030d8b25d8de5f2f5ef835f2f00c969ea76f0cd26a
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: libyaml-0.2.5-12.fc39.x86_64 1690380235 7a2d14af95de99c89bd10bc0f904a40d508a69db03dd7731e0603cc22260f146
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: mpdecimal-2.5.1-7.fc39.x86_64 1689869180 e6763efe12cb02912c77aa8259bcf9783eb4eb5c2a674de1e4dd274141953396
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: npth-1.6-14.fc39.x86_64 1689872361 006769c1faafdf58f2b730ac871e41f2c5cad1873b62b1108ea3fe1dfe72dcc6
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: libnghttp2-1.55.1-4.fc39.x86_64 1697110809 536ad615979060a3889abe68b16a96ebea395d663a12657a787b2c620b4cd403
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: elfutils-default-yama-scope-0.190-1.fc39.noarch 1699048392 fb92bda47682cb054ab9c893c45ef03b77ef1f9615d75ab1c845f0ddd8631f74
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Configuring (running scriptlet for): elfutils-default-yama-scope-0.190-1.fc39.noarch 1699048392 fb92bda47682cb054ab9c893c45ef03b77ef1f9615d75ab1c845f0ddd8631f74
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: elfutils-libs-0.190-1.fc39.x86_64 1699048397 65512b92b023ab0d9675160231aec6da3242dcc6f6800a72d91a27806aebd23e
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: libssh-config-0.10.5-2.fc39.noarch 1689855664 56fdcd24a191b145720e219cac607dbfeeb32ea9f6af2fbae0de01f4b572f557
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: libreport-filesystem-2.17.11-3.fc39.noarch 1689854656 16b9bdc7039d0f810a20a8488ed9879e2ee93b38a5a9fccf42dd6cd6ff01aae2
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: dnf-data-4.18.1-1.fc39.noarch 1699347386 9ecf50d5bae2e1a6eaa885cfcbd9ae4f751defa2f2fe13fee0ed0634b5493c87
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: coreutils-common-9.3-4.fc39.x86_64 1694505814 92bd23a4500cbf0423d38e2fd1d997c389841791cdee67c8620902668573071a
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: openssl-libs-1:3.1.1-4.fc39.x86_64 1693497748 8c775832646c44adcc8d629008e0a0c22f49d6553c2c45dfa8705a90a1679334
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: coreutils-9.3-4.fc39.x86_64 1694505814 5afc1391744df8cab4d5e9daf78b1a5fd010d53b57782c99b58c910c8a7f9a8a
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Configuring (running scriptlet for): ca-certificates-2023.2.60_v7.0.306-2.fc39.noarch 1690910374 6c206ae5f9a179b4120852b5f6e9b71fa08dbc47dd44d1fc65c9a3399ad7d0d8
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: ca-certificates-2023.2.60_v7.0.306-2.fc39.noarch 1690910374 6c206ae5f9a179b4120852b5f6e9b71fa08dbc47dd44d1fc65c9a3399ad7d0d8
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Configuring (running scriptlet for): ca-certificates-2023.2.60_v7.0.306-2.fc39.noarch 1690910374 6c206ae5f9a179b4120852b5f6e9b71fa08dbc47dd44d1fc65c9a3399ad7d0d8
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: krb5-libs-1.21.2-2.fc39.x86_64 1697472778 fb419aa83d3704c512bc7ff86d516d335f0735aafba73ff39c59a291bad652d0
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: libtirpc-1.3.4-0.fc39.x86_64 1696677191 9d8cb4d86df97240a0ea2f931271b97192e7271cb1dd82e5ff255bca6cfa61ed
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: libnsl2-2.0.0-6.fc39.x86_64 1689853448 12864baac4ff80c5ce384ede8772f458f227e6a3ff3055ffc37e9ce731c78b03
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: zchunk-libs-1.3.2-1.fc39.x86_64 1696533302 cfffef279347707f7f23472a7c09c95322bd03a7d60e707f49776d56226adfe8
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: libssh-0.10.5-2.fc39.x86_64 1689855671 cf888cee15ed7a3a05551e2e591f2f745b13d6d79c94406f449e9775151887f1
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: python-pip-wheel-23.2.1-1.fc39.noarch 1691403876 a2d3748756eabb15474e7d5367e283272916c5ed3824ecc4a49bd8c58411517b
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: python3-3.12.0-1.fc39.x86_64 1696274574 243fde015b695169a95c14573a813f079a2309dc1cc803bcb103ed07329dad8b
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: python3-libs-3.12.0-1.fc39.x86_64 1696274574 9becb544afbac08063b5d0ebc6da0f8fe5248078c6037d480f0e7217ddcc069a
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: python3-libcomps-0.1.20-1.fc39.x86_64 1696500503 9963ef4ea604aeae28ec048ce57c730a28f9018c346c7a756295ae5417d93ead
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Configuring (running scriptlet for): authselect-libs-1.4.3-1.fc39.x86_64 1695819309 2f6d63921e39e9ebe0bcc88eef833956404da072748f38aa37bfea87b2d89012
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: authselect-libs-1.4.3-1.fc39.x86_64 1695819309 2f6d63921e39e9ebe0bcc88eef833956404da072748f38aa37bfea87b2d89012
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: authselect-1.4.3-1.fc39.x86_64 1695819309 12da91bc37713a40da005960eb719eab5fc6116bf9e866878e16046a501baa51
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: gzip-1.12-6.fc39.x86_64 1690979443 7144118328b5fd3568c314b588e6c9df6c5711035ddc9b383664e3091cc6b9d5
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: cracklib-2.9.11-2.fc39.x86_64 1689785661 1049f52b10e6e7dc6467a818a63ea28900d3758a8fa045560cce13e0682a7ae5
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: libpwquality-1.4.5-6.fc39.x86_64 1689854199 ae91943c8ad70193355f46eb97090e690ed07a366b7475491431848d906bcc8d
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: pam-1.5.3-3.fc39.x86_64 1697784292 05e63043d8db28210174124ab36277ac7afd9226b47e27e9bc2263154acf2e71
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: libarchive-3.7.1-1.fc39.x86_64 1690802352 c80c75c64e6c5b214c334f1444edae10ee2a7499e0326c8446bdc316c605f89c
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: libevent-2.1.12-9.fc39.x86_64 1689850605 35e18e6c6b7b70983be7b866401c961ee4a227c6ed2e8db33194eeed0d7c6188
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: openldap-2.6.6-1.fc39.x86_64 1690851618 b21745cda1bbe9255f91f76b80bd4f2664ec51d348b741ecc5073904e024369e
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: libcurl-8.2.1-3.fc39.x86_64 1697039060 a8d156539200726997fa515ae0fc6a9b0f3a64fbd3e407bc39307e16d444369b
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Configuring (running scriptlet for): tpm2-tss-4.0.1-4.fc39.x86_64 1690044412 d513fdf4d1b03270ade20ef836e30279d063875b12934d893f569fdcc82f985b
+INFO:dnf.rpm:useradd: Warning: missing or non-executable shell '/usr/sbin/nologin'
+
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: tpm2-tss-4.0.1-4.fc39.x86_64 1690044412 d513fdf4d1b03270ade20ef836e30279d063875b12934d893f569fdcc82f985b
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: ima-evm-utils-1.5-2.fc39.x86_64 1689838322 8d07a47e8c5da1abf1382a00653cf0d329ddab300fa9855c954319b3064d75a4
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: gnupg2-2.4.3-3.fc39.x86_64 1699308546 94f4db0cda9b3b96526b5fa66272be17f9f83395993c9d3435e978cb6f6f697e
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: curl-8.2.1-3.fc39.x86_64 1697039060 f826caa49a33e711a159c56a4a428033465113af6559fc2db736bc47865fd362
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: libfsverity-1.4-10.fc39.x86_64 1689798821 b2934a0fc30a17f3c22c27cb77d6b9ac30a0e27986846bb9477f04364931e977
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: rpm-sequoia-1.5.0-1.fc39.x86_64 1693344413 852752794af3df6d4223ad2c7c7f4245f549eb28acb377655944629f23461c4c
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: rpm-libs-4.19.0-1.fc39.x86_64 1695128532 7a5fd078c774fa40df400bab6bce2b518960698a106e8576597e9aa638e8b877
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: libmodulemd-2.15.0-5.fc39.x86_64 1689852891 a9c51f1abeb793ef63b4b150380e9a079e1277991571b86a5c84b2a7fefdc236
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: libsolv-0.7.25-1.fc39.x86_64 1696317315 bc8b357827d405f47e80f217043c75b0275295dcce73523a4417183e52074928
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: librepo-1.17.0-1.fc39.x86_64 1697634042 f7671808e07b6e25e751f233f6dc9b46a5b72a3df5af4a7762e2c22f1b2487b1
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: libdnf-0.72.0-1.fc39.x86_64 1697634179 baf5209dd52b41a0834da73d338877bb406860fb6d11cbd59e3ab04a29f93dae
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: python3-libdnf-0.72.0-1.fc39.x86_64 1697634179 456ce662ae96184009213a6d839cf5dde3b4e757320240d93bb5ef43a52d7cb0
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: python3-hawkey-0.72.0-1.fc39.x86_64 1697634179 f88de6e6a4ca19ae64fe525cfba16c54ad1253c9a87240d900cd7e736ddfe1c3
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: rpm-build-libs-4.19.0-1.fc39.x86_64 1695128532 1ffd637afbfba149fb474d9db26c922aeeca8252a995ccce1d7ef265f7470015
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: rpm-sign-libs-4.19.0-1.fc39.x86_64 1695128532 b32c4f1643ce05be2a319c39edef087076b6403b312ad6bcab11ccbfe2977dc0
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: python3-rpm-4.19.0-1.fc39.x86_64 1695128532 dae201e0ed12b1ddfff895e0365396a0f59f40b9233b233641fdc6545dced47f
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: python3-dnf-4.18.1-1.fc39.noarch 1699347386 0777678588a829017c0ec5461b089527aee16a1da8e3c2887bd06e95ce23850d
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: dnf-4.18.1-1.fc39.noarch 1699347386 c5bd31fc98e6e55d4b74672ca1b8ce7af9aa2d3457b5cef32c422cd83ad4a34f
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Configuring (running scriptlet for): dnf-4.18.1-1.fc39.noarch 1699347386 c5bd31fc98e6e55d4b74672ca1b8ce7af9aa2d3457b5cef32c422cd83ad4a34f
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: yum-4.18.1-1.fc39.noarch 1699347386 96957f44006eab3b7b7a8549329d52a1caf64105551d6ffd32662289f3a1b68d
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Configuring (running scriptlet for): rpm-4.19.0-1.fc39.x86_64 1695128532 ed8a5a1c4500cb507b87cab1f2cad07d0760205a8cff5fecc8939e88108291e4
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: rpm-4.19.0-1.fc39.x86_64 1695128532 ed8a5a1c4500cb507b87cab1f2cad07d0760205a8cff5fecc8939e88108291e4
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: sudo-1.9.14-1.p3.fc39.x86_64 1690361571 5c38e77d2ba44fb261569ce3a3eef77441b376977b366f409562b0f9e2565841
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: util-linux-core-2.39.2-1.fc39.x86_64 1692269134 806e1315a9888f66d428b1f08d3134f1145e7e702db4c7e86c7a9ab4119b2a68
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: tar-2:1.35-2.fc39.x86_64 1692107989 f47bbf51adaf58153a321f1d20e554831c02924fa8ea44be20af3918caff5ec0
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: vim-minimal-2:9.0.2081-1.fc39.x86_64 1698852209 5e42aae8c2cba50fcde252161b45280764cfe8cbb0a2592350d5050e4b006d74
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Installed: rootfiles-8.1-34.fc39.noarch 1689959809 7724e5b3ae3111a74e6b4521748e34e08b54edccb7a0189b67fdc28acf93ec39
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Post installation setup phase started.
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Configuring (running scriptlet for): filesystem-3.18-6.fc39.x86_64 1689953784 a95ef45c3436fe932d45854a63e4c924f0f5a2c426cf347f2b29484193cc2e68
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Configuring (running scriptlet for): ca-certificates-2023.2.60_v7.0.306-2.fc39.noarch 1690910374 6c206ae5f9a179b4120852b5f6e9b71fa08dbc47dd44d1fc65c9a3399ad7d0d8
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Configuring (running scriptlet for): authselect-libs-1.4.3-1.fc39.x86_64 1695819309 2f6d63921e39e9ebe0bcc88eef833956404da072748f38aa37bfea87b2d89012
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Configuring (running scriptlet for): rpm-4.19.0-1.fc39.x86_64 1695128532 ed8a5a1c4500cb507b87cab1f2cad07d0760205a8cff5fecc8939e88108291e4
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Configuring (running scriptlet for): rootfiles-8.1-34.fc39.noarch 1689959809 7724e5b3ae3111a74e6b4521748e34e08b54edccb7a0189b67fdc28acf93ec39
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Configuring (running scriptlet for): rootfiles-8.1-34.fc39.noarch 1689959809 7724e5b3ae3111a74e6b4521748e34e08b54edccb7a0189b67fdc28acf93ec39
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Configuring (running scriptlet for): rootfiles-8.1-34.fc39.noarch 1689959809 7724e5b3ae3111a74e6b4521748e34e08b54edccb7a0189b67fdc28acf93ec39
+DDEBUG:dnf:RPM transaction over.
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: alternatives-1.25-1.fc39.x86_64 1690977115 fcb9e3ed5df5ca5bef9b712aa42ea2aea3f5ed16468997756edbf1d40daab9db
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: audit-libs-3.1.2-4.fc39.x86_64 1694770290 05bad9222129b84443b116754194a9badb4a287024123e499cc13c40ed2cee01
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: authselect-1.4.3-1.fc39.x86_64 1695819309 12da91bc37713a40da005960eb719eab5fc6116bf9e866878e16046a501baa51
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: authselect-libs-1.4.3-1.fc39.x86_64 1695819309 2f6d63921e39e9ebe0bcc88eef833956404da072748f38aa37bfea87b2d89012
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: basesystem-11-18.fc39.noarch 1689777092 e4775892424bebf8e95b4c053315f544be44d3ec6b3ea073a13ff47ca478d02b
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: bash-5.2.15-5.fc39.x86_64 1689777198 4e939a17df9f0aa222bca19157e4dd1b0aac6e58b3902b0cfa0791bfbbc73575
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: bzip2-libs-1.0.8-16.fc39.x86_64 1689859568 f621176691d5fed2368f2a62f234538a048b22b63d20659b773aacd959604eaf
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: ca-certificates-2023.2.60_v7.0.306-2.fc39.noarch 1690910374 6c206ae5f9a179b4120852b5f6e9b71fa08dbc47dd44d1fc65c9a3399ad7d0d8
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: coreutils-9.3-4.fc39.x86_64 1694505814 5afc1391744df8cab4d5e9daf78b1a5fd010d53b57782c99b58c910c8a7f9a8a
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: coreutils-common-9.3-4.fc39.x86_64 1694505814 92bd23a4500cbf0423d38e2fd1d997c389841791cdee67c8620902668573071a
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: cracklib-2.9.11-2.fc39.x86_64 1689785661 1049f52b10e6e7dc6467a818a63ea28900d3758a8fa045560cce13e0682a7ae5
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: crypto-policies-20230731-1.git5ed06e0.fc39.noarch 1690801573 f1bc3a1a38eb208d051a54c90ff54ac3e4b829b7acc7104300a50d4081e83541
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: curl-8.2.1-3.fc39.x86_64 1697039060 f826caa49a33e711a159c56a4a428033465113af6559fc2db736bc47865fd362
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: cyrus-sasl-lib-2.1.28-11.fc39.x86_64 1689786689 1c2d3cc517ec544587f287f3c80bf602ea4b6230659ad7e7235c1c10ede8295a
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: expat-2.5.0-3.fc39.x86_64 1689794042 db3b047b493dc5437cfea04ed7b75dfbf908c5afe06468e521408a63a2a39bbd
+DDEBUG:dnf:timer: verify transaction: 153 ms
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: fedora-gpg-keys-39-1.noarch 1696876151 1ed1722c4db56ca2ec4a9baa5d1485486dc8e9ce7b8c644cb0dea86c4c2490df
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: fedora-release-common-39-30.noarch 1696876154 855e4bbe2f44db7aff2e96c08289bed657c3504a650a95119f134f6eec10fc15
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: fedora-release-container-39-30.noarch 1696876154 04129cc9b65986cd09f31ae74354848ad2f021e4445fc4e4a4c1105f16f0e535
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: fedora-release-identity-container-39-30.noarch 1696876154 29931b117624d92745a3cf7abaf3d49520993824ca18d82a442159576476cd1d
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: fedora-repos-39-1.noarch 1696876151 4d3e51431aaee92d074c63c0c1c2fa005e0d7c0124f27a5b6c1ed748efcded9a
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: file-libs-5.44-5.fc39.x86_64 1689796014 e5f4b5e5a1a3070e61c3da0cbaf97caabfb4ba0ba91eda40c2d0e67811d38a0c
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: filesystem-3.18-6.fc39.x86_64 1689953784 a95ef45c3436fe932d45854a63e4c924f0f5a2c426cf347f2b29484193cc2e68
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: findutils-1:4.9.0-5.fc39.x86_64 1689796113 b4813972733cba4041b2da4f097ecdc9d450d593bd2475e9133a67b5e2e8d3f3
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: gawk-5.2.2-2.fc39.x86_64 1689800243 05aafdc4e381aaf577c6b9899fad35a47f60fa23acde96084f53d19beb782d7d
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: gdbm-libs-1:1.23-4.fc39.x86_64 1689800513 5d73a027bc3b0091386afdc1a51f1a7bf5a9f1e9d36b94a748298ce6818aafd2
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: gmp-1:6.2.1-5.fc39.x86_64 1689809616 b7a29ed1f07e5a3f8ff7e4b9ca7cde144842ef5e15410bc4fcd5176b26d7a913
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: gnutls-3.8.1-1.fc39.x86_64 1693213384 241db123e933e037a24c654729c6aa6edc2767e9e0f343644f025abe93f083a6
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: grep-3.11-3.fc39.x86_64 1689831837 01e5fc0d91e2216994b5aabdd1aa4625472326500690ea67d1ffe2e0f16a6b56
+DDEBUG:dnf:timer: transaction: 17746 ms
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: gzip-1.12-6.fc39.x86_64 1690979443 7144118328b5fd3568c314b588e6c9df6c5711035ddc9b383664e3091cc6b9d5
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: ima-evm-utils-1.5-2.fc39.x86_64 1689838322 8d07a47e8c5da1abf1382a00653cf0d329ddab300fa9855c954319b3064d75a4
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: json-c-0.17-1.fc39.x86_64 1691948280 357634dc46327c25804625bba4f4020f14aa096955915808893d3c09b47d98bf
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: keyutils-libs-1.6.1-7.fc39.x86_64 1689843334 de30d373ecc4075fdcabbf1a0e9493dd717320707d9bdfbe1251610d284fb8fe
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: libacl-2.3.1-8.fc39.x86_64 1689772285 702974e77543ceb2e69ed4486be452c25a1f246ee81eaa853e3f9e2c91fcb33c
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: libarchive-3.7.1-1.fc39.x86_64 1690802352 c80c75c64e6c5b214c334f1444edae10ee2a7499e0326c8446bdc316c605f89c
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: libassuan-2.5.6-2.fc39.x86_64 1689848905 b18e3a7d8a7114746dcab82265a0311c3517514d2ba5f3cd15dbff6cb221c5ed
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: libattr-2.5.1-8.fc39.x86_64 1689776087 18b75e78e0f35e9e7d162f02b4f8a3d6d7d1cefebab91aa378ab5131e77ae55a
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: libb2-0.98.1-9.fc39.x86_64 1689848967 f747db8cc7ddc4c45a4e07ee99bce2bf69efb36804330ded60521e6e86a9c9f2
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: libblkid-2.39.2-1.fc39.x86_64 1692269134 84779c8fba584a083c14f32c4062eae4e2138293920dc6b69ba1c9a990a2672b
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: libbrotli-1.1.0-1.fc39.x86_64 1694795190 9ddbbe835f4fb31bd4cde4c752a35d6e2dd6f485f8618e66084d28d18e632bb2
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: libcap-2.48-7.fc39.x86_64 1689849277 9f4e2d242c53604dc37208e812858bd501d12b71ea56fa89312380e4a39972ee
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: libcap-ng-0.8.3-8.fc39.x86_64 1693843074 6c5f811b61fac07139f26716f14d4c413270846215d069304a54bae633a8b0af
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: libcom_err-1.47.0-2.fc39.x86_64 1689790400 60a8e58868ab6d2c1146d2b22526d551dff7151b72f064206b8899f503199cd1
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: libcurl-8.2.1-3.fc39.x86_64 1697039060 a8d156539200726997fa515ae0fc6a9b0f3a64fbd3e407bc39307e16d444369b
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: libdb-5.3.28-56.fc39.x86_64 1689849928 3942e173cf0c80a325e056b1882c2b9150e91dc0b340f4d4f6e177e6356f767c
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: libdnf-0.72.0-1.fc39.x86_64 1697634179 baf5209dd52b41a0834da73d338877bb406860fb6d11cbd59e3ab04a29f93dae
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: libeconf-0.5.2-1.fc39.x86_64 1693261711 fef749faba37949b7e241f225efd372d0fd528218b1cec7c1fd8b1ca872503fb
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: libevent-2.1.12-9.fc39.x86_64 1689850605 35e18e6c6b7b70983be7b866401c961ee4a227c6ed2e8db33194eeed0d7c6188
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: libffi-3.4.4-4.fc39.x86_64 1689850697 7647100d549b97244c8d85c9e54711d2d9ecfaa01fd9c8ab206d9d08e8222221
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: libfsverity-1.4-10.fc39.x86_64 1689798821 b2934a0fc30a17f3c22c27cb77d6b9ac30a0e27986846bb9477f04364931e977
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: libgcrypt-1.10.2-2.fc39.x86_64 1689850923 cf529e4707071591a8385a6241926f5302c25e7bdbfba7d7b711a6138ca34d24
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: libgpg-error-1.47-2.fc39.x86_64 1689851346 80e0717d79910c07806a8fb171b1503312b1eb94aaa00db89f6ecac1b565d3e9
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: libidn2-2.3.4-3.fc39.x86_64 1689851738 5913b24cd01cebc836caa6586f1ab0eba1f77509b25b92180f95c0c806043e65
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: libksba-1.6.4-2.fc39.x86_64 1689852353 ae63d6e24cc5e1cd8a1181dbe37690c2879d5ff617ed2956ffe70dbc93245dea
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: libmodulemd-2.15.0-5.fc39.x86_64 1689852891 a9c51f1abeb793ef63b4b150380e9a079e1277991571b86a5c84b2a7fefdc236
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: libmount-2.39.2-1.fc39.x86_64 1692269134 24dec53eadf675c45c402491d9c9f4676c79c464425470bf982be56de5e954e3
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: libnsl2-2.0.0-6.fc39.x86_64 1689853448 12864baac4ff80c5ce384ede8772f458f227e6a3ff3055ffc37e9ce731c78b03
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: libpsl-0.21.2-4.fc39.x86_64 1689854175 13e3c508d51a9b7cc9a867103f72616c3f20e71703d23cfabb4775900a103017
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: libpwquality-1.4.5-6.fc39.x86_64 1689854199 ae91943c8ad70193355f46eb97090e690ed07a366b7475491431848d906bcc8d
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: librepo-1.17.0-1.fc39.x86_64 1697634042 f7671808e07b6e25e751f233f6dc9b46a5b72a3df5af4a7762e2c22f1b2487b1
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: libreport-filesystem-2.17.11-3.fc39.noarch 1689854656 16b9bdc7039d0f810a20a8488ed9879e2ee93b38a5a9fccf42dd6cd6ff01aae2
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: libselinux-3.5-5.fc39.x86_64 1689855185 784f70249e31f734e7c1975d455e14e6ff4fc3fd5efb8d943883ab74f3d29edf
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: libsemanage-3.5-4.fc39.x86_64 1689855272 b674f797cf2d8a70bdf64fdafdbc6597cd743e9678be416e3ef983945fa80fdf
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: libsepol-3.5-2.fc39.x86_64 1689855221 4017b5534b3a40ae669175c204770e454f2fec85fbdda8581c785ee63965525d
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: libsigsegv-2.14-5.fc39.x86_64 1689855387 ae36fde936d10df86229fa91397a7c4a28af28f98727b092616003b4fc476be0
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: libsmartcols-2.39.2-1.fc39.x86_64 1692269134 91720bd94bc6c953664bee3b743f502ed650fe984b33d2cd7de39cac3269c7a6
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: libssh-0.10.5-2.fc39.x86_64 1689855671 cf888cee15ed7a3a05551e2e591f2f745b13d6d79c94406f449e9775151887f1
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: libssh-config-0.10.5-2.fc39.noarch 1689855664 56fdcd24a191b145720e219cac607dbfeeb32ea9f6af2fbae0de01f4b572f557
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: libtasn1-4.19.0-3.fc39.x86_64 1689855851 6360f39fbde9ec7dbbe0bd6e93b6711dc0e8ad9e52b51346e92328d1234c869a
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: libunistring-1.1-5.fc39.x86_64 1692599790 307760fa6b7e3b8629b42d44a2f0648c6a115d44dd7df8675bdc1d741faa00d3
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: libuuid-2.39.2-1.fc39.x86_64 1692269134 bc79a7a58012711f0341f0d5ebd5a6dd8c39c2f0c1a594e56c9a8f3493084a35
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: libverto-0.3.2-6.fc39.x86_64 1689856575 69475bb36e14c99fce036f030d8b25d8de5f2f5ef835f2f00c969ea76f0cd26a
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: libxcrypt-4.4.36-2.fc39.x86_64 1689856957 0209377d13f4fc7bba04736adc692044145d1da0bb360f0a70fba48102d4a308
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: libxml2-2.10.4-3.fc39.x86_64 1689857051 018a97d0badb532421e32d31963bfed5efe066c9c5bc99118c8228ff7a87a63e
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: libyaml-0.2.5-12.fc39.x86_64 1690380235 7a2d14af95de99c89bd10bc0f904a40d508a69db03dd7731e0603cc22260f146
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: libzstd-1.5.5-4.fc39.x86_64 1690055959 bb4c974f4e0be72d0c04622bc84e6eb0a2584b79739844536843470f88677c3f
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: lua-libs-5.4.6-3.fc39.x86_64 1690898924 ad93dbdf80326ff3fcc1353ee1be8ea077dd9b0904579d3af42add9e2ae531d5
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: lz4-libs-1.9.4-4.fc39.x86_64 1689860537 888294066d03ddbbd6bab053bd97326dbfbd6aa385578223ef04b83a615e885f
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: mpdecimal-2.5.1-7.fc39.x86_64 1689869180 e6763efe12cb02912c77aa8259bcf9783eb4eb5c2a674de1e4dd274141953396
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: mpfr-4.2.0-3.fc39.x86_64 1689869461 20658d08ed33560f6027b60b05153a991d25d83118f1074f5151b78b51c706eb
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: ncurses-base-6.4-7.20230520.fc39.noarch 1692690929 0ab8567a70e710c0bb83a5c56677bf8d76ce68e53f88c5462f1e6c44b43533f3
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: ncurses-libs-6.4-7.20230520.fc39.x86_64 1692690982 1056e559b1d37b6c3c1e10ee52faa8d07ea90c3bb8e8941f0c0a79e8a1121533
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: nettle-3.9.1-2.fc39.x86_64 1689871334 28cf2aa0feb04fc6e9d443e20024e8ecbcba815d5a8166f915fd8884b4e03494
+DEBUG:dnf:Installed: alternatives-1.25-1.fc39.x86_64
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: npth-1.6-14.fc39.x86_64 1689872361 006769c1faafdf58f2b730ac871e41f2c5cad1873b62b1108ea3fe1dfe72dcc6
+DEBUG:dnf:Installed: audit-libs-3.1.2-4.fc39.x86_64
+DEBUG:dnf:Installed: authselect-1.4.3-1.fc39.x86_64
+DEBUG:dnf:Installed: authselect-libs-1.4.3-1.fc39.x86_64
+DEBUG:dnf:Installed: basesystem-11-18.fc39.noarch
+DEBUG:dnf:Installed: bash-5.2.15-5.fc39.x86_64
+DEBUG:dnf:Installed: bzip2-libs-1.0.8-16.fc39.x86_64
+DEBUG:dnf:Installed: ca-certificates-2023.2.60_v7.0.306-2.fc39.noarch
+DEBUG:dnf:Installed: coreutils-9.3-4.fc39.x86_64
+DEBUG:dnf:Installed: coreutils-common-9.3-4.fc39.x86_64
+DEBUG:dnf:Installed: cracklib-2.9.11-2.fc39.x86_64
+DEBUG:dnf:Installed: crypto-policies-20230731-1.git5ed06e0.fc39.noarch
+DEBUG:dnf:Installed: curl-8.2.1-3.fc39.x86_64
+DEBUG:dnf:Installed: cyrus-sasl-lib-2.1.28-11.fc39.x86_64
+DEBUG:dnf:Installed: dnf-4.18.1-1.fc39.noarch
+DEBUG:dnf:Installed: dnf-data-4.18.1-1.fc39.noarch
+DEBUG:dnf:Installed: elfutils-default-yama-scope-0.190-1.fc39.noarch
+DEBUG:dnf:Installed: elfutils-libelf-0.190-1.fc39.x86_64
+DEBUG:dnf:Installed: elfutils-libs-0.190-1.fc39.x86_64
+DEBUG:dnf:Installed: expat-2.5.0-3.fc39.x86_64
+DEBUG:dnf:Installed: fedora-gpg-keys-39-1.noarch
+DEBUG:dnf:Installed: fedora-release-common-39-30.noarch
+DEBUG:dnf:Installed: fedora-release-container-39-30.noarch
+DEBUG:dnf:Installed: fedora-release-identity-container-39-30.noarch
+DEBUG:dnf:Installed: fedora-repos-39-1.noarch
+DEBUG:dnf:Installed: file-libs-5.44-5.fc39.x86_64
+DEBUG:dnf:Installed: filesystem-3.18-6.fc39.x86_64
+DEBUG:dnf:Installed: findutils-1:4.9.0-5.fc39.x86_64
+DEBUG:dnf:Installed: gawk-5.2.2-2.fc39.x86_64
+DEBUG:dnf:Installed: gdbm-libs-1:1.23-4.fc39.x86_64
+DEBUG:dnf:Installed: glib2-2.78.1-1.fc39.x86_64
+DEBUG:dnf:Installed: glibc-2.38-10.fc39.x86_64
+DEBUG:dnf:Installed: glibc-common-2.38-10.fc39.x86_64
+DEBUG:dnf:Installed: glibc-minimal-langpack-2.38-10.fc39.x86_64
+DEBUG:dnf:Installed: gmp-1:6.2.1-5.fc39.x86_64
+DEBUG:dnf:Installed: gnupg2-2.4.3-3.fc39.x86_64
+DEBUG:dnf:Installed: gnutls-3.8.1-1.fc39.x86_64
+DEBUG:dnf:Installed: grep-3.11-3.fc39.x86_64
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: openldap-2.6.6-1.fc39.x86_64 1690851618 b21745cda1bbe9255f91f76b80bd4f2664ec51d348b741ecc5073904e024369e
+DEBUG:dnf:Installed: gzip-1.12-6.fc39.x86_64
+DEBUG:dnf:Installed: ima-evm-utils-1.5-2.fc39.x86_64
+DEBUG:dnf:Installed: json-c-0.17-1.fc39.x86_64
+DEBUG:dnf:Installed: keyutils-libs-1.6.1-7.fc39.x86_64
+DEBUG:dnf:Installed: krb5-libs-1.21.2-2.fc39.x86_64
+DEBUG:dnf:Installed: libacl-2.3.1-8.fc39.x86_64
+DEBUG:dnf:Installed: libarchive-3.7.1-1.fc39.x86_64
+DEBUG:dnf:Installed: libassuan-2.5.6-2.fc39.x86_64
+DEBUG:dnf:Installed: libattr-2.5.1-8.fc39.x86_64
+DEBUG:dnf:Installed: libb2-0.98.1-9.fc39.x86_64
+DEBUG:dnf:Installed: libblkid-2.39.2-1.fc39.x86_64
+DEBUG:dnf:Installed: libbrotli-1.1.0-1.fc39.x86_64
+DEBUG:dnf:Installed: libcap-2.48-7.fc39.x86_64
+DEBUG:dnf:Installed: libcap-ng-0.8.3-8.fc39.x86_64
+DEBUG:dnf:Installed: libcom_err-1.47.0-2.fc39.x86_64
+DEBUG:dnf:Installed: libcomps-0.1.20-1.fc39.x86_64
+DEBUG:dnf:Installed: libcurl-8.2.1-3.fc39.x86_64
+DEBUG:dnf:Installed: libdb-5.3.28-56.fc39.x86_64
+DEBUG:dnf:Installed: libdnf-0.72.0-1.fc39.x86_64
+DEBUG:dnf:Installed: libeconf-0.5.2-1.fc39.x86_64
+DEBUG:dnf:Installed: libevent-2.1.12-9.fc39.x86_64
+DEBUG:dnf:Installed: libffi-3.4.4-4.fc39.x86_64
+DEBUG:dnf:Installed: libfsverity-1.4-10.fc39.x86_64
+DEBUG:dnf:Installed: libgcc-13.2.1-4.fc39.x86_64
+DEBUG:dnf:Installed: libgcrypt-1.10.2-2.fc39.x86_64
+DEBUG:dnf:Installed: libgomp-13.2.1-4.fc39.x86_64
+DEBUG:dnf:Installed: libgpg-error-1.47-2.fc39.x86_64
+DEBUG:dnf:Installed: libidn2-2.3.4-3.fc39.x86_64
+DEBUG:dnf:Installed: libksba-1.6.4-2.fc39.x86_64
+DEBUG:dnf:Installed: libmodulemd-2.15.0-5.fc39.x86_64
+DEBUG:dnf:Installed: libmount-2.39.2-1.fc39.x86_64
+DEBUG:dnf:Installed: libnghttp2-1.55.1-4.fc39.x86_64
+DEBUG:dnf:Installed: libnsl2-2.0.0-6.fc39.x86_64
+DEBUG:dnf:Installed: libpsl-0.21.2-4.fc39.x86_64
+DEBUG:dnf:Installed: libpwquality-1.4.5-6.fc39.x86_64
+DEBUG:dnf:Installed: librepo-1.17.0-1.fc39.x86_64
+DEBUG:dnf:Installed: libreport-filesystem-2.17.11-3.fc39.noarch
+DEBUG:dnf:Installed: libselinux-3.5-5.fc39.x86_64
+DEBUG:dnf:Installed: libsemanage-3.5-4.fc39.x86_64
+DEBUG:dnf:Installed: libsepol-3.5-2.fc39.x86_64
+DEBUG:dnf:Installed: libsigsegv-2.14-5.fc39.x86_64
+DEBUG:dnf:Installed: libsmartcols-2.39.2-1.fc39.x86_64
+DEBUG:dnf:Installed: libsolv-0.7.25-1.fc39.x86_64
+DEBUG:dnf:Installed: libssh-0.10.5-2.fc39.x86_64
+DEBUG:dnf:Installed: libssh-config-0.10.5-2.fc39.noarch
+DEBUG:dnf:Installed: libstdc++-13.2.1-4.fc39.x86_64
+DEBUG:dnf:Installed: libtasn1-4.19.0-3.fc39.x86_64
+DEBUG:dnf:Installed: libtirpc-1.3.4-0.fc39.x86_64
+DEBUG:dnf:Installed: libunistring-1.1-5.fc39.x86_64
+DEBUG:dnf:Installed: libuuid-2.39.2-1.fc39.x86_64
+DEBUG:dnf:Installed: libverto-0.3.2-6.fc39.x86_64
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: openssl-libs-1:3.1.1-4.fc39.x86_64 1693497748 8c775832646c44adcc8d629008e0a0c22f49d6553c2c45dfa8705a90a1679334
+DEBUG:dnf:Installed: libxcrypt-4.4.36-2.fc39.x86_64
+DEBUG:dnf:Installed: libxml2-2.10.4-3.fc39.x86_64
+DEBUG:dnf:Installed: libyaml-0.2.5-12.fc39.x86_64
+DEBUG:dnf:Installed: libzstd-1.5.5-4.fc39.x86_64
+DEBUG:dnf:Installed: lua-libs-5.4.6-3.fc39.x86_64
+DEBUG:dnf:Installed: lz4-libs-1.9.4-4.fc39.x86_64
+DEBUG:dnf:Installed: mpdecimal-2.5.1-7.fc39.x86_64
+DEBUG:dnf:Installed: mpfr-4.2.0-3.fc39.x86_64
+DEBUG:dnf:Installed: ncurses-base-6.4-7.20230520.fc39.noarch
+DEBUG:dnf:Installed: ncurses-libs-6.4-7.20230520.fc39.x86_64
+DEBUG:dnf:Installed: nettle-3.9.1-2.fc39.x86_64
+DEBUG:dnf:Installed: npth-1.6-14.fc39.x86_64
+DEBUG:dnf:Installed: openldap-2.6.6-1.fc39.x86_64
+DEBUG:dnf:Installed: openssl-libs-1:3.1.1-4.fc39.x86_64
+DEBUG:dnf:Installed: p11-kit-0.25.2-1.fc39.x86_64
+DEBUG:dnf:Installed: p11-kit-trust-0.25.2-1.fc39.x86_64
+DEBUG:dnf:Installed: pam-1.5.3-3.fc39.x86_64
+DEBUG:dnf:Installed: pam-libs-1.5.3-3.fc39.x86_64
+DEBUG:dnf:Installed: pcre2-10.42-1.fc39.2.x86_64
+DEBUG:dnf:Installed: pcre2-syntax-10.42-1.fc39.2.noarch
+DEBUG:dnf:Installed: popt-1.19-3.fc39.x86_64
+DEBUG:dnf:Installed: publicsuffix-list-dafsa-20230812-1.fc39.noarch
+DEBUG:dnf:Installed: python-pip-wheel-23.2.1-1.fc39.noarch
+DEBUG:dnf:Installed: python3-3.12.0-1.fc39.x86_64
+DEBUG:dnf:Installed: python3-dnf-4.18.1-1.fc39.noarch
+DEBUG:dnf:Installed: python3-hawkey-0.72.0-1.fc39.x86_64
+DEBUG:dnf:Installed: python3-libcomps-0.1.20-1.fc39.x86_64
+DEBUG:dnf:Installed: python3-libdnf-0.72.0-1.fc39.x86_64
+DEBUG:dnf:Installed: python3-libs-3.12.0-1.fc39.x86_64
+DEBUG:dnf:Installed: python3-rpm-4.19.0-1.fc39.x86_64
+DEBUG:dnf:Installed: readline-8.2-4.fc39.x86_64
+DEBUG:dnf:Installed: rootfiles-8.1-34.fc39.noarch
+DEBUG:dnf:Installed: rpm-4.19.0-1.fc39.x86_64
+DEBUG:dnf:Installed: rpm-build-libs-4.19.0-1.fc39.x86_64
+DEBUG:dnf:Installed: rpm-libs-4.19.0-1.fc39.x86_64
+DEBUG:dnf:Installed: rpm-sequoia-1.5.0-1.fc39.x86_64
+DEBUG:dnf:Installed: rpm-sign-libs-4.19.0-1.fc39.x86_64
+DEBUG:dnf:Installed: sed-4.8-14.fc39.x86_64
+DEBUG:dnf:Installed: setup-2.14.4-1.fc39.noarch
+DEBUG:dnf:Installed: shadow-utils-2:4.14.0-2.fc39.x86_64
+DEBUG:dnf:Installed: sqlite-libs-3.42.0-7.fc39.x86_64
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: pcre2-10.42-1.fc39.2.x86_64 1689880865 d8db7cf62c374e0c50f61e8b22c4c1067979efe1515ef35a7290c609cce4ec19
+DEBUG:dnf:Installed: sudo-1.9.14-1.p3.fc39.x86_64
+DEBUG:dnf:Installed: systemd-libs-254.5-2.fc39.x86_64
+DEBUG:dnf:Installed: tar-2:1.35-2.fc39.x86_64
+DEBUG:dnf:Installed: tpm2-tss-4.0.1-4.fc39.x86_64
+DEBUG:dnf:Installed: tzdata-2023c-2.fc39.noarch
+DEBUG:dnf:Installed: util-linux-core-2.39.2-1.fc39.x86_64
+DEBUG:dnf:Installed: vim-data-2:9.0.2081-1.fc39.noarch
+DEBUG:dnf:Installed: vim-minimal-2:9.0.2081-1.fc39.x86_64
+DEBUG:dnf:Installed: xz-libs-5.4.4-1.fc39.x86_64
+DEBUG:dnf:Installed: yum-4.18.1-1.fc39.noarch
+DEBUG:dnf:Installed: zchunk-libs-1.3.2-1.fc39.x86_64
+DEBUG:dnf:Installed: zlib-1.2.13-4.fc39.x86_64
+DEBUG:anaconda.modules.payloads.payload.dnf.dnf_manager:The transaction has ended.
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: pcre2-syntax-10.42-1.fc39.2.noarch 1689880856 4e0009aaf790fd0522ecff87c2d718ba7637a3dcbbaf46498f6c22ac764bb729
+DDEBUG:dnf:Cleaning up.
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: popt-1.19-3.fc39.x86_64 1689919991 e6e8216e2d1d8b0b758a00922df1d9c78dc4704ebbe9def575a76bebab7831da
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: publicsuffix-list-dafsa-20230812-1.fc39.noarch 1692137180 765070eb8657856f08de7ed748e25906197b207b90cbcb6c5ef9e18727b1336c
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/libblkid-2.39.2-1.fc39.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/util-linux-core-2.39.2-1.fc39.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/setup-2.14.4-1.fc39.noarch.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/gdbm-libs-1.23-4.fc39.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/tpm2-tss-4.0.1-4.fc39.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/tzdata-2023c-2.fc39.noarch.rpm removed
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: python-pip-wheel-23.2.1-1.fc39.noarch 1691403876 a2d3748756eabb15474e7d5367e283272916c5ed3824ecc4a49bd8c58411517b
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/libidn2-2.3.4-3.fc39.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/libdnf-0.72.0-1.fc39.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/npth-1.6-14.fc39.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/libacl-2.3.1-8.fc39.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/libpsl-0.21.2-4.fc39.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/libverto-0.3.2-6.fc39.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/rootfiles-8.1-34.fc39.noarch.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/libgcc-13.2.1-4.fc39.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/gzip-1.12-6.fc39.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/libcurl-8.2.1-3.fc39.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/json-c-0.17-1.fc39.x86_64.rpm removed
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: python3-3.12.0-1.fc39.x86_64 1696274574 243fde015b695169a95c14573a813f079a2309dc1cc803bcb103ed07329dad8b
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/libunistring-1.1-5.fc39.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/libuuid-2.39.2-1.fc39.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/coreutils-common-9.3-4.fc39.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/findutils-4.9.0-5.fc39.x86_64.rpm removed
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: python3-hawkey-0.72.0-1.fc39.x86_64 1697634179 f88de6e6a4ca19ae64fe525cfba16c54ad1253c9a87240d900cd7e736ddfe1c3
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/glib2-2.78.1-1.fc39.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/libevent-2.1.12-9.fc39.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/basesystem-11-18.fc39.noarch.rpm removed
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: python3-libdnf-0.72.0-1.fc39.x86_64 1697634179 456ce662ae96184009213a6d839cf5dde3b4e757320240d93bb5ef43a52d7cb0
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/gawk-5.2.2-2.fc39.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/libssh-config-0.10.5-2.fc39.noarch.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/ncurses-base-6.4-7.20230520.fc39.noarch.rpm removed
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: python3-libs-3.12.0-1.fc39.x86_64 1696274574 9becb544afbac08063b5d0ebc6da0f8fe5248078c6037d480f0e7217ddcc069a
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/openssl-libs-3.1.1-4.fc39.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/pcre2-10.42-1.fc39.2.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/librepo-1.17.0-1.fc39.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/libssh-0.10.5-2.fc39.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/mpfr-4.2.0-3.fc39.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/fedora-release-common-39-30.noarch.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/libmount-2.39.2-1.fc39.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/libsmartcols-2.39.2-1.fc39.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/gmp-6.2.1-5.fc39.x86_64.rpm removed
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: python3-rpm-4.19.0-1.fc39.x86_64 1695128532 dae201e0ed12b1ddfff895e0365396a0f59f40b9233b233641fdc6545dced47f
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/shadow-utils-4.14.0-2.fc39.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/mpdecimal-2.5.1-7.fc39.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/popt-1.19-3.fc39.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/p11-kit-trust-0.25.2-1.fc39.x86_64.rpm removed
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: readline-8.2-4.fc39.x86_64 1689959142 c976b55c7772957201537d157d78254415619de938a11e0aac661a1a478f0bfa
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/krb5-libs-1.21.2-2.fc39.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/libcom_err-1.47.0-2.fc39.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/libnghttp2-1.55.1-4.fc39.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/grep-3.11-3.fc39.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/libsepol-3.5-2.fc39.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/yum-4.18.1-1.fc39.noarch.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/libpwquality-1.4.5-6.fc39.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/libsolv-0.7.25-1.fc39.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/pcre2-syntax-10.42-1.fc39.2.noarch.rpm removed
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: rootfiles-8.1-34.fc39.noarch 1689959809 7724e5b3ae3111a74e6b4521748e34e08b54edccb7a0189b67fdc28acf93ec39
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/python-pip-wheel-23.2.1-1.fc39.noarch.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/vim-data-9.0.2081-1.fc39.noarch.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/xz-libs-5.4.4-1.fc39.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/p11-kit-0.25.2-1.fc39.x86_64.rpm removed
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: rpm-4.19.0-1.fc39.x86_64 1695128532 ed8a5a1c4500cb507b87cab1f2cad07d0760205a8cff5fecc8939e88108291e4
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/sudo-1.9.14-1.p3.fc39.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/libgcrypt-1.10.2-2.fc39.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/libfsverity-1.4-10.fc39.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/filesystem-3.18-6.fc39.x86_64.rpm removed
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: rpm-build-libs-4.19.0-1.fc39.x86_64 1695128532 1ffd637afbfba149fb474d9db26c922aeeca8252a995ccce1d7ef265f7470015
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/openldap-2.6.6-1.fc39.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/zchunk-libs-1.3.2-1.fc39.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/libyaml-0.2.5-12.fc39.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/libsigsegv-2.14-5.fc39.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/python3-dnf-4.18.1-1.fc39.noarch.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/gnupg2-2.4.3-3.fc39.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/ima-evm-utils-1.5-2.fc39.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/elfutils-default-yama-scope-0.190-1.fc39.noarch.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/libcomps-0.1.20-1.fc39.x86_64.rpm removed
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: rpm-libs-4.19.0-1.fc39.x86_64 1695128532 7a5fd078c774fa40df400bab6bce2b518960698a106e8576597e9aa638e8b877
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/glibc-minimal-langpack-2.38-10.fc39.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/expat-2.5.0-3.fc39.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/rpm-sign-libs-4.19.0-1.fc39.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/libreport-filesystem-2.17.11-3.fc39.noarch.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/libtirpc-1.3.4-0.fc39.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/elfutils-libs-0.190-1.fc39.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/nettle-3.9.1-2.fc39.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/fedora-release-container-39-30.noarch.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/coreutils-9.3-4.fc39.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/python3-hawkey-0.72.0-1.fc39.x86_64.rpm removed
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: rpm-sequoia-1.5.0-1.fc39.x86_64 1693344413 852752794af3df6d4223ad2c7c7f4245f549eb28acb377655944629f23461c4c
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/glibc-common-2.38-10.fc39.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/bzip2-libs-1.0.8-16.fc39.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/elfutils-libelf-0.190-1.fc39.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/curl-8.2.1-3.fc39.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/libksba-1.6.4-2.fc39.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/vim-minimal-9.0.2081-1.fc39.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/sqlite-libs-3.42.0-7.fc39.x86_64.rpm removed
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: rpm-sign-libs-4.19.0-1.fc39.x86_64 1695128532 b32c4f1643ce05be2a319c39edef087076b6403b312ad6bcab11ccbfe2977dc0
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/pam-1.5.3-3.fc39.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/python3-libdnf-0.72.0-1.fc39.x86_64.rpm removed
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: sed-4.8-14.fc39.x86_64 1689989426 befe59e70e87d208f1c3f2af833e2a779c3ab519a091a5913616ed22a68de5d5
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/bash-5.2.15-5.fc39.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/rpm-4.19.0-1.fc39.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/authselect-1.4.3-1.fc39.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/readline-8.2-4.fc39.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/fedora-gpg-keys-39-1.noarch.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/libxcrypt-4.4.36-2.fc39.x86_64.rpm removed
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: setup-2.14.4-1.fc39.noarch 1690369653 a1ada1e96dce04f7529fe28bbaac904d611cc118a41db9f202ebeecb949887f1
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/libgomp-13.2.1-4.fc39.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/libarchive-3.7.1-1.fc39.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/fedora-release-identity-container-39-30.noarch.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/python3-libcomps-0.1.20-1.fc39.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/publicsuffix-list-dafsa-20230812-1.fc39.noarch.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/libmodulemd-2.15.0-5.fc39.x86_64.rpm removed
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: sqlite-libs-3.42.0-7.fc39.x86_64 1689992975 16d59fb0e30c2f386719890837f3faa8acf3f9680ceac51a0d17772259bd5a71
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/audit-libs-3.1.2-4.fc39.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/libattr-2.5.1-8.fc39.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/libffi-3.4.4-4.fc39.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/libdb-5.3.28-56.fc39.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/keyutils-libs-1.6.1-7.fc39.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/rpm-sequoia-1.5.0-1.fc39.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/pam-libs-1.5.3-3.fc39.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/ncurses-libs-6.4-7.20230520.fc39.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/libsemanage-3.5-4.fc39.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/cracklib-2.9.11-2.fc39.x86_64.rpm removed
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: sudo-1.9.14-1.p3.fc39.x86_64 1690361571 5c38e77d2ba44fb261569ce3a3eef77441b376977b366f409562b0f9e2565841
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/alternatives-1.25-1.fc39.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/ca-certificates-2023.2.60_v7.0.306-2.fc39.noarch.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/libstdc++-13.2.1-4.fc39.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/libeconf-0.5.2-1.fc39.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/zlib-1.2.13-4.fc39.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/cyrus-sasl-lib-2.1.28-11.fc39.x86_64.rpm removed
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: systemd-libs-254.5-2.fc39.x86_64 1695831509 dc480941cec22360f469a5d4deba5a6c384570055f60f2f63b50656ad271bdc9
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/dnf-4.18.1-1.fc39.noarch.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/python3-3.12.0-1.fc39.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/libselinux-3.5-5.fc39.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/libcap-ng-0.8.3-8.fc39.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/libassuan-2.5.6-2.fc39.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/python3-rpm-4.19.0-1.fc39.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/sed-4.8-14.fc39.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/dnf-data-4.18.1-1.fc39.noarch.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/authselect-libs-1.4.3-1.fc39.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/fedora-repos-39-1.noarch.rpm removed
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: tar-2:1.35-2.fc39.x86_64 1692107989 f47bbf51adaf58153a321f1d20e554831c02924fa8ea44be20af3918caff5ec0
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/libgpg-error-1.47-2.fc39.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/libnsl2-2.0.0-6.fc39.x86_64.rpm removed
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: tpm2-tss-4.0.1-4.fc39.x86_64 1690044412 d513fdf4d1b03270ade20ef836e30279d063875b12934d893f569fdcc82f985b
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: tzdata-2023c-2.fc39.noarch 1690045307 031ada654168f523bac80f25030a82d59935a219b8d5884e454d4ad2419c0eb0
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/python3-libs-3.12.0-1.fc39.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/systemd-libs-254.5-2.fc39.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/lz4-libs-1.9.4-4.fc39.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/libzstd-1.5.5-4.fc39.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/libbrotli-1.1.0-1.fc39.x86_64.rpm removed
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: util-linux-core-2.39.2-1.fc39.x86_64 1692269134 806e1315a9888f66d428b1f08d3134f1145e7e702db4c7e86c7a9ab4119b2a68
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/glibc-2.38-10.fc39.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/rpm-libs-4.19.0-1.fc39.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/file-libs-5.44-5.fc39.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/rpm-build-libs-4.19.0-1.fc39.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/lua-libs-5.4.6-3.fc39.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/libxml2-2.10.4-3.fc39.x86_64.rpm removed
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: xz-libs-5.4.4-1.fc39.x86_64 1690992258 4baf99c1d3629f655349aa3ef442ba9e815ef694f18828d3dc13c9c725486eca
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/crypto-policies-20230731-1.git5ed06e0.fc39.noarch.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/gnutls-3.8.1-1.fc39.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/tar-1.35-2.fc39.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/libb2-0.98.1-9.fc39.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/libtasn1-4.19.0-3.fc39.x86_64.rpm removed
+DDEBUG:dnf:/mnt/sysroot/tmp/dnf.package.cache/libcap-2.48-7.fc39.x86_64.rpm removed
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: zlib-1.2.13-4.fc39.x86_64 1690055842 d049c9b207124493ba08fda0c7686524875dbfa278a120dc944a6a157703ca63
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: dnf-4.18.1-1.fc39.noarch 1699347386 c5bd31fc98e6e55d4b74672ca1b8ce7af9aa2d3457b5cef32c422cd83ad4a34f
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: dnf-data-4.18.1-1.fc39.noarch 1699347386 9ecf50d5bae2e1a6eaa885cfcbd9ae4f751defa2f2fe13fee0ed0634b5493c87
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: elfutils-default-yama-scope-0.190-1.fc39.noarch 1699048392 fb92bda47682cb054ab9c893c45ef03b77ef1f9615d75ab1c845f0ddd8631f74
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: elfutils-libelf-0.190-1.fc39.x86_64 1699048397 a8fd938670f641db20b85322d2732e1feb25b4a72543f4bc88a283e96998c5d3
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: elfutils-libs-0.190-1.fc39.x86_64 1699048397 65512b92b023ab0d9675160231aec6da3242dcc6f6800a72d91a27806aebd23e
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: glib2-2.78.1-1.fc39.x86_64 1698337632 cd90ee7dc1c55969b38674f4af937b2332cccaaa473134da89b2ee0df2aa88d6
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: glibc-2.38-10.fc39.x86_64 1698445690 ed83ae33f19b011b0462f6af3b6cc650579c40ad47bc01e12e101e50fd17577a
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: glibc-common-2.38-10.fc39.x86_64 1698445690 ed8c04494840c51c30bf84f55fd1382c7a2b76de49e2e68f86f0c7e18d6c0f95
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: glibc-minimal-langpack-2.38-10.fc39.x86_64 1698445690 068c87aa7e223b815b4f3bc5aa9a0bdaa092dc7d34fe1a4688fb30e2d3549e30
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: gnupg2-2.4.3-3.fc39.x86_64 1699308546 94f4db0cda9b3b96526b5fa66272be17f9f83395993c9d3435e978cb6f6f697e
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: krb5-libs-1.21.2-2.fc39.x86_64 1697472778 fb419aa83d3704c512bc7ff86d516d335f0735aafba73ff39c59a291bad652d0
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: libcomps-0.1.20-1.fc39.x86_64 1696500503 6ee4c4cc4a7a9e15216251be851c93f5b5eb8bb08bad5c82da16176e19e5b209
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: libgcc-13.2.1-4.fc39.x86_64 1697013499 f6bf4df8d570cadcb2783bbda13e19532709bb85db13c20448cc7fb69145ddb0
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: libgomp-13.2.1-4.fc39.x86_64 1697013499 f6beb8f944b8c3b7fb3b59f6f1aada310ae388f62a8d61060dc0d51f7b6b46ed
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: libnghttp2-1.55.1-4.fc39.x86_64 1697110809 536ad615979060a3889abe68b16a96ebea395d663a12657a787b2c620b4cd403
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: libsolv-0.7.25-1.fc39.x86_64 1696317315 bc8b357827d405f47e80f217043c75b0275295dcce73523a4417183e52074928
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: libstdc++-13.2.1-4.fc39.x86_64 1697013499 7be17699d26f0f5c5467684b418b1cb1748b14fb6b4b91758f6e49d56c46d37e
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: libtirpc-1.3.4-0.fc39.x86_64 1696677191 9d8cb4d86df97240a0ea2f931271b97192e7271cb1dd82e5ff255bca6cfa61ed
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: p11-kit-0.25.2-1.fc39.x86_64 1698754551 74fc82d43a44ea09118ef2cf740cf184064dc9c285befe9090744104c10f48bc
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: p11-kit-trust-0.25.2-1.fc39.x86_64 1698754551 6122396a91e1cb215dd46656a80066701858d992839ad54ee6ee78c6b0d0147a
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: pam-1.5.3-3.fc39.x86_64 1697784292 05e63043d8db28210174124ab36277ac7afd9226b47e27e9bc2263154acf2e71
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: pam-libs-1.5.3-3.fc39.x86_64 1697784292 82146dd6c56ec8cfcd0e588464512b615d240b96db85458c1e22a24f3305b7b6
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: python3-dnf-4.18.1-1.fc39.noarch 1699347386 0777678588a829017c0ec5461b089527aee16a1da8e3c2887bd06e95ce23850d
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: python3-libcomps-0.1.20-1.fc39.x86_64 1696500503 9963ef4ea604aeae28ec048ce57c730a28f9018c346c7a756295ae5417d93ead
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: shadow-utils-2:4.14.0-2.fc39.x86_64 1696321808 c05df5bf22e91f85cccdda1b6c4480a53690a374d3a6981bf88950446f4313db
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: vim-data-2:9.0.2081-1.fc39.noarch 1698852138 87db48a5dcc8ad72c19a3bc1784dedde3b76403bf177960eb0a516a5fbd14552
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: vim-minimal-2:9.0.2081-1.fc39.x86_64 1698852209 5e42aae8c2cba50fcde252161b45280764cfe8cbb0a2592350d5050e4b006d74
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: yum-4.18.1-1.fc39.noarch 1699347386 96957f44006eab3b7b7a8549329d52a1caf64105551d6ffd32662289f3a1b68d
+INFO:anaconda.modules.payloads.payload.dnf.transaction_progress:Verifying: zchunk-libs-1.3.2-1.fc39.x86_64 1696533302 cfffef279347707f7f23472a7c09c95322bd03a7d60e707f49776d56226adfe8
+DEBUG:anaconda.modules.payloads.payload.dnf.dnf_manager:The transaction process exited with 0.
+INFO:anaconda.core.threads:Thread Done: AnaTaskThread-InstallPackagesTask-1 (140066167301824)
+DEBUG:anaconda.modules.payloads.payload.payload_base:The kernel version list is set to: []
+INFO:anaconda.core.threads:Running Thread: AnaTaskThread-CleanUpDownloadLocationTask-1 (140066167301824)
+INFO:anaconda.modules.common.task.task:Remove downloaded packages
+INFO:anaconda.modules.payloads.payload.dnf.installation:Removing downloaded packages from /mnt/sysroot/tmp/dnf.package.cache.
+INFO:anaconda.core.threads:Thread Done: AnaTaskThread-CleanUpDownloadLocationTask-1 (140066167301824)
+DEBUG:dasbus.connection:Publishing an object at /org/fedoraproject/Anaconda/Modules/Payloads/Task/11.
+DEBUG:dasbus.connection:Publishing an object at /org/fedoraproject/Anaconda/Modules/Payloads/Task/12.
+DEBUG:dasbus.connection:Publishing an object at /org/fedoraproject/Anaconda/Modules/Payloads/Task/13.
+DEBUG:dasbus.connection:Publishing an object at /org/fedoraproject/Anaconda/Modules/Payloads/Task/14.
+DEBUG:dasbus.connection:Publishing an object at /org/fedoraproject/Anaconda/Modules/Payloads/Task/15.
+INFO:anaconda.core.threads:Running Thread: AnaTaskThread-CopyDriverDisksFilesTask-1 (140066167301824)
+INFO:anaconda.modules.common.task.task:Copy driver disks files
+INFO:anaconda.core.threads:Thread Done: AnaTaskThread-CopyDriverDisksFilesTask-1 (140066167301824)
+INFO:anaconda.core.threads:Running Thread: AnaTaskThread-WriteRepositoriesTask-1 (140066167301824)
+INFO:anaconda.modules.common.task.task:Write repositories
+DEBUG:anaconda.modules.payloads.payload.dnf.installation:Installation of the repository is not allowed.
+DEBUG:anaconda.modules.payloads.payload.dnf.installation:Couldn't write koji-override-0.repo to the target system.
+DEBUG:anaconda.modules.payloads.payload.dnf.installation:Installation of the repository is not allowed.
+DEBUG:anaconda.modules.payloads.payload.dnf.installation:Couldn't write koji-override-1.repo to the target system.
+INFO:anaconda.core.threads:Thread Done: AnaTaskThread-WriteRepositoriesTask-1 (140066167301824)
+INFO:anaconda.core.threads:Running Thread: AnaTaskThread-ImportRPMKeysTask-1 (140066167301824)
+INFO:anaconda.modules.common.task.task:Import RPM keys
+INFO:program:Running... uname -i
+INFO:program:unknown
+DEBUG:program:Return code: 0
+INFO:anaconda.modules.payloads.payload.dnf.installation:Importing GPG key to RPM database: /etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-39-unknown
+INFO:program:Running in chroot '/mnt/sysroot'... rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-39-unknown
+INFO:program:error: /etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-39-unknown: import read failed(2).
+DEBUG:program:Return code: 1
+ERROR:anaconda.modules.payloads.payload.dnf.installation:Failed to import the GPG key.
+INFO:anaconda.core.threads:Thread Done: AnaTaskThread-ImportRPMKeysTask-1 (140066167301824)
+INFO:anaconda.core.threads:Running Thread: AnaTaskThread-UpdateDNFConfigurationTask-1 (140066167301824)
+INFO:anaconda.modules.common.task.task:Update DNF configuration
+INFO:anaconda.core.threads:Thread Done: AnaTaskThread-UpdateDNFConfigurationTask-1 (140066167301824)
+INFO:anaconda.core.threads:Running Thread: AnaTaskThread-ResetDNFManagerTask-1 (140066167301824)
+INFO:anaconda.modules.common.task.task:Reset the DNF manager
+DDEBUG:dnf:Cleaning up.
+INFO:dnf:The downloaded packages were saved in cache until the next successful transaction.
+INFO:dnf:You can remove cached packages by executing 'dnf clean packages'.
+DEBUG:anaconda.modules.payloads.payload.dnf.dnf_manager:The DNF base has been reset.
+INFO:anaconda.core.threads:Thread Done: AnaTaskThread-ResetDNFManagerTask-1 (140066167301824)
+DEBUG:anaconda.modules.common.base.base:Generating kickstart...

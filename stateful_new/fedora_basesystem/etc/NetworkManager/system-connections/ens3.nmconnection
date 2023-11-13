@@ -1,0 +1,16 @@
+[connection]
+id=ens3
+uuid=193ae196-55fe-4705-99a8-3b623372a699
+type=ethernet
+interface-name=ens3
+
+[ethernet]
+
+[ipv4]
+method=auto
+
+[ipv6]
+addr-gen-mode=eui64
+method=auto
+
+[proxy]

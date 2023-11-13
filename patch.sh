@@ -5,8 +5,10 @@ SCRIPT_DIR=$(dirname "$0")
 SCRIPT_DIR=${SCRIPT_DIR:-"."}
 . "$SCRIPT_DIR/lib/wax_common.sh"
 
+echo
 cat logo.txt
-echo "Dollar Store Shim OS™ Builder"
+echo "  Dollar Store Shim OS™ Builder"
+echo
 
 set -e
 if [ "$EUID" -ne 0 ]; then
@@ -42,7 +44,7 @@ mount "${ROOTA}" rootmnt
 
 sleep 2 # arbitrary sleep for fun :trolllaugh:
 echo "[*] Copying Bootloader..."
-rsync -avh --progress ./rootpatches/* rootmnt # this *should* merge the new files into the rootfs.
+rsync -avh --progress ./root_new/* rootmnt # this *should* merge the new files into the rootfs.
 
 echo "[*] Mounting stateful partition"
 mkdir -p statefulmnt
@@ -51,6 +53,9 @@ mount "${STATE}" statefulmnt
 sleep 2 # yet another arbitrary sleep for fun :madTrolley:
 echo "[*] Preparing stateful partition..."
 rm -rf statefulmnt/cros_payloads
+
+echo "[*] Copying base system..."
+rsync -avh --progress ./stateful_new/* statefulmnt
 
 sleep 3 # ok maybe not so arbitrary this time
 echo "[*] Cleaning up..."

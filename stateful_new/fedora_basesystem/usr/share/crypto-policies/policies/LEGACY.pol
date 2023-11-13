@@ -1,0 +1,79 @@
+# Provides settings for ensuring maximum compatibility with legacy systems.
+# This policy is less secure and intended to be a easy way to switch system
+# to be compatible with older systems.
+# It should provide at least 64-bit security, include 3DES, but exclude RC4.
+
+# MACs: all HMAC with SHA1 or better + all modern MACs (Poly1305 etc)
+# Curves: all prime >= 255 bits (including Bernstein curves)
+# Signature algorithms: with SHA-1 hash or better (DSA allowed)
+# TLS Ciphers: all available > 112-bit key, >= 128-bit block
+# (including 3DES, excluding RC4)
+# non-TLS Ciphers: as TLS Ciphers with added Camellia
+# key exchange: ECDHE, RSA, DHE
+# DH params size: >= 1024
+# RSA params size: >= 1024
+# DSA params size: >= 1024
+# TLS protocols: TLS >= 1.0 DTLS >= 1.0
+
+mac = AEAD HMAC-SHA2-256 HMAC-SHA1 UMAC-128 HMAC-SHA2-384 HMAC-SHA2-512
+mac@Kerberos = HMAC-SHA2-384 HMAC-SHA2-256 AEAD UMAC-128 HMAC-SHA2-512 HMAC-SHA1
+
+group = X25519 SECP256R1 X448 SECP521R1 SECP384R1 \
+        FFDHE-2048 FFDHE-3072 FFDHE-4096 FFDHE-6144 FFDHE-8192 FFDHE-1536
+
+group@SSH = FFDHE-1024+
+
+hash = SHA2-256 SHA2-384 SHA2-512 SHA3-256 SHA3-384 SHA3-512 SHA2-224 SHA3-224 \
+       SHAKE-256 SHAKE-128 SHA1
+
+sign = ECDSA-SHA3-256 ECDSA-SHA2-256 ECDSA-SHA2-256-FIDO \
+       ECDSA-SHA3-384 ECDSA-SHA2-384 \
+       ECDSA-SHA3-512 ECDSA-SHA2-512 \
+       EDDSA-ED25519 EDDSA-ED25519-FIDO EDDSA-ED448 \
+       RSA-PSS-SHA3-256 RSA-PSS-SHA2-256 \
+       RSA-PSS-SHA3-384 RSA-PSS-SHA2-384 \
+       RSA-PSS-SHA3-512 RSA-PSS-SHA2-512 \
+       RSA-PSS-RSAE-SHA3-256 RSA-PSS-RSAE-SHA2-256 \
+       RSA-PSS-RSAE-SHA3-384 RSA-PSS-RSAE-SHA2-384 \
+       RSA-PSS-RSAE-SHA3-512 RSA-PSS-RSAE-SHA2-512 \
+       RSA-SHA3-256 RSA-SHA2-256 \
+       RSA-SHA3-384 RSA-SHA2-384 \
+       RSA-SHA3-512 RSA-SHA2-512 \
+       ECDSA-SHA2-224 RSA-PSS-SHA2-224 RSA-SHA2-224 \
+       ECDSA-SHA3-224 RSA-PSS-SHA3-224 RSA-SHA3-224 \
+       DSA-SHA2-256 DSA-SHA2-384 DSA-SHA2-512 DSA-SHA2-224 \
+       DSA-SHA3-256 DSA-SHA3-384 DSA-SHA3-512 \
+       ECDSA-SHA1 RSA-PSS-SHA1 RSA-SHA1 DSA-SHA1
+
+cipher = AES-256-GCM AES-256-CCM CHACHA20-POLY1305 CAMELLIA-256-GCM \
+    AES-256-CTR AES-256-CBC CAMELLIA-256-CBC AES-128-GCM AES-128-CCM \
+    CAMELLIA-128-GCM AES-128-CTR AES-128-CBC CAMELLIA-128-CBC \
+    3DES-CBC
+
+cipher@TLS = AES-256-GCM AES-256-CCM CHACHA20-POLY1305 AES-256-CBC \
+    AES-128-GCM AES-128-CCM AES-128-CBC 3DES-CBC
+
+cipher@SSH = AES-256-GCM CHACHA20-POLY1305 AES-256-CTR AES-256-CBC \
+    AES-128-GCM AES-128-CTR AES-128-CBC 3DES-CBC
+
+cipher@sequoia = AES-256-CFB AES-128-CFB CAMELLIA-256-CFB CAMELLIA-128-CFB
+cipher@RPM = AES-256-CFB AES-128-CFB CAMELLIA-256-CFB CAMELLIA-128-CFB
+
+# 'RSA' is intentionally before DHE ciphersuites, as the DHE ciphersuites have
+# interoperability issues in TLS.
+key_exchange = ECDHE RSA DHE DHE-RSA DHE-DSS PSK DHE-PSK ECDHE-PSK RSA-PSK ECDHE-GSS DHE-GSS
+
+protocol@TLS = TLS1.3 TLS1.2 TLS1.1 TLS1.0 DTLS1.2 DTLS1.0
+protocol@IKE = IKEv2
+
+# Parameter sizes
+min_dh_size = 1024
+min_dsa_size = 1024
+min_rsa_size = 1024
+
+# GnuTLS only for now
+sha1_in_certs = 1
+
+arbitrary_dh_groups = 1
+ssh_certs = 1
+ssh_etm = 1

@@ -1,0 +1,11 @@
+# dist macros.
+
+%__bootstrap         ~bootstrap
+%fedora              39
+%fc39                1
+%dist                %{!?distprefix0:%{?distprefix}}%{expand:%{lua:for i=0,9999 do print("%{?distprefix" .. i .."}") end}}.fc%{fedora}%{?with_bootstrap:~bootstrap}
+%dist_vendor         Fedora
+%dist_name           Fedora Linux
+%dist_home_url       https://fedoraproject.org/
+%dist_bug_report_url https://bugzilla.redhat.com/
+%dist_debuginfod_url https://debuginfod.fedoraproject.org/

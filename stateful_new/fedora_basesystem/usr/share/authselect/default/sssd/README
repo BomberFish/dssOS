@@ -1,0 +1,138 @@
+Enable SSSD for system authentication (also for local users only)
+=================================================================
+
+Selecting this profile will enable SSSD as the source of identity
+and authentication providers.
+
+SSSD provides a set of daemons to manage access to remote directories and
+authentication mechanisms such as LDAP, Kerberos, FreeIPA or AD. It provides
+an NSS and PAM interface toward the system and a pluggable backend system
+to connect to multiple different account sources.
+
+More information about SSSD can be found on its project page:
+https://sssd.io
+
+However, if you do not want to keep SSSD running on your machine, you can
+keep this profile selected and just disable SSSD service. The resulting
+configuration will still work correctly even with SSSD disabled and local users
+and groups will be read from local files directly.
+
+SSSD CONFIGURATION
+------------------
+
+Authselect does not touch SSSD's configuration. Please, read SSSD's
+documentation to see how to configure it manually. Only local users
+will be available on the system if there is no existing SSSD configuration.
+
+AVAILABLE OPTIONAL FEATURES
+---------------------------
+
+with-faillock::
+    Enable account locking in case of too many consecutive
+    authentication failures.
+
+with-mkhomedir::
+    Enable automatic creation of home directories for users on their
+    first login.
+
+with-ecryptfs::
+    Enable automatic per-user ecryptfs.
+
+with-smartcard::
+    Enable authentication with smartcards through SSSD. Please note that
+    smartcard support must be also explicitly enabled within
+    SSSD's configuration.
+
+with-smartcard-lock-on-removal::
+    Lock screen when a smartcard is removed.
+
+with-smartcard-required::
+    Smartcard authentication is required. No other means of authentication
+    (including password) will be enabled.
+
+with-fingerprint::
+    Enable authentication with fingerprint reader through *pam_fprintd*.
+
+with-pam-gnome-keyring::
+    Enable pam-gnome-keyring support.
+
+with-pam-u2f::
+    Enable authentication via u2f dongle through *pam_u2f*.
+
+with-pam-u2f-2fa::
+    Enable 2nd factor authentication via u2f dongle through *pam_u2f*.
+
+without-pam-u2f-nouserok::
+    Module argument nouserok is omitted if also with-pam-u2f-2fa is used.
+    *WARNING*: Omitting nouserok argument means that users without pam-u2f
+    authentication configured will not be able to log in *INCLUDING* root.
+    Make sure you are able to log in before losing root privileges.
+
+with-silent-lastlog::
+    Do not produce pam_lastlog message during login.
+
+with-sudo::
+    Allow sudo to use SSSD as a source for sudo rules in addition of /etc/sudoers.
+
+with-pamaccess::
+    Check access.conf during account authorization.
+
+with-pwhistory::
+    Enable pam_pwhistory module for local users.
+
+with-altfiles::
+    Use nss_altfiles for passwd and group nsswitch databases.
+
+with-mdns4::
+    Enable multicast DNS over IPv4.
+
+with-mdns6::
+    Enable multicast DNS over IPv6.
+
+with-files-domain::
+    If set, SSSD will be contacted before "files" when resolving users and
+    groups. The order in nsswitch.conf will be set to "sss files" instead of
+    "files sss" for passwd and group maps.
+
+with-files-access-provider::
+    If set, account management for local users is handled also by pam_sss. This
+    is needed if there is an explicitly configured domain with id_provider=files
+    and non-empty access_provider setting in sssd.conf.
+
+    *WARNING:* SSSD access check will become mandatory for local users and
+    if SSSD is stopped then local users will not be able to log in. Only
+    system accounts (as defined by pam_usertype, including root) will be
+    able to log in.
+
+with-gssapi::
+    If set, pam_sss_gss module is enabled to perform user authentication over
+    GSSAPI.
+
+with-subid::
+    Enable SSSD as a source of subid database in /etc/nsswitch.conf.
+
+with-systemd-homed::
+    If set, pam_systemd_homed is enabled for all pam operations.
+
+without-nullok::
+    Do not add nullok parameter to pam_unix.
+
+with-libvirt::
+    Enable connecting to libvirt VMs using the hostname configured in the
+    guest OS or, as a fallback, their name.
+
+EXAMPLES
+--------
+
+* Enable SSSD with sudo and smartcard support
+
+  authselect select sssd with-sudo with-smartcard
+
+* Enable SSSD with sudo support and create home directories for users on their
+  first login
+
+  authselect select sssd with-mkhomedir with-sudo
+
+SEE ALSO
+--------
+* man sssd.conf(5)

@@ -1,0 +1,40 @@
+#!/usr/bin/bash
+# Script to migrate rpmdb from /var/lib/rpm to new rpmdb path in /usr
+
+# Copyright (C) 2022 Neal Gompa <ngompa@fedoraproject.org>.
+#
+# Fedora-License-Identifier: GPLv2+
+# SPDX-2.0-License-Identifier: GPL-2.0+
+# SPDX-3.0-License-Identifier: GPL-2.0-or-later
+#
+# This program is free software.
+# For more information on the license, see COPYING or
+# <https://www.gnu.org/licenses/gpl-2.0.en.html>.
+# For more information on free software, see
+# <https://www.gnu.org/philosophy/free-sw.en.html>.
+
+
+set -euo pipefail
+
+# Script to migrate the rpmdb to /usr
+rpmdb_path="$(rpm --eval '%_dbpath')"
+rpmdb_path_old="/var/lib/rpm"
+rpmdb_path_new="${rpmdb_path}"
+
+
+if [ "${rpmdb_path}" = "${rpmdb_path_old}" ]; then
+	echo "The rpmdb path is still in /var, exiting!"
+	exit 0
+fi
+
+if [ -L "${rpmdb_path_old}" ]; then
+	echo "The rpmdb has already been migrated, exiting!"
+	rm -v "${rpmdb_path_old}/.migratedb"
+	exit 0
+fi
+
+rpm --verbose --rebuilddb
+
+rm -rfv ${rpmdb_path_old}
+
+ln -srv ${rpmdb_path_new} ${rpmdb_path_old}

@@ -1,0 +1,4 @@
+removed directory '/var/cache/bpf'
+removed directory '/var/cache/dnf'
+removed '/var/cache/ldconfig/aux-cache'
+removed directory '/var/cache/ldconfig'

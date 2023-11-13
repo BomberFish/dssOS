@@ -1,0 +1,27 @@
+# Just an empty policy for testing
+
+mac =
+
+group =
+
+hash =
+
+sign =
+
+cipher =
+
+key_exchange =
+
+#protocol =
+
+# Parameter sizes
+min_dh_size = 0
+min_dsa_size = 0
+min_rsa_size = 0
+
+# GnuTLS only for now
+sha1_in_certs = 0
+
+arbitrary_dh_groups = 0
+ssh_certs = 0
+ssh_etm = 0

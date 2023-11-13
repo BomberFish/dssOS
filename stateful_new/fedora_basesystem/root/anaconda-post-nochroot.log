@@ -1,0 +1,33 @@
++ KEEPLANG=en_US
++ for dir in locale i18n
++ find /mnt/sysimage/usr/share/locale -mindepth 1 -maxdepth 1 -type d -not '(' -name en_US -o -name POSIX ')' -exec rm -rfv '{}' +
+removed '/mnt/sysimage/usr/share/locale/en_GB/LC_MESSAGES/glib20.mo'
+removed '/mnt/sysimage/usr/share/locale/en_GB/LC_MESSAGES/dnf.mo'
+removed '/mnt/sysimage/usr/share/locale/en_GB/LC_MESSAGES/p11-kit.mo'
+removed directory '/mnt/sysimage/usr/share/locale/en_GB/LC_MESSAGES'
+removed directory '/mnt/sysimage/usr/share/locale/en_GB'
+removed directory '/mnt/sysimage/usr/share/locale/en@piglatin/LC_MESSAGES'
+removed directory '/mnt/sysimage/usr/share/locale/en@piglatin'
+removed directory '/mnt/sysimage/usr/share/locale/en@boldquot/LC_MESSAGES'
+removed directory '/mnt/sysimage/usr/share/locale/en@boldquot'
+removed directory '/mnt/sysimage/usr/share/locale/en@arabic/LC_MESSAGES'
+removed directory '/mnt/sysimage/usr/share/locale/en@arabic'
+removed directory '/mnt/sysimage/usr/share/locale/en@quot/LC_MESSAGES'
+removed directory '/mnt/sysimage/usr/share/locale/en@quot'
+removed directory '/mnt/sysimage/usr/share/locale/en@greek/LC_MESSAGES'
+removed directory '/mnt/sysimage/usr/share/locale/en@greek'
+removed directory '/mnt/sysimage/usr/share/locale/en@hebrew/LC_MESSAGES'
+removed directory '/mnt/sysimage/usr/share/locale/en@hebrew'
+removed '/mnt/sysimage/usr/share/locale/en_CA/LC_MESSAGES/glib20.mo'
+removed directory '/mnt/sysimage/usr/share/locale/en_CA/LC_MESSAGES'
+removed directory '/mnt/sysimage/usr/share/locale/en_CA'
+removed directory '/mnt/sysimage/usr/share/locale/en/LC_MESSAGES'
+removed directory '/mnt/sysimage/usr/share/locale/en'
+removed directory '/mnt/sysimage/usr/share/locale/en@shaw/LC_MESSAGES'
+removed directory '/mnt/sysimage/usr/share/locale/en@shaw'
+removed directory '/mnt/sysimage/usr/share/locale/en@cyrillic/LC_MESSAGES'
+removed directory '/mnt/sysimage/usr/share/locale/en@cyrillic'
++ for dir in locale i18n
++ find /mnt/sysimage/usr/share/i18n -mindepth 1 -maxdepth 1 -type d -not '(' -name en_US -o -name POSIX ')' -exec rm -rfv '{}' +
+removed directory '/mnt/sysimage/usr/share/i18n/locales'
+removed directory '/mnt/sysimage/usr/share/i18n/charmaps'
