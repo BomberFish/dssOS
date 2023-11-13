@@ -49,8 +49,8 @@ mkdir -p statefulmnt
 mount "${STATE}" statefulmnt
 
 sleep 2 # yet another arbitrary sleep for fun :madTrolley:
-echo "[*] Clearing stateful partition..."
-rm -rf statefulmnt/* # absolutely fucking nuke the thing. going full oppenheimer mode here
+echo "[*] Preparing stateful partition..."
+rm -rf statefulmnt/cros_payloads
 
 sleep 3 # ok maybe not so arbitrary this time
 echo "[*] Cleaning up..."

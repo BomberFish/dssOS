@@ -41,3 +41,6 @@ mount "${ROOTA}" rootmnt
 echo "[*] Mounting stateful partition"
 mkdir -p statefulmnt
 mount "${STATE}" statefulmnt
+
+echo
+echo "[✓] All done! Make sure to manually detach any loop devices and unmount any mounted partitions when you're finished."
