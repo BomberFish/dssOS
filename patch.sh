@@ -42,7 +42,7 @@ mount "${ROOTA}" rootmnt
 
 sleep 2 # arbitrary sleep for fun :trolllaugh:
 echo "[*] Copying Bootloader..."
-rsync -avh --progress ./rma/* rootmnt # this *should* merge the new files into the rootfs.
+rsync -avh --progress ./rootpatches/* rootmnt # this *should* merge the new files into the rootfs.
 
 echo "[*] Mounting stateful partition"
 mkdir -p statefulmnt
