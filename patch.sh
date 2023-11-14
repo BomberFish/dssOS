@@ -17,23 +17,52 @@ if [ "$EUID" -ne 0 ]; then
 fi
 
 if [ -z "$1" ]; then
-    echo "[!!!] No shim supplied!"
+	echo "[!!!] No shim supplied!"
 	exit 1
 fi
-
 
 SHIM=$1
 if [[ ! -f $SHIM ]]; then
 	echo "[!!] The file path specified does not exist!"
-	exit 1
+	exit 1 
 fi
 
+echo "[*] Creating user partition..."
+
+dd if=/dev/zero bs=1G status=progress count=6 >>"${SHIM}" # 6gb should be enough for anyone, right?
+echo -ne "\a"
+# Fix corrupt gpt
+echo "[*] Fixing up image..."
+fdisk "${SHIM}" <<EOF
+n
+
+
+
+w
+EOF	
 
 echo "[*] Creating loop device..."
 LOOPDEV=$(losetup -f)
 losetup -P "${LOOPDEV}" "${SHIM}"
 ROOTA="${LOOPDEV}p3"
-STATE="${LOOPDEV}p1"
+USR="${LOOPDEV}p13"
+
+echo "[*] Formatting user partition..."
+mkfs.ext2 -L arch "${LOOPDEV}p13"
+
+cleanup() {
+	echo "[*] Cleaning up..."
+	set -x
+	umount rootmnt
+	umount usrmnt
+	rm -rf rootmnt
+	rm -rf usrmnt
+
+	safesync
+
+	losetup -d "$LOOPDEV"
+	set +x
+}
 
 echo "[*] Making ROOT-A writable..."
 enable_rw_mount "${ROOTA}"
@@ -41,31 +70,20 @@ enable_rw_mount "${ROOTA}"
 echo "[*] Mounting ROOT-A..."
 mkdir -p rootmnt
 mount "${ROOTA}" rootmnt
-
 sleep 2 # arbitrary sleep for fun :trolllaugh:
+
 echo "[*] Copying Bootloader..."
-rsync -avh --progress ./root_new/* rootmnt # this *should* merge the new files into the rootfs.
+rsync -avh --progress ./root_new/* rootmnt || cleanup # this *should* merge the new files into the rootfs.
 
-echo "[*] Mounting stateful partition"
-mkdir -p statefulmnt
-mount "${STATE}" statefulmnt
-
+echo "[*] Mounting user partition"
+mkdir -p usrmnt
+mount "${USR}" usrmnt
 sleep 2 # yet another arbitrary sleep for fun :madTrolley:
-echo "[*] Preparing stateful partition..."
-rm -rf statefulmnt/cros_payloads
 
-echo "[*] Copying base system..."
-rsync -avh --progress ./stateful_new/* statefulmnt
+echo "[*] Copying base system. This may take a while."
+rsync -ah --progress ./basesystem/layer usrmnt || cleanup
 
 sleep 3 # ok maybe not so arbitrary this time
-echo "[*] Cleaning up..."
-umount rootmnt
-umount statefulmnt
-rm -rf rootmnt
-rm -rf statefulmnt
-
-safesync
-
-losetup -d "$LOOPDEV"
+cleanup
 
 echo "[✓] All done!"

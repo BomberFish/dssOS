@@ -1,4 +1,0 @@
-
-[fips_sect]
-tls1-prf-ems-check = 1
-activate = 1

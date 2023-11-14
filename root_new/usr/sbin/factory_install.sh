@@ -9,9 +9,15 @@ echo """
 \____//____//____///\____//____/  
                                  
 The Dollar Store Shim Operating System
-
 """
 /bin/dssos_motd # print a funny message
 echo
 
-/bin/bash -i
+echo "[*] Mounting user partition..."
+mount /dev/sda13 /archmnt # no way a chromebook has a sata drive
+echo "[*] Binding /dev..."
+mount --bind /dev /archmnt/layer/dev
+echo "[*] Binding /proc..."
+mount --bind /proc /archmnt/layer/proc
+echo "[*] Entering chroot"
+chroot /archmnt/layer bash

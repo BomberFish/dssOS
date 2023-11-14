@@ -14,7 +14,42 @@ dssOS is an alternative operating system for Chrome OS devices which runs off a 
 > [!WARNING]  
 > Warning: dssOS was hacked together in a weekend, and thus is very unstable. Don't come crying to me when something breaks.
 
+## How to install
+
+If you can't figure out how to use the scripts in this repo, you're better off using a better option like [TerraOS](https://github.com/r58Playz/terraos) or [Shimboot](https://github.com/ading2210/shimboot).
+
+(also, i'm too lazy to provide install instructions :P)
+
+## Where to get RootFSes
+
+[Here](https://github.com/BomberFish/dssOS-rootFS/releases). Extract layer.tar in `basesystem`, making sure to keep a file structure similar to the following:
+
+```
+basesystem
+└── layer
+    ├── afs
+    ├── bin -> usr/bin
+    ├── boot
+    ├── dev
+    ├── etc
+    ├── home
+    ├── lib -> usr/lib
+    ├── lib64 -> usr/lib64
+    ├── lost+found
+    ├── media
+    ├── mnt
+    ├── opt
+    ├── proc
+    ├── root
+    ├── run
+    ├── sbin -> usr/sbin
+    ├── srv
+    ├── sys
+    ├── tmp
+    ├── usr
+    └── var
+```
+
 ## Credits
 
-- SH1MMER – Utilities used in patcher script, initial RMA shim research
-- Shimboot – bootloader approach
+Thanks to the sh1mmer project for providing some utilities used in the patcher script, as well as doing the hard work of figuring out what the hell the shims even do.

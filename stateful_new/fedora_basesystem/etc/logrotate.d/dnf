@@ -1,7 +1,0 @@
-/var/log/hawkey.log {
-    missingok
-    notifempty
-    rotate 4
-    weekly
-    create
-}

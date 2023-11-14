@@ -1,7 +1,0 @@
-disable-algorithms "." {
-RSAMD5;
-ECCGOST;
-};
-disable-ds-digests "." {
-GOST;
-};

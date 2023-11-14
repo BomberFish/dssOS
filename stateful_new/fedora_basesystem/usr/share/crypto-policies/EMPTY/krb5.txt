@@ -1,2 +1,0 @@
-[libdefaults]
-permitted_enctypes = 
