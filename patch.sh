@@ -39,7 +39,7 @@ n
 
 
 w
-EOF	
+EOF
 
 echo "[*] Creating loop device..."
 LOOPDEV=$(losetup -f)
