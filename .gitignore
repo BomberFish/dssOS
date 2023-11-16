@@ -4,3 +4,6 @@ usrmnt
 non_shell_stuff/a.out
 basesystem/layer
 basesystem/layer.tar
+src/a.out
+src/dssos_motd
+src/dssos_bootloader
