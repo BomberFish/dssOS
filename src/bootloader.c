@@ -1,14 +1,13 @@
 #include <stdio.h>
 #include <time.h>
 #include <sys/select.h>
+#include <sys/types.h>
 #include <sys/time.h>
 #include <sys/syscall.h>
 #include <termios.h>
 #include <unistd.h>
 
-// TODO: Get bash job control working
-
-int main(void) {
+int main(int argc, char *argv[]) {
     int exit = 0;
     printf("       __             //___  _____\n  ____/ /_____ _____ // __ \/ ___/\n / __  // ___// ___/// / / /\__ \ \n/ /_/ /(__  )(__  )// /_/ /___/ / \n\____//____//____///\____//____/\nThe Dollar Store Shim Operating System\n");
     printMOTD();
@@ -36,11 +35,11 @@ int main(void) {
         perror("select()");
     } else if (retval) {
         printf("Dropping you to bash.\nIf at any point you want to enter the chroot, run the following commands:\nmount /dev/sda13 /archmnt\nmount --bind /dev /archmnt/layer/dev\nmount --bind /proc /archmnt/layer/proc\nmount --bind /run/frecon /archmnt/layer/run/frecon\nchroot /archmnt/layer bash\n");
-        run("while true; do /bin/bash -i; done");
+        open_shell();
     } else {
         printf("\nBooting dssOS...\n");
         exit = enter_chroot();
-        run_chroot("bash -i", "/archmnt/layer");
+        open_shell();
     }
 
     // restore terminal settings
@@ -78,19 +77,12 @@ void handleCrash(void) {
 }
 
 void open_shell(void) {
-    run("/bin/bash -c 'while true; do /bin/bash -i; done'");
-}
-
-int start_chroot(void) {
-    printf("[*] Starting chroot...\n");
-    enter_chroot();
-    return run_chroot("bash", "/archmnt/layer");
+   execve("/bin/bash", "-c 'while true; do /bin/bash -i; done'", NULL);
 }
 
 int enter_chroot(void) {
     // using run() until i can find a way to do this in c
     printf("[*] Preparing mount point...\n");
-    run("mkdir -p /archmnt");
     syscall(SYS_mkdir, "/archmnt", 0777);
 
     printf("[*] Mounting user partition...\n");
@@ -110,14 +102,6 @@ int enter_chroot(void) {
 
     printf("[*] Entering chroot...\n");
     return syscall(SYS_chroot, "/archmnt/layer");
-}
-
-int run(char *cmd) {
-    return system("/bin/bash -c '%s'", cmd);
-}
-
-int run_chroot(char *cmd, char *chroot) {
-    return system("%s/bin/bash -c '%sZ'", chroot, cmd);
 }
 
 void printMOTD(void) {
