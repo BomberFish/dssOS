@@ -80,7 +80,7 @@ enter_chroot() {
      echo "[*] Mounting /sys..."
      mount -t sysfs /sys /archmnt/layer/sys
      echo "[*] Mounting /run/frecon..."
-     mount -t sysfs /run/frecon /archmnt/layer/run/frecon
+     mount --bind /run/frecon /archmnt/layer/run/frecon
      sleep 0.3
      echo "[*] Entering chroot"
      echo
