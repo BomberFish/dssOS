@@ -1,0 +1,128 @@
+@font-face {
+    font-family: 'Unifont';
+    src: local('Unifont'), url('./unifont.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Terminus';
+    font-weight: normal;
+    font-style: normal;
+    src: local('Terminus (TTF)'), url('./terminus.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Terminus';
+    font-weight: bold;
+    font-style: normal;
+    src: local('Terminus (TTF) Bold'), url('./terminus-bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Terminus';
+    font-weight: normal;
+    font-style: italic;
+    src: local('Terminus (TTF) Italic'), url('./terminus-italic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Terminus';
+    font-weight: bold;
+    font-style: italic;
+    src: local('Terminus (TTF) Bold Italic'), url('./terminus-bold-italic.ttf') format('truetype');
+}
+
+
+html,
+body,
+pre,
+code,
+p,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+button {
+    font-family: 'Terminus', 'Unifont', 'Courier New', monospace, sans-serif;
+    image-rendering: pixelated !important;
+    font-smooth: never !important;
+    -webkit-font-smoothing: none !important;
+}
+
+#title {
+    text-align: center;
+}
+
+.big {
+    font-size: 1.1em;
+}
+
+.small {
+    font-size: 0.9em;
+}
+
+body {
+    color: #fff;
+    background-color: #000;
+    margin: 16px 20%;
+}
+
+html {
+    overflow: -moz-scrollbars-vertical; 
+    overflow-y: scroll;
+}
+
+ul,
+li {
+    list-style: square;
+}
+
+hint {
+    border-bottom: 1px dotted #777;
+}
+
+hint:hover {
+    cursor: help;
+}
+
+a {
+    color: #2244ff!important;
+    text-decoration: none;
+    border-bottom: 1px dotted #2244ff;
+}
+
+a:visited {
+    opacity: 0.7
+}
+
+pre:not(#title) {
+    background-color: #111;
+    margin: 0 10%;
+
+    padding: 16px;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #111;
+}
+
+::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-thumb:hover {
+    transition: background 0.75s ease!important;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #aaa;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #fff;
+}

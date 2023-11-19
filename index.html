@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dssOS</title>
+    <link rel="stylesheet" href="web/main.css">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <meta name="description" content="Official website for The Dollar Store Shim Operating System.">
+    <meta name="keywords" content="dssOS, dollar store shim, dollar store shim os, chromebook, chromebook linux, get linux on chromebook, terraos, shimboot, sh1mmer">
+    <meta name="author" content="BomberFish">
+    <meta name="theme-color" content="#000000">
+</head>
+
+<body>
+    <pre id="title" class="big">
+       __             //___  _____
+  ____/ /_____ _____ // __ \/ ___/
+ / __  // ___// ___/// / / /\__ \ 
+/ /_/ /(__  )(__  )// /_/ /___/ / 
+\____//____//____///\____//____/  
+
+The Dollar Store Shim Operating System
+    </pre>
+    <br>
+    <p>Ever wanted to piss off your school's sysadmin? Well here's your golden ticket. dssOS is an alternate terminal-based
+        live
+        operating system for every student's favourite piece-of-shit hardware, the Chromebook.</p>
+    <h3>Ok, what the hell does it do?</h3>
+    <p>It uses a <hint lore="Just like the four commercial airliners hijacked on the morning of September 11, 2001.">
+            hijacked</hint> RMA shim to boot you into an <hint
+            lore="That means ‟temporary” for all the 10 year old script kiddies who are inevitably reading this.">ephemeral</hint>
+        Linux environment.</p>
+    <h3>How do I use it then?</h3>
+    <h4>You'll need:</h4>
+    <ul>
+        <li>A Chromebook (duh)</li>
+        <li>A USB drive (at least 16GB)</li>
+        <li>A computer running Linux</li>
+        <li>A raw shim from <a href="https://chrome100.dev">chrome100</a></li>
+        <li>Some common sense.</li>
+    </ul>
+    <p>First, clone the dssOS repo.</p>
+    <pre>
+git clone https://github.com/BomberFish/dssOS --depth 1
+cd dssOS</pre>
+    <p>Then, run the setup script.</p>
+    <pre>
+sudo ./patch.sh /path/to/shim.bin</pre>
+    <p>Now, you'll need to flash the shim to your USB drive (wow, who would have seen this coming). <hint
+            lore="DD (commonly known as disk destroyer) will wipe everything on the drive, including your 15 gigabyte hentai collection. Don't say I didn't warn you.">
+            Don't be dumb and flash it to the USB with all your
+            "homework"!</hint>
+    </p>
+    <pre>
+sudo dd if=shim.bin of=/dev/sdX conv=fdatasync status=progress</pre>
+    <h3>FAQ</h3>
+    <ul>
+        <li>
+            <h4>wen eta gui????</h4>
+            <p>Shut the fuck up.</p>
+        </li>
+        <li>
+            <h4>help!!!! theres no shim for my chrombok!!!1</h4>
+            <p>Too bad. No dssOS for you.</p>
+        </li>
+        <li>
+            <h4>Why does this suck so much?</h4>
+            <p>You have to be a special breed of retarded to think something called the "dollar store shim os" would give you a good experience. Just use something better like <a href="https://shimboot.ading.dev">Shimboot</a> or <a href="https://github.com/r58playz/TerraOS">TerraOS</a> if you want a polished experience with actual effort put in.</p>
+        </li>
+    </ul>
+</body>
+<script src="web/main.js" defer></script>
+</html>

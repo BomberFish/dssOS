@@ -7,3 +7,4 @@ basesystem/layer.tar
 src/a.out
 src/dssos_motd
 src/dssos_bootloader
+.DS_Store

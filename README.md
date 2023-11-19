@@ -16,9 +16,7 @@ dssOS is an alternative operating system for Chrome OS devices which runs off a 
 
 ## How to install
 
-If you can't figure out how to use the scripts in this repo, you're better off using a better option like [TerraOS](https://github.com/r58Playz/terraos) or [Shimboot](https://github.com/ading2210/shimboot).
-
-(also, i'm too lazy to provide install instructions :P)
+See [here](https://dssos.nineeleven.tech)
 
 ## Where to get RootFSes
 
