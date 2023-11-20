@@ -106,6 +106,12 @@ pre:not(#title) {
     padding: 16px;
 }
 
+.review {
+    width: auto;
+    height: 64px;
+    margin: 7px;
+}
+
 ::-webkit-scrollbar {
     width: 5px;
 }
