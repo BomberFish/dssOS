@@ -92,7 +92,7 @@ a {
 }
 
 .navlink {
-    color: #fff;
+    color: #fff!important;
     text-decoration: none;
     border-bottom: 1px dotted #fff;
 }
