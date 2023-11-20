@@ -86,6 +86,7 @@ h3 {
 #nav {
     font-size: 0.95em;
     font-weight: bold;
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
     left: 0;
