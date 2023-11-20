@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: since 1990,dead
+*/
+
 @font-face {
     font-family: 'Unifont';
     src: local('Unifont'), url('./unifont.otf') format('opentype');
@@ -31,6 +38,18 @@
     src: local('Terminus (TTF) Bold Italic'), url('./terminus-bold-italic.ttf') format('truetype');
 }
 
+body {
+    color: #fff;
+    background-color: #000;
+    margin: 16px 20%;
+    font-size: 20px;
+}
+
+html {
+    overflow: -moz-scrollbars-vertical; 
+    overflow-y: scroll;
+}
+
 
 html,
 body,
@@ -48,9 +67,34 @@ h6,
 form,
 button {
     font-family: 'Terminus', 'Unifont', 'Courier New', monospace, sans-serif;
-    image-rendering: pixelated !important;
+    -ms-interpolation-mode: linear !important;
+        image-rendering: -webkit-optimize-contrast !important;
+        image-rendering: -moz-crisp-edges !important;
+        image-rendering: -o-pixelated !important;
+        image-rendering: pixelated !important;
     font-smooth: never !important;
     -webkit-font-smoothing: none !important;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+#nav {
+    font-size: 0.95em;
+    font-weight: bold;
+}
+
+a {
+    color: #2244ff;
+    text-decoration: none;
+    border-bottom: 1px dotted #2244ff;
+}
+
+.navlink {
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px dotted #fff;
 }
 
 #title {
@@ -65,17 +109,6 @@ button {
     font-size: 0.9em;
 }
 
-body {
-    color: #fff;
-    background-color: #000;
-    margin: 16px 20%;
-}
-
-html {
-    overflow: -moz-scrollbars-vertical; 
-    overflow-y: scroll;
-}
-
 ul,
 li {
     list-style: square;
@@ -87,12 +120,6 @@ hint {
 
 hint:hover {
     cursor: help;
-}
-
-a {
-    color: #2244ff!important;
-    text-decoration: none;
-    border-bottom: 1px dotted #2244ff;
 }
 
 a:visited {
@@ -122,6 +149,7 @@ pre:not(#title) {
 
 ::-webkit-scrollbar-thumb,
 ::-webkit-scrollbar-thumb:hover {
+    -webkit-transition: background 0.75s ease!important;
     transition: background 0.75s ease!important;
 }
 

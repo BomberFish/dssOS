@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="web/main.css">
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
     <meta name="description" content="Official website for The Dollar Store Shim Operating System.">
-    <meta name="keywords" content="dssOS, dollar store shim, dollar store shim os, chromebook, chromebook linux, get linux on chromebook, terraos, shimboot, sh1mmer">
+    <meta name="keywords"
+        content="dssOS, dollar store shim, dollar store shim os, chromebook, chromebook linux, get linux on chromebook, terraos, shimboot, sh1mmer">
     <meta name="author" content="BomberFish">
     <meta name="theme-color" content="#000000">
 </head>
@@ -23,16 +24,26 @@
 
 The Dollar Store Shim Operating System
     </pre>
+    <div id="nav">
+        Jump to:
+        <a class="navlink" href="#intro">Intro</a>
+        <a class="navlink" href="#about">About</a>
+        <a class="navlink" href="#instructions">Instructions</a>
+        <a class="navlink" href="#faq">FAQ</a>
+        <a class="navlink" href="#reviews">Reviews</a>
+    </div>
     <br>
-    <p>Ever wanted to piss off your school's sysadmin? Well here's your golden ticket. dssOS is an alternate terminal-based
+    <p id="intro">Ever wanted to piss off your school's sysadmin? Well here's your golden ticket. dssOS is an alternate
+        terminal-based
         live
         operating system for every student's favourite piece-of-shit hardware, the Chromebook.</p>
-    <h3>Ok, what the hell does it do?</h3>
+    <h3 id="about">Ok, what the hell does it do?</h3>
     <p>It uses a <hint lore="Just like the four commercial airliners hijacked on the morning of September 11, 2001.">
             hijacked</hint> RMA shim to boot you into an <hint
-            lore="That means ‟temporary” for all the 10 year old script kiddies who are inevitably reading this.">ephemeral</hint>
+            lore="That means ‟temporary” for all the 10 year old script kiddies who are inevitably reading this.">
+            ephemeral</hint>
         Linux environment.</p>
-    <h3>How do I use it then?</h3>
+    <h3 id="instructions">How do I use it then?</h3>
     <h4>You'll need:</h4>
     <ul>
         <li>A Chromebook (duh)</li>
@@ -55,7 +66,7 @@ sudo ./patch.sh /path/to/shim.bin</pre>
     </p>
     <pre>
 sudo dd if=shim.bin of=/dev/sdX conv=fdatasync status=progress</pre>
-    <h3>FAQ</h3>
+    <h3 id="faq">FAQ</h3>
     <ul>
         <li>
             <h4>wen eta gui????</h4>
@@ -67,13 +78,18 @@ sudo dd if=shim.bin of=/dev/sdX conv=fdatasync status=progress</pre>
         </li>
         <li>
             <h4>Why does this suck so much?</h4>
-            <p>You have to be a special breed of retarded to think something called the "dollar store shim os" would give you a good experience. Just use something better like <a href="https://shimboot.ading.dev">Shimboot</a> or <a href="https://github.com/r58playz/TerraOS">TerraOS</a> if you want a polished experience with actual effort put in.</p>
+            <p>You have to be a special breed of retarded to think something called the "dollar store shim os" would
+                give you a good experience. Just use something better like <a
+                    href="https://shimboot.ading.dev">Shimboot</a> or <a
+                    href="https://github.com/r58playz/TerraOS">TerraOS</a> if you want a polished experience with actual
+                effort put in.</p>
         </li>
     </ul>
-    <h3>‟Reviews”</h3>
+    <h3 id="reviews">‟Reviews”</h3>
     <p>Look at these amazing reviews from happy customers!!!</p>
     <img class="review" src="web/r58.png" alt="r58playz says: this project's shittier than i thought it would be">
     <img class="review" src="web/interpolation.png" alt="interpolation says: what is dssos">
 </body>
 <script src="web/main.js" defer></script>
+
 </html>
