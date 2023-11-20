@@ -18,15 +18,16 @@
     <div id="top"></div>
     <div id="nav">
         Jump to:
-        <a class="navlink" href="#top">Top</a>
-        <a class="navlink" href="#intro">Intro</a>
-        <a class="navlink" href="#about">About</a>
-        <a class="navlink" href="#instructions">Instructions</a>
-        <a class="navlink" href="#faq">FAQ</a>
-        <a class="navlink" href="#reviews">Reviews</a>
+        <a class="navlink" href="#top">Top</a>&nbsp;
+        <a class="navlink" href="#intro">Intro</a>&nbsp;
+        <a class="navlink" href="#about">About</a>&nbsp;
+        <a class="navlink" href="#instructions">Instructions</a>&nbsp;
+        <a class="navlink" href="#faq">FAQ</a>&nbsp;
+        <a class="navlink" href="#explainer">Technical Explainer</a>&nbsp;
+        <a class="navlink" href="#reviews">Reviews</a>&nbsp;
     </div>
     <main>
-    <pre id="title" class="big">
+        <pre id="title" class="big">
        __             //___  _____
   ____/ /_____ _____ // __ \/ ___/
  / __  // ___// ___/// / / /\__ \ 
@@ -35,67 +36,124 @@
 
 The Dollar Store Shim Operating System
     </pre>
-    <br>
-    <p id="intro">Ever wanted to piss off your school's sysadmin? Well here's your golden ticket. dssOS is an alternate
-        terminal-based
-        live
-        operating system for every student's favourite piece-of-shit hardware, the Chromebook.</p>
-    <h3 id="about">Ok, what the hell does it do?</h3>
-    <p>It uses a <hint lore="Just like the four commercial airliners hijacked on the morning of September 11, 2001.">
-            hijacked</hint> RMA shim to boot you into an <hint
-            lore="That means ‟temporary” for all the 10 year old script kiddies who are inevitably reading this.">
-            ephemeral</hint>
-        Linux environment.</p>
-    <h3 id="instructions">How do I use it then?</h3>
-    <h4>You'll need:</h4>
-    <ul>
-        <li>A Chromebook (duh)</li>
-        <li>A USB drive (at least 16GB)</li>
-        <li>A computer running Linux</li>
-        <li>A raw shim from <a href="https://chrome100.dev">chrome100</a></li>
-        <li>Some common sense.</li>
-    </ul>
-    <p>First, clone the dssOS repo.</p>
-    <pre>
+        <br>
+        <p id="intro">Ever wanted to piss off your school's sysadmin? Well here's your golden ticket. dssOS is an
+            alternate
+            terminal-based
+            live
+            operating system for every student's favourite piece-of-shit hardware, the Chromebook.</p>
+        <h3 id="about">Ok, what the hell does it do?</h3>
+        <p>It uses a <hint
+                lore="Just like the four commercial airliners hijacked on the morning of September 11, 2001.">
+                hijacked</hint> RMA shim to boot you into an <hint
+                lore="That means ‟temporary” for all the 10 year old script kiddies who are inevitably reading this.">
+                ephemeral</hint>
+            Linux environment.</p>
+        <h3 id="instructions">How do I use it then?</h3>
+        <h4>You'll need:</h4>
+        <ul>
+            <li>A Chromebook (duh)</li>
+            <li>A USB drive (at least 16GB)</li>
+            <li>A computer running Linux</li>
+            <li>A raw shim from <a href="https://chrome100.dev">chrome100</a></li>
+            <li>Some common sense.</li>
+        </ul>
+        <p>First, clone the dssOS repo.</p>
+        <pre>
 git clone https://github.com/BomberFish/dssOS --depth 1
 cd dssOS</pre>
-    <p>Then, run the setup script.</p>
-    <pre>
+        <p>You will need to <a href="https://github.com/BomberFish/dssOS-rootFS/releases">download a RootFS</a> and
+            extract it into the basesystem folder. Make sure to maintain this file
+            hierarchy:</p>
+        <pre>
+basesystem
+└── layer
+    ├── afs
+    ├── bin -> usr/bin
+    ├── boot
+    ├── dev
+    ├── etc
+    ├── home
+    ├── lib -> usr/lib
+    ├── lib64 -> usr/lib64
+    ├── lost+found
+    ├── media
+    ├── mnt
+    ├── opt
+    ├── proc
+    ├── root
+    ├── run
+    ├── sbin -> usr/sbin
+    ├── srv
+    ├── sys
+    ├── tmp
+    ├── usr
+    └── var
+</pre>
+        <p>Then, run the setup script.</p>
+        <pre>
 sudo ./patch.sh /path/to/shim.bin</pre>
-    <p>Now, you'll need to flash the shim to your USB drive (wow, who would have seen this coming). <hint
-            lore="DD (commonly known as disk destroyer) will wipe everything on the drive, including your 15 gigabyte hentai collection. Don't say I didn't warn you.">
-            Don't be dumb and flash it to the USB with all your
-            ‟homework”!</hint>
-    </p>
-    <pre>
+        <p>Now, you'll need to flash the shim to your USB drive (wow, who would have seen this coming). <hint
+                lore="DD (commonly known as disk destroyer) will wipe everything on the drive, including your 15 gigabyte hentai collection. Don't say I didn't warn you.">
+                Don't be dumb and flash it to the USB with all your
+                ‟homework”!</hint>
+        </p>
+        <pre>
 sudo dd if=shim.bin of=/dev/sdX conv=fdatasync status=progress</pre>
-    <h3 id="faq">FAQ</h3>
-    <ul>
-        <li>
-            <h4>wen eta gui????</h4>
-            <p>Shut the fuck up.</p>
-        </li>
-        <li>
-            <h4>help!!!! theres no shim for my chrombok!!!1</h4>
-            <p>Too bad. No dssOS for you.</p>
-        </li>
-        <li>
-            <h4>Why does this suck so much?</h4>
-            <p>You have to be a special breed of retarded to think something called the "dollar store shim os" would
-                give you a good experience. Just use something better like <a
-                    href="https://shimboot.ading.dev">Shimboot</a> or <a
-                    href="https://github.com/r58playz/TerraOS">TerraOS</a> if you want a polished experience with actual
-                effort put in.</p>
-        </li>
-    </ul>
-    <h3 id="reviews">‟Reviews”</h3>
-    <p>Look at these amazing reviews from happy customers!!!</p>
-    <img class="review" src="web/r58.png" alt="r58playz says: this project's shittier than i thought it would be">
-    <img class="review" src="web/interpolation.png" alt="interpolation says: what is dssos">
-</main>
+        <h3 id="faq">FAQ</h3>
+        <ul>
+            <li>
+                <h4>wen eta gui????</h4>
+                <p>Shut the fuck up.</p>
+            </li>
+            <li>
+                <h4>help!!!! theres no shim for my chrombok!!!1</h4>
+                <p>Too bad. No dssOS for you.</p>
+            </li>
+            <li>
+                <h4>Why does this suck so much?</h4>
+                <p>You have to be a special breed of retarded to think something called the "dollar store shim os" would
+                    give you a good experience. Just use something better like <a
+                        href="https://shimboot.ading.dev">Shimboot</a> or <a
+                        href="https://github.com/r58playz/TerraOS">TerraOS</a> if you want a polished experience with
+                    actual
+                    effort put in.</p>
+            </li>
+            <li>
+                <h4>Can you give me a prebuilt image?</h4>
+                <p>Stop being a pussy and build your own.</p>
+            </li>
+            <li>
+                <h4>Please?</h4>
+                <p>No, fuck off.</p>
+            </li>
+        </ul>
+        <h3 id="explainer">Technical Explainer</h3>
+        <p>So dssOS runs on an RMA shim? What the hell is that? </p>
+        <p>Well, an RMA shim is a diagnostic tool used by people unfortunate enough to repair a Chromebook. It's
+            essentially an extremely slimmed-down ChromeOS live system which a Chromebook inherently trusts. This means
+            that if you can get your hands on one, you can boot into it without having to enable devmode.</p>
+        <p> Luckily, some retard over at Lenovo decided to put a shitton of shims on their public-facing download server
+            for everyone to see. Additionally, Google (in their infinite wisdom) decided to <hint
+                lore="aka they're being pussies and not changing the certificate that signs the shim">NOT try</hint> and
+            fix it at all.</p>
+        <p>What dssOS does is it replaces the lame diagnostics menu with a kick-ass bootloader (soon to be rewritten in
+            C), which mounts some partitions and uses Linux's native chroot functionality to boot into a
+            fully-functional linux environment.</p>
+        <h3 id="reviews">‟Reviews”</h3>
+        <p>Look at these amazing reviews from happy customers!!!</p>
+        <img class="review" src="web/r58.png" alt="r58playz says: this project's shittier than i thought it would be">
+        <img class="review" src="web/interpolation.png" alt="interpolation says: what is dssos">
+    </main>
+    <footer>
+        <p>Made with <span style="color: red;">HATE</span> by BomberFish.</p>
+        <p>Get the source code <a href="https://github.com/BomberFish/dssOS">here</a>.</p>
+    </footer>
 </body>
 <script src="web/main.js" defer></script>
 <!-- 100% privacy-first analytics -->
 <script async defer src="https://site-stats.bomberfish.ca/latest.js"></script>
-<noscript><img src="https://site-stats.bomberfish.ca/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
+<noscript><img src="https://site-stats.bomberfish.ca/noscript.gif" alt=""
+        referrerpolicy="no-referrer-when-downgrade" /></noscript>
+
 </html>

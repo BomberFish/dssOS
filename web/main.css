@@ -151,6 +151,15 @@ pre:not(#title) {
     margin: 7px;
 }
 
+footer {
+    padding: 10px;
+    padding-bottom: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
 @media (orientation: portrait) {
     pre:not(#title) {
         margin: 0 5%;
