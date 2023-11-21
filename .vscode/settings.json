@@ -1,6 +1,7 @@
 {
     "files.associations": {
         "syscall.h": "c",
-        "select.h": "c"
+        "select.h": "c",
+        "mount.h": "c"
     }
 }
