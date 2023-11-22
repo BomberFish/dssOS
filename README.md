@@ -16,7 +16,7 @@ dssOS is an alternative operating system for Chrome OS devices which runs off a 
 
 ## How to install
 
-See [here](https://dssos.nineeleven.tech)
+See [here](https://dssos.nineeleven.tech/#instructions)
 
 ## Where to get RootFSes
 
