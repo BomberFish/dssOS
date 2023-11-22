@@ -1,4 +1,4 @@
-CC ?= gcc
+CC = gcc
 CFLAGS = -Wall -Wextra -pedantic -std=c99 -Ofast -static
 
 default: bootloader_full
@@ -19,7 +19,7 @@ optimize_bootloader:
 	upx --best dssos_bootloader
 
 copy_bootloader:
-	cp dssos_bootloader ../root_new/bin/dssos_bootloader
+	mv dssos_bootloader ../root_new/bin/dssos_bootloader
 
 print_blsize:
 	du -h dssos_bootloader
@@ -32,7 +32,7 @@ optimize_motd:
 	upx --best dssos_motd
 
 copy_motd:
-	cp dssos_motd ../root_new/bin/dssos_motd
+	mv dssos_motd ../root_new/bin/dssos_motd
 
 print_motdsize:
 	du -h dssos_motd
